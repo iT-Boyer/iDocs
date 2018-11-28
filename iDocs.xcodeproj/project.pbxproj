@@ -8,6 +8,43 @@
 
 /* Begin PBXFileReference section */
 		846EF8A521AEE8A200746096 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846EF8A921AEEAF600746096 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846EF8AA21AEEB1100746096 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846EF8AB21AEEB2100746096 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		846EF8AD21AEEB2C00746096 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		846EF8AE21AEEB2C00746096 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		846EF8B021AEEB2C00746096 /* highlight.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = highlight.css; sourceTree = "<group>"; };
+		846EF8B121AEEB2C00746096 /* jazzy.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = jazzy.css; sourceTree = "<group>"; };
+		846EF8B321AEEB2C00746096 /* RoomListCellView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RoomListCellView.html; sourceTree = "<group>"; };
+		846EF8B421AEEB2C00746096 /* TuliCell.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TuliCell.html; sourceTree = "<group>"; };
+		846EF8B521AEEB2C00746096 /* AlertlistModel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AlertlistModel.html; sourceTree = "<group>"; };
+		846EF8B621AEEB2C00746096 /* TestViewController.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = TestViewController.html; sourceTree = "<group>"; };
+		846EF8B721AEEB2C00746096 /* DecisionCellView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DecisionCellView.html; sourceTree = "<group>"; };
+		846EF8B821AEEB2C00746096 /* SetCordonValueView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = SetCordonValueView.html; sourceTree = "<group>"; };
+		846EF8B921AEEB2C00746096 /* IntelDesListViewCell.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = IntelDesListViewCell.html; sourceTree = "<group>"; };
+		846EF8BA21AEEB2C00746096 /* IntelDescisionViewController.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = IntelDescisionViewController.html; sourceTree = "<group>"; };
+		846EF8BB21AEEB2C00746096 /* RoomListViewController.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RoomListViewController.html; sourceTree = "<group>"; };
+		846EF8BC21AEEB2C00746096 /* AddIntelDesViewController.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AddIntelDesViewController.html; sourceTree = "<group>"; };
+		846EF8BD21AEEB2C00746096 /* RoomStatusModel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = RoomStatusModel.html; sourceTree = "<group>"; };
+		846EF8BE21AEEB2C00746096 /* StatusLabel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = StatusLabel.html; sourceTree = "<group>"; };
+		846EF8BF21AEEB2C00746096 /* IntelDescisionView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = IntelDescisionView.html; sourceTree = "<group>"; };
+		846EF8C021AEEB2C00746096 /* FilterModel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = FilterModel.html; sourceTree = "<group>"; };
+		846EF8C121AEEB2C00746096 /* AlertListFullView.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AlertListFullView.html; sourceTree = "<group>"; };
+		846EF8C221AEEB2C00746096 /* IntelDesModel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = IntelDesModel.html; sourceTree = "<group>"; };
+		846EF8C321AEEB2C00746096 /* DecisionModel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = DecisionModel.html; sourceTree = "<group>"; };
+		846EF8C521AEEB2C00746096 /* jquery.min.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		846EF8C621AEEB2C00746096 /* jazzy.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jazzy.js; sourceTree = "<group>"; };
+		846EF8C821AEEB2C00746096 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
+		846EF8C921AEEB2C00746096 /* dash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dash.png; sourceTree = "<group>"; };
+		846EF8CA21AEEB2C00746096 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
+		846EF8CB21AEEB2C00746096 /* undocumented.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = undocumented.json; sourceTree = "<group>"; };
+		846EF8CC21AEEB2C00746096 /* badge.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = badge.svg; sourceTree = "<group>"; };
+		846EF8CD21AEEB2C00746096 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		846EF8CE21AEEB2C00746096 /* Classes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Classes.html; sourceTree = "<group>"; };
+		846EF8D021AEEB2C00746096 /* jinher.app.IntelDecision.tgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = jinher.app.IntelDecision.tgz; sourceTree = "<group>"; };
+		846EF8D121AEEB2C00746096 /* jinher.app.IntelDecision.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = jinher.app.IntelDecision.docset; sourceTree = "<group>"; };
+		846EF8D221AEEB2C00746096 /* Protocols.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Protocols.html; sourceTree = "<group>"; };
+		846EF8D421AEEB2C00746096 /* NibLoadable.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = NibLoadable.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -24,6 +61,8 @@
 		846EF8A621AEE8A800746096 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				846EF8AB21AEEB2100746096 /* README.md */,
+				846EF8AC21AEEB2C00746096 /* 智能设备 */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -31,6 +70,7 @@
 		846EF8A721AEE8B600746096 /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				846EF8AA21AEEB1100746096 /* README.md */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -38,8 +78,98 @@
 		846EF8A821AEE8C000746096 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				846EF8A921AEEAF600746096 /* README.md */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		846EF8AC21AEEB2C00746096 /* 智能设备 */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8AD21AEEB2C00746096 /* index.html */,
+				846EF8AE21AEEB2C00746096 /* search.json */,
+				846EF8AF21AEEB2C00746096 /* css */,
+				846EF8B221AEEB2C00746096 /* Classes */,
+				846EF8C421AEEB2C00746096 /* js */,
+				846EF8C721AEEB2C00746096 /* img */,
+				846EF8CB21AEEB2C00746096 /* undocumented.json */,
+				846EF8CC21AEEB2C00746096 /* badge.svg */,
+				846EF8CD21AEEB2C00746096 /* .gitignore */,
+				846EF8CE21AEEB2C00746096 /* Classes.html */,
+				846EF8CF21AEEB2C00746096 /* docsets */,
+				846EF8D221AEEB2C00746096 /* Protocols.html */,
+				846EF8D321AEEB2C00746096 /* Protocols */,
+			);
+			path = "智能设备";
+			sourceTree = "<group>";
+		};
+		846EF8AF21AEEB2C00746096 /* css */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8B021AEEB2C00746096 /* highlight.css */,
+				846EF8B121AEEB2C00746096 /* jazzy.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		846EF8B221AEEB2C00746096 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8B321AEEB2C00746096 /* RoomListCellView.html */,
+				846EF8B421AEEB2C00746096 /* TuliCell.html */,
+				846EF8B521AEEB2C00746096 /* AlertlistModel.html */,
+				846EF8B621AEEB2C00746096 /* TestViewController.html */,
+				846EF8B721AEEB2C00746096 /* DecisionCellView.html */,
+				846EF8B821AEEB2C00746096 /* SetCordonValueView.html */,
+				846EF8B921AEEB2C00746096 /* IntelDesListViewCell.html */,
+				846EF8BA21AEEB2C00746096 /* IntelDescisionViewController.html */,
+				846EF8BB21AEEB2C00746096 /* RoomListViewController.html */,
+				846EF8BC21AEEB2C00746096 /* AddIntelDesViewController.html */,
+				846EF8BD21AEEB2C00746096 /* RoomStatusModel.html */,
+				846EF8BE21AEEB2C00746096 /* StatusLabel.html */,
+				846EF8BF21AEEB2C00746096 /* IntelDescisionView.html */,
+				846EF8C021AEEB2C00746096 /* FilterModel.html */,
+				846EF8C121AEEB2C00746096 /* AlertListFullView.html */,
+				846EF8C221AEEB2C00746096 /* IntelDesModel.html */,
+				846EF8C321AEEB2C00746096 /* DecisionModel.html */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		846EF8C421AEEB2C00746096 /* js */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8C521AEEB2C00746096 /* jquery.min.js */,
+				846EF8C621AEEB2C00746096 /* jazzy.js */,
+			);
+			path = js;
+			sourceTree = "<group>";
+		};
+		846EF8C721AEEB2C00746096 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8C821AEEB2C00746096 /* carat.png */,
+				846EF8C921AEEB2C00746096 /* dash.png */,
+				846EF8CA21AEEB2C00746096 /* gh.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		846EF8CF21AEEB2C00746096 /* docsets */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8D021AEEB2C00746096 /* jinher.app.IntelDecision.tgz */,
+				846EF8D121AEEB2C00746096 /* jinher.app.IntelDecision.docset */,
+			);
+			path = docsets;
+			sourceTree = "<group>";
+		};
+		846EF8D321AEEB2C00746096 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				846EF8D421AEEB2C00746096 /* NibLoadable.html */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
