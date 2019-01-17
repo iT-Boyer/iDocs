@@ -1,4 +1,4 @@
 [submodule "Libs/智能设备"]
 	path = Libs/智能设备
-	url = https://gitee.com/huosan/IntelDecision.git
+	url = https://gitee.com/iTBoyer/IntelDecision.git
 	branch = gh-pages
