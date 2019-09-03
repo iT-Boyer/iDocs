@@ -1,0 +1,810 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJson.h",
+      "line": 42,
+      "symbol": "SBJSON.jsonParser",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJson.h",
+      "line": 43,
+      "symbol": "SBJSON.jsonWriter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 32,
+      "symbol": "SBJSONErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 35,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 36,
+      "symbol": ".EUNSUPPORTED",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 37,
+      "symbol": ".EPARSENUM",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 38,
+      "symbol": ".EPARSE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 39,
+      "symbol": ".EFRAGMENT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 40,
+      "symbol": ".ECTRL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 41,
+      "symbol": ".EUNICODE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 42,
+      "symbol": ".EDEPTH",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 43,
+      "symbol": ".EESCAPE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 44,
+      "symbol": ".ETRAILCOMMA",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 45,
+      "symbol": ".ETRAILGARBAGE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 46,
+      "symbol": ".EEOF",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 47,
+      "symbol": ".EINPUT",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 56,
+      "symbol": "SBJsonBase.errorTrace",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 59,
+      "symbol": "SBJsonBase.depth",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonBase.h",
+      "line": 59,
+      "symbol": "SBJsonBase.maxDepth",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonParser.h",
+      "line": 77,
+      "symbol": "SBJsonParser.c",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonParser.h",
+      "line": 83,
+      "symbol": "SBJsonParser(Private)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonParser.h",
+      "line": 84,
+      "symbol": "SBJsonParser.-fragmentWithString:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonWriter.h",
+      "line": 97,
+      "symbol": "SBJsonWriter.humanReadable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonWriter.h",
+      "line": 97,
+      "symbol": "SBJsonWriter.sortKeys",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonWriter.h",
+      "line": 103,
+      "symbol": "SBJsonWriter(Private)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonWriter.h",
+      "line": 104,
+      "symbol": "SBJsonWriter.-stringWithFragment:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/AcrossNetEnginDemo/lib/SBJSON/SBJsonWriter.h",
+      "line": 127,
+      "symbol": "NSObject(SBProxyForJson).-proxyForJson",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 15,
+      "symbol": "APIRequest",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 16,
+      "symbol": "APIRequest.engineSel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 17,
+      "symbol": "APIRequest.engineDel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 42,
+      "symbol": "APIRequest.-responseFromRequest",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 45,
+      "symbol": "APIRequest.+isReachable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/APIRequest.h",
+      "line": 48,
+      "symbol": "APIRequest.+isWIFIRechable",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/BSAPIResponse.h",
+      "line": 20,
+      "symbol": "BSAPIResponse",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/JHTWIPDetector.h",
+      "line": 11,
+      "symbol": "JHTWIPDetector",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/JHTWIPDetector.h",
+      "line": 14,
+      "symbol": "JHTWIPDetector.+getLANIPAddressWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/JHTWIPDetector.h",
+      "line": 16,
+      "symbol": "JHTWIPDetector.+getWANIPAddressWithCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/JHTWIPDetector.h",
+      "line": 19,
+      "symbol": "JHTWIPDetector.+getLANIPAddress",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/JHTWIPDetector.h",
+      "line": 22,
+      "symbol": "JHTWIPDetector.+getWANIPAddress:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 270,
+      "symbol": "TarbarType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 271,
+      "symbol": ".Home",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 271,
+      "symbol": "TarbarType..Home",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 272,
+      "symbol": ".Brokenews",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 272,
+      "symbol": "TarbarType..Brokenews",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 273,
+      "symbol": ".Gold",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 273,
+      "symbol": "TarbarType..Gold",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 274,
+      "symbol": ".More",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 274,
+      "symbol": "TarbarType..More",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 275,
+      "symbol": ".Custom",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 275,
+      "symbol": "TarbarType..Custom",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 278,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 278,
+      "symbol": "NewOrOld",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 278,
+      "symbol": "NewOrOld.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 279,
+      "symbol": ".New",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 279,
+      "symbol": "NewOrOld..New",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 280,
+      "symbol": ".Old",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 280,
+      "symbol": "NewOrOld..Old",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 283,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 283,
+      "symbol": "AdType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 283,
+      "symbol": "AdType.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 284,
+      "symbol": ".LoadingAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 284,
+      "symbol": "AdType..LoadingAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 285,
+      "symbol": ".ScrollAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 285,
+      "symbol": "AdType..ScrollAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 286,
+      "symbol": ".ContentAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 286,
+      "symbol": "AdType..ContentAd",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 289,
+      "symbol": "",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 289,
+      "symbol": "AdActiveType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 289,
+      "symbol": "AdActiveType.",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 290,
+      "symbol": ".AdLaunch",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 290,
+      "symbol": "AdActiveType..AdLaunch",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 291,
+      "symbol": ".AdClicked",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 291,
+      "symbol": "AdActiveType..AdClicked",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 298,
+      "symbol": "NetEngine.lbs",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 324,
+      "symbol": "NetEngine.galleryArray",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 329,
+      "symbol": "NetEngine.-concurrentQueue",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 331,
+      "symbol": "NetEngine.-appId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 333,
+      "symbol": "NetEngine.-packageId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 335,
+      "symbol": "NetEngine.-userId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 338,
+      "symbol": "NetEngine.-v2newsQueryFirstPartsWithDel:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 341,
+      "symbol": "NetEngine.-v2newsQueryTwoPartsWithParentId:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 345,
+      "symbol": "NetEngine.-v2newsQueryFirstPageWithParentId:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 349,
+      "symbol": "NetEngine.-v2newsQueryPartsWithPartId:parentId:count:dateTime:newOrOld:modifyTime:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 359,
+      "symbol": "NetEngine.-getNewsDetailWithNewsID:del:sel:isShowImage:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 372,
+      "symbol": "NetEngine.-newsPraisesAndStepWithAppId:userID:newsId:type:userName:accountType:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 468,
+      "symbol": "NetEngine.-newsQueryPartsTwoWithPartId:count:dateTime:newOrOld:modifyTime:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 576,
+      "symbol": "NetEngine.-getUserExtendInfomationsdel:sel:withUserID:currentUserId:AppId:codes:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 604,
+      "symbol": "NetEngine.-getUserInforMationsdel:sel:withUserID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 700,
+      "symbol": "NetEngine.-newsSendCommentWithNewId:content:geographicInfo:location:commentId:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 808,
+      "symbol": "NetEngine.-umSetUserPhoto:del:sel:withUserID:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 879,
+      "symbol": "NetEngine.-launchGetFaceAndStartImgWithDel:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 912,
+      "symbol": "NetEngine.-reportNewsWithNewsContent:newsId:newsTitle:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 918,
+      "symbol": "NetEngine.-shortUrlGenWithSourceUrl:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 922,
+      "symbol": "NetEngine.-getAppOwnerTypeWiteDel:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 925,
+      "symbol": "NetEngine.-gameGetNoPlayedWithDel:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 928,
+      "symbol": "NetEngine.-readCountWithNewsIdPost:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 932,
+      "symbol": "NetEngine.-searchResultWithKeyWord:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 951,
+      "symbol": "NetEngine.+isExistenceNetwork",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1167,
+      "symbol": "NetEngine.-getMyCommonsendFormRequestWithDictionary:url:delegate:selector:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1268,
+      "symbol": "NetEngine.-UploadFileWithFileName:size:startLocation:data:filePath:folderName:isVideo:del:sel:cell:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1279,
+      "symbol": "NetEngine.-updateStoryWithMediaItem:del:sel:cellDel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1329,
+      "symbol": "NetEngine.+RequestProtocol",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1331,
+      "symbol": "NetEngine.+newsDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1333,
+      "symbol": "NetEngine.+mvpDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1335,
+      "symbol": "NetEngine.+getDomainWithKey:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1391,
+      "symbol": "NetEngine.-queryRecommendNews:dataCount:opType:orderType:lastDataId:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1433,
+      "symbol": "NetEngine.-changProtocolURLWithString:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1445,
+      "symbol": "NetEngine.-deleteAppFavoriteBatch:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1448,
+      "symbol": "NetEngine.-queryNewsPics:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1451,
+      "symbol": "NetEngine.-getHeadFullFileURL:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1453,
+      "symbol": "NetEngine.-getPlayVideoFullFileURL:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1455,
+      "symbol": "NetEngine.+getHttpHost:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1457,
+      "symbol": "NetEngine.+queryViewCountNew:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1460,
+      "symbol": "NetEngine.-queryNewsForSearchComponent:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo/JHAcrossNetEngin/NetEngin/NetEngine.h",
+      "line": 1463,
+      "symbol": "NetEngine.-getNewsAttachments:del:sel:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/admin/hsg/acrossnetengin/AcrossNetEnginDemo"
+}
