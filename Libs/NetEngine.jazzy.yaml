@@ -1,0 +1,14 @@
+module: JHAcrossNetEngin
+author: iTBoyer
+github_url: https://github.com/IBM-Swift/swift-html-entities
+
+theme: fullwidth
+clean: true
+objc: true
+sdk: iphonesimulator
+
+framework_root: .
+umbrella_header: 'JHAcrossNetEngin/NetEngin/NetEngine.h'
+
+skip_undocumented: false
+hide_documentation_coverage: false
