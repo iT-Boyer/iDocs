@@ -1,0 +1,58 @@
+@startuml
+title
+布局器相关的开发流程图
+创建时间：2019-07-23 23:26:03+0800 
+endtitle
+left header
+梳理布局器的基本设计模式，实现三级布局器的开发
+endheader
+|一级布局器|
+|#bisque|二级布局器|
+|#beige|三级布局器|
+|#azure|菜单集合|
+|一级布局器|
+start
+:LayoutEngineViewController;
+:widgetImageViewClickWithData:;
+if (menuItem && menuItem.clazz && ![type isEqualToString:@"NewsColumn"]) then (YES)
+    if (menuItem.subMenus) then (YES)
+      if (layoutXML.length > 0) then (YES)
+        :带有导航条的二级布局器;
+      elseif(NO)
+        :二级布局器;
+|二级布局器|
+        :LayoutSecondEngineViewController;
+        :- (id)initWithLayuotMenuID:;
+        :点击菜单;
+        :widgetImageViewClickWithData:;
+        if (menuItem && menuItem.clazz && ![type isEqualToString:@"NewsColumn"]) then (YES)
+            if (menuItem.subMenus) then (YES)
+                 if (layoutXML.length > 0) then (YES)
+                    :三级布局器;
+                    |三级布局器|
+                    :WidgetThirdController;
+                    |菜单集合|
+                    :JHLPMenuItemManager;
+                    :menuItemsWithRolesToShowWithLevel:menuId:;
+                    |三级布局器|
+                    :菜单集合;
+                    :tableView:didSelectRowAtIndexPath:;
+                    :功能菜单:JHMenuItem;
+                    :getDataFromPlistWithTypeID:;
+                    :跳转业务; 
+                 |二级布局器|
+                 :presentSecondLayout:;
+                 :widgetImageViewClickWithData:;
+                 endif
+            endif
+        endif
+        :功能菜单;
+        :跳转反射类页面;
+        detach
+|一级布局器|
+     endif   
+  endif
+endif
+:功能菜单; 
+:跳转反射类页面;
+@enduml

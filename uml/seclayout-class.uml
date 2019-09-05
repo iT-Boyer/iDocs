@@ -1,0 +1,37 @@
+@startuml
+page 1x1
+title 
+二级布局器流程
+创建时间：2019-07-22 19:35:47+0800 
+endtitle
+left header
+整理二级布局器的相关代码实现,模仿二级布局器实现三级布局数据源的获取
+endheader
+class "LayoutSecondEngineViewController" as second {
+    --属性组 --
+    + var :String=""	
+    __ 函数组__
+    - (id)initWithLayuotMenuID:andIsSmallWindow:
+    #pragma mark 加载布局器主视图
+    - (void)loadMainLayoutView:(BOOL)isRefresh
+    //传入xml数据，返回布局器页面view
+    - (void)parseXML:menuItemManager:refresh:block:(void (^)(UIView *view))block
+    // 根据二级栏目ID返回菜单信息数组
+    + (NSArray *)getMenuItemsByID:(NSString *)identifier
+}
+class "JHLPMenuItemManager" as menuitem {
+    --属性组 --
+    + var :String=""	
+    __ 函数组__
+    + (NSMutableArray *)menuItemsWithRolesToShowWithLevel:(JHLPMenuLevel)level menuId:(NSString *)menuId
+}
+class "JHLPSourceManager" as source {
+    --属性组 --
+    + var :String=""	
+    __ 函数组__
+    // 获得menu文件中imageView数组
+    + (NSArray *)getAllItem;
+    +(NSMutableArray *)getSecondLayoutItemIDArray:(NSString *)identifier;
+}
+
+@enduml

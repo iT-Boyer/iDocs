@@ -1,0 +1,29 @@
+@startmindmap
+caption 学习org-mode的基本使用和导出操作
+title 增强vim管理项目的功能
+center header
+头部描述
+endheader
+* Termux
+** ADR:项目决策记录工具
+*** 安装:npm install -g adr
+*** 使用:adr new "新建决策记录"
+*** 查看: adr list
+*** 导出:
+** vim-orgmode:日程任务管理工具
+*** 安装emacs: apt update && apt install emacs 
+**** 安装orgmode: Plug 'jceb/vim-orgmode'
+*** 使用: spaceEmacs
+*** 查看:
+*** 导出:
+** Mac端Emacs安装及使用
+*** 安装emacs`brew cask install emacs`
+*** 安装spacemacs`git clone spacemacs.git ~/.emacs.d/`
+'给图表添加备注
+legend right
+增强termux工具集,着重说明orgmode的安装和使用
+endlegend
+center footer
+谢谢观看
+endfooter
+@endmindmap
