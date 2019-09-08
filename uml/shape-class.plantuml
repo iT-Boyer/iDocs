@@ -1,0 +1,43 @@
+@startuml
+scale 2
+page 1x1
+title
+面向对象的继承概念的理解
+创建时间: <2019-09-08 15:45>
+endtitle
+left header
+通过对几何图形定义的类对象之间的关系，来表达面向对象的思想
+endheader
+
+class "Shape" as Shape {
+--属性组 --
++ var numberOfSides
+__ 函数组__
++ func simpleDescription()->String
+}
+
+class "NamedShape" as NamedShape {
+--属性组 --
++ var numOfSides:Int
++ var name:String
+__ 函数组__
++ func init(name:)
++ func simpleDescription()->String
+}
+
+class "Square" as Square {
+--属性组 --
++ var sideLength:Double	
+__ 函数组__
++ func init(sideLength:Double,name:String)
++ func area()->Double
+}
+
+NamedShape <|-- Square:继承<
+
+note left of Square
+继承父类的属性，新增周长，和面积的方法
+end note
+
+
+@enduml

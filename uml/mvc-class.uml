@@ -1,0 +1,39 @@
+@startuml
+scale 2
+page 1x1
+title
+    MVC  出自plyground中的四个常见设计模式
+    创建时间: <2019-09-08 17:03>
+endtitle
+left header
+学习在iPad使用设计模式来编程
+endheader
+    class "Person" as Person {
+        --属性组 --
+        + let firstName:String=""	
+        + let lastName:String=""	
+    }
+    note left of Person
+       数据mode层，用来定义数据结构 
+    end note
+
+    class "GreetingViewController" as vc {
+        --属性组 --
+        + var person:Person!
+	    + var showGreetingButton:UIBtton!
+        + var greetingLabel:UILabel! 
+        __ 函数组__
+        + override func viewDidLoad()
+        - func setupUIElements()
+        == 控件组 ==
+        private func _setupButton()
+        private func _setupLabel()
+        -- 布局组 --
+        private func _layoutButton()
+        private func _layoutLabel()
+    }
+    Person *--> vc:合成< 
+    note left of vc
+    mvc是重控制器，所有操作有控制器来完成    
+    end note
+@enduml
