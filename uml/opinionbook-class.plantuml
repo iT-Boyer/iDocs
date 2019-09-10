@@ -1,0 +1,71 @@
+@startuml
+scale 2
+page 1x1
+title
+    意见书通知书设计
+    创建时间: <2019-09-09 23:50>
+    endtitle
+    left header
+        巡查结果产出的意见书和通知书需求
+    endheader
+    'package，node，folder，frame，cloud，database'
+    folder "用户信息" as userInfo{
+        class "SuperInfoVModel" as model {
+            --属性组 --
+            + var userName:String=""	
+            + var legalName:String=""	
+            + var address:String=""	
+            + var tel:String=""	
+        }
+        class "SuperBaseInfoView" as baseInfo {
+            --属性组 --
+            + model:SuperInfoVModel
+            __ 函数组__
+            + initWith:
+        }
+        class "SuperShowInfoView" as showInfoView {
+            --编辑事件 --
+        }
+        
+        class "SuperEditInfoView" as editInfoView {
+            --提交事件--
+            + show
+            - remove
+        }
+        class "SuperTextField" as textField {
+            --属性组 --
+            
+            __ 函数组__
+            + initWithPlaceholder:clear:fontSize:
+        }
+        baseInfo <|-- showInfoView:继承<
+        baseInfo <|-- editInfoView:继承<
+        model *-up-> baseInfo:合成< 
+        textField *--> editInfoView:合成<
+    }
+    'package，node，folder，frame，cloud，database'
+    folder "意见书控制器" as books{
+        
+        class "SuperBookBaseController" as basevc {
+            --属性组 --
+             var :String=""	
+            __ 函数组__
+            + func (:,:)
+        }
+        class "OpinionBookController" as opinionbook {
+            --属性组 --
+
+            __ 函数组__
+             
+        }
+
+        class "NoticeBookController" as noticebook {
+            --属性组 --
+
+            __ 函数组__
+        }
+        basevc <|-- opinionbook:继承<
+        basevc <|-- noticebook:继承< 
+    }
+   userInfo *--> books:合成<
+    @enduml
