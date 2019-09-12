@@ -7,3 +7,10 @@
 ### 工具包类型
 
 ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/opinion-wbs.uml)
+
+替换为github代理
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/CLIImageEditor-class.uml)
+
+
+### 时序图
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/CLIImageEditor-act.uml) 
