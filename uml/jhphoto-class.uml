@@ -1,0 +1,16 @@
+@startuml
+scale 2
+page 1x1
+title
+    图名
+    创建时间: <2019-09-23 09:49>
+    endtitle
+    left header
+        描述
+    endheader
+    class "clas" as 别名 {
+        --属性组 --
+
+        __ 函数组__
+    }
+    @enduml
