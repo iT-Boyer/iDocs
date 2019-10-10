@@ -2,12 +2,3 @@
 * root
 ** subtree
 @endwbs
-
-@startgantt
-project starts 2019-10-10
-Sunday are closed
-Saturday are closed
---组名--
-[task1] as [task2] on {hsg:100%} lasts 1 days
-@endgantt
-
