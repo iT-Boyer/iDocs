@@ -1,0 +1,26 @@
+@startgantt
+scale 2
+page 1x1
+title 
+用户组管理工期
+创建时间：2019-07-05 08:26:09+0800 
+endtitle
+left header
+    通过甘特图梳理工作进度安排
+endheader
+project starts 2019-07-03 
+Sunday are closed
+Saturday are closed
+--依赖组件模块--
+[扫码邀请] as [scan] on {hsg} lasts 1 days
+then [用户组管理入口] as [groupMenu] on {hsg} lasts 1 days
+then [分享组件] on {hsg} lasts 1 days
+then [人员选择器] as [selecter] on {hsg} lasts 1 days
+[依赖结束] happens at [selecter]'s end
+--用户组管理组件--
+then [默认组逻辑] as [defaultGroup] on {hsg} lasts 1 days
+then [删除业务] as [deleteAction] on {hsg} lasts 1 days
+then [三个菜单] on {hsg:100%} lasts 1 days
+then [待审核业务] as [verfy] on {hsg:100%} lasts 1 days
+[迭代结束] happens at [verfy]'s end   
+@endgantt

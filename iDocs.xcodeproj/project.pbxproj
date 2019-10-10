@@ -12,7 +12,7 @@
 		8491280E231E74C50037B1F5 /* Utils */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utils; sourceTree = "<group>"; };
 		8491280F231E74C50037B1F5 /* Apps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Apps; sourceTree = "<group>"; };
 		84912810231E74C50037B1F5 /* Libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Libs; sourceTree = "<group>"; };
-		84A75C58232128A2009D8EF7 /* uml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = uml; sourceTree = "<group>"; };
+		84E70569234F2E2C00B3ECD2 /* uml */ = {isa = PBXFileReference; lastKnownFileType = folder; path = uml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -21,7 +21,7 @@
 			children = (
 				81F1088721F07BA500850990 /* .gitmodules */,
 				846EF8A521AEE8A200746096 /* README.md */,
-				84A75C58232128A2009D8EF7 /* uml */,
+				84E70569234F2E2C00B3ECD2 /* uml */,
 				8491280F231E74C50037B1F5 /* Apps */,
 				84912810231E74C50037B1F5 /* Libs */,
 				8491280E231E74C50037B1F5 /* Utils */,
