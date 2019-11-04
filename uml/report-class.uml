@@ -1,6 +1,6 @@
 #+BEGIN_SRC plantuml :file ~/Desktop/uml.png
 @startuml
-scale 2
+scale 1
 page 1x1
 title
         拍抢干业务实现梳理,知识点分享
