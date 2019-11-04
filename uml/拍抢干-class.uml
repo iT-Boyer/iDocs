@@ -1,0 +1,71 @@
+#+BEGIN_SRC plantuml :file ~/Desktop/uml.png
+@startuml
+scale 2
+page 1x1
+title
+        拍抢干业务实现梳理,知识点分享
+        创建时间: <2019-11-04 16:39>
+        endtitle
+        left header
+           梳理任务
+        endheader
+        class "ReportedDetailController" as detail {
+                --属性组 --
+                /// 上报记录id
+                NSString *reportId;
+                /// view数据model
+                ReportDoingModel *reportModel;
+                /// 分割线
+                UIView *line;
+                /// 根视图容器
+                UIScrollView *scrollView;
+                /// 底部约束:为动态显示上传按钮提供空间高度
+                MASConstraint *scrollView_mas_Bottom;
+                __ 函数组__
+                -(void)installView;
+                -(void)loadData;
+                -(void)reloadDetailViewData;
+                -(void)loadDoingView{}; 
+        }
+        note left of detail
+               通过reportId,拉去详情的数据,并展示任务详情UI 
+        end note
+        
+        class "ReportedDoingController" as Doing {
+                --属性组 --
+                /// 是否为管理员
+                BOOL isAdmin;
+                /// 任务类型
+                TaskFlagType flag;
+                __ 函数组__
+                -(void)loadDoingView;
+                -(void)reloadThreeBtnView;
+                //无效上报/领取任务/检查结果上传
+                -(void)installThreeBtnView;
+                --按钮事件--
+                -(void)commitAction;
+                -(void)editNoteAction;
+                -(void)closereportAction;
+                -(void)todoAction;
+        }
+        class "ClientReportDetailController" as clientDetail {
+                --属性组 --
+                +NSString *reportId;
+                __ 函数组__
+                -(UIView *)infoView;
+                -(UIView *)detailView;
+        }
+        class "ReportManagerController" as reportMag {
+                --属性组 --
+                UITableView *tableView;
+                 NSMutableArray<ReportSectionModel *>  *dataArray; 
+                __ 定制section header方法__
+                -(UIView *)createHeadView:(NSString *)text;
+                -(CGFloat)tableView:heightForHeaderInSection:
+                -(UIView *)tableView:viewForHeaderInSection:
+        }
+
+        reportMag <|-- clientDetail:继承<
+        
+        @enduml
+        #+END_SRC
