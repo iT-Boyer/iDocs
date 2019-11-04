@@ -21,4 +21,4 @@
 
 
 ### 拍抢干
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/拍抢干-class.uml)
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/report-class.uml)
