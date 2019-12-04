@@ -1,0 +1,16 @@
+@startuml
+scale 2
+page 1x1
+title
+    人员档案
+    创建时间: <2019-12-04 20:54>
+    endtitle
+    left header
+        完成设计
+    endheader
+    class "clas" as 别名 {
+        --属性组 --
+
+        __ 函数组__
+    }
+    @enduml
