@@ -8,9 +8,43 @@ title
     left header
         完成设计
     endheader
-    class "clas" as 别名 {
-        --属性组 --
-
-        __ 函数组__
+    'package，node，folder，frame，cloud，database'
+    folder "personalList" as listpkg{
+        class "personBaseListViewController" as baselist {
+            --var --
+            NSString *Id;
+            UITableView *tableView;
+            __ func__
+            -(void)loadData;
+            -(void)refreshData;
+        }
+        class "PersonalListViewController" as personlist {
+            --var--
+            NSString *requestID;
+            --func--
+            -(void)createView;
+        }
+        baselist <|-- personlist:继承<
     }
+
+
+    'package，node，folder，frame，cloud，database'
+    folder "detail" as detail{
+        class "personalDetailBaseViewContrller" as detailBase {
+            --var --
+
+            __func __
+        }
+        class "personalDetailViewContoller" as personaldetail {
+            --var --
+            UIView *headView;
+            UIView *secondView;
+            __ func__
+            -(void)loadData;
+        }
+
+        detailBase <|-- personaldetail:继承<
+       
+    }
+
     @enduml
