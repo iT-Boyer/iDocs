@@ -22,3 +22,6 @@
 
 ### 拍抢干
 ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/report-class.uml)
+
+### 电梯项目
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://huos3203.github.io/iDocs/uml/DtBox/dtbox.plantuml)

@@ -1,50 +1,199 @@
 @startuml
-scale 2
+scale 1
 page 1x1
 title
     人员档案
     创建时间: <2019-12-04 20:54>
+    人员档案相关类的封装复用基于电梯和药店在同一组件中实现的情况下设计。
+    暂未考虑复用老代码页面。
     endtitle
     left header
-        完成设计
+        人员档案相关类的封装复用基于电梯和药店在同一组件中实现的情况下设计。
+        暂未考虑复用老代码页面。
     endheader
     'package，node，folder，frame，cloud，database'
-    folder "personalList" as listpkg{
-        class "personBaseListViewController" as baselist {
-            --var --
+    folder "员工档案" as listpkg{
+        class "EmployeeBaseListController" as baselist {
+            -- property --
             NSString *Id;
             UITableView *tableView;
-            __ func__
+            __func__
             -(void)loadData;
             -(void)refreshData;
         }
-        class "PersonalListViewController" as personlist {
-            --var--
+        class "EmployeeElevatorListController" as personlist {
+            -- property --
             NSString *requestID;
             --func--
             -(void)createView;
         }
-        baselist <|-- personlist:继承<
+
+        class "EmployeeDrugStoreListCotroller" as druglist {
+            -- property--
+            NSString *title;
+            __func__
+            -(void)createView;
+        }
+        folder "详情" as detail{
+            class "EmployeeDetailBaseContrller" as basedetail {
+                -- property --
+                +NSString *Id;
+                +UIView *topView;
+                +UIView *bottomView;
+                __func__
+                +(void)loadData;
+                +(void)editTopAction;
+                +(void)editBottomAction;
+            }
+            class "EmployeeElevatorDetailContoller" as empeledetail {
+                -- property --
+                +elevator;
+                __func__
+                -(void)loadelevatorData;
+            }
+            class "EmployeeDrugDetailContoller" as empdrugdetail {
+                -- property --
+                +drug;
+                __ func __
+                -(void)loadDrugData;
+            }
+            class "详情model" as detailm {
+                -- property --
+                +validDate
+                +health
+                +idCard
+                __func__
+                +init();
+            }
+            note left of basedetail
+                1、展示员工“健康证”、“执业药师证”、“执业药师注册证”三个维度的信息
+                2、工作履历：支持编辑修改，与阳光餐饮展示效果一致
+                3、培训考试记录：抓取“培训考试”模块中的数据，在本页面显示
+            end note
+
+            note left of empeledetail
+                增加电梯安全管理员，并上传证件
+            end note
+
+            note right of empdrugdetail
+                增加药店安全管理员，并上传证件
+            end note
+
+            basedetail .right.> detailm:依赖 <
+            basedetail <|-- empeledetail:继承 <
+            basedetail <|-- empdrugdetail:继承 <
+        }
+
+        folder "编辑" as edit{
+            class "EmployeeEditBaseContrller" as baseedit {
+                -- property --
+                +reqModel; //新增更新的model
+                +isEdit;   //判断编辑/新增
+                __func__
+                +uploadCardAction();
+                +updateCardAction();  //更新证书
+                +addDataAction(); //添加证书
+            }
+            class "EmployeeElevatorEditContoller" as empeleedit {
+                -- property --
+                +elevator;
+                __func__
+                -(void)elevatorData;
+            }
+            class "EmployeeDrugEditContoller" as empdrugedit {
+                -- property --
+                +drug;
+                __func__
+                -(void)drugData;
+            }
+            note left of baseedit
+                编辑上传员工证件(更新/新增)
+                1. 点击证件编辑-->进入该页面:上传图片/编辑个人信息
+                2. 点击证书编辑-->进入证书编辑页面
+                增加药店安全管理员，并上传证件
+                3. 新增如添加入口 ？？
+            end note
+            note left of empeleedit
+                编辑电梯管理员信息
+            end note
+            note right of empdrugedit
+                编辑药店管理员信息
+            end note
+
+            baseedit <|-- empeleedit:继承 <
+            baseedit <|-- empdrugedit:继承 <
+        }
+        'package，node，folder，frame，cloud，database'
+        folder "Views" as views{
+            class "EmployeeBaseCellView" as basecell {
+                -- property --
+                +title
+                +role
+                +tel
+                +date
+                +validDate
+                __ func __
+                +reloadData();
+            }
+
+            class "EmpDrugCellView" as empDCell {
+                -- property --
+                +status
+                +model
+                __func__
+                +method();
+            }
+
+            class "EmpElevatorCellView" as empelecell {
+                -- property --
+                +status
+                __func__
+                +method();
+            }
+
+            note left of basecell
+                展示雇员的基本信息
+            end note
+            note bottom of empDCell
+                药店管理员cell
+            end note
+            note bottom of empelecell
+                电梯雇员cell
+            end note
+
+            basecell <|-- empDCell:继承 <
+            basecell <|-- empelecell:继承 <
+        }
+
+
+        note left of baselist
+            列表基类：实现UI相关交互
+            分页加载相关功能
+        end note
+        note left of personlist
+            电梯的管理员列表
+            1、员工档案列表，叹号表示证件不合格或没有证件
+        end note
+
+        note right of druglist
+            药店管理列表
+            1、列表中显示员工的健康档案信息
+            2、根据添加时间，由上至下排列
+        end note
+
+
+        baselist <|-- personlist:继承 <
+        baselist <|-- druglist:继承 <
+        'baselist o-down---> basecell:聚合 <
+        '详情
+        druglist o--> basedetail:聚合 <
+        personlist o--> basedetail:聚合 <
+        '编辑'
+        empeledetail ..> baseedit:依赖 <
+        empdrugdetail ..> baseedit:依赖 <
     }
 
 
-    'package，node，folder，frame，cloud，database'
-    folder "detail" as detail{
-        class "personalDetailBaseViewContrller" as detailBase {
-            --var --
 
-            __func __
-        }
-        class "personalDetailViewContoller" as personaldetail {
-            --var --
-            UIView *headView;
-            UIView *secondView;
-            __ func__
-            -(void)loadData;
-        }
-
-        detailBase <|-- personaldetail:继承<
-       
-    }
 
     @enduml
