@@ -1,0 +1,36 @@
+title
+    电梯时序图
+    创建时间: <2019-12-06 13:08>
+    endtitle
+    left header
+        动态类图的表达
+    endheader
+
+    autonumber 0
+    actor "电梯管理员" as admin
+    actor 管理员列表 as list
+    entity 人员详情 as detail
+    control 编辑 as edit
+    control 新增 as add
+
+
+    ===查看人员信息==
+    admin -[#black]> list :查看人员列表
+    activate admin
+       activate list
+            list -[#black]> detail :查看详情
+            activate detail
+                detail -[#black]> edit :编辑证书
+                activate edit
+                    edit -[#black]> detail :返回
+                deactivate edit
+                detail -[#black]> add :新增证书
+                activate add
+                    add -[#black]> detail :返回
+                deactivate add
+                detail --[#black]> list:返回
+            deactivate detail
+            list --[#black]> admin:返回
+       deactivate list
+
+    deactivate admin
