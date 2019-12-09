@@ -1,0 +1,141 @@
+@startuml
+scale 0.5
+page 1x1
+title
+    老版本食安人员档案梳理
+    创建时间: 2019-12-09 17:29
+    endtitle
+    left header
+        迁移使用档案模块
+    endheader
+
+    enum "UserType" as usertype {
+        FromOther  = 0,//主体自律等
+        FromHealth ,//健康证
+        FromManage //食安管理员
+    }
+
+    class "StoreWorkersViewController" as workervc {
+        -- property --
+        + var storeOrgId:String;
+        + var storeId:String;
+        + var types:UserType;
+        - tableView:UITableView;
+        - workerList:Array;
+        - isAdmin:BOOL;
+        __func__
+        func
+    }
+
+    'package，node，folder，frame，cloud，database'
+    folder "详情页面" as detailpkg{
+        class "StoreWorkerInfoViewController" as infovc {
+            -- property --
+            var isAdmin;
+            var orgId;
+            var storeId;
+            var userType;
+            var headerView:WorkerHealthCardView;
+            var footView:WorkerExaminationTableView;
+            var tableView:UITableView;
+            __func__
+            func
+            +(void)setWorkInfoWith:canEdit:;
+        }
+        class "WorkerHealthCardView" as headerview {
+            -- property --
+            + var titleBtnView:StoreWorkerTagLabel;
+            + var resultTagLbl:StoreWorkerTagLabel;
+            + var idCardTagLabel:StoreWorkerTagLabel;
+            __func__
+            +(void)showDataWith:result:healthUrl:idCard:;
+        }
+
+        class "WorkerExaminationTableView" as footerview {
+            -- property --
+            var wkTitleView:StoreWorkerTitleBtnView;
+            __func__
+            +(void)showExaminationListWith:;
+        }
+
+        class "WorkExperienceTableView" as careerview {
+            -- property --
+            var wkTitleView:StoreWorkerTitleBtnView;
+            __func__
+            func reloadDataWith:;
+        }
+        class "StoreCertificateTableViewCell" as cercellview {
+            -- property --
+            var void(^btnClickBlock)(NSString * title);
+            __func__
+            - (void)bindDataWithModel:WithHaveData:WithType:;
+        }
+
+        note top of headerview
+            健康证信息，用view封装一个view
+        end note
+        note top of footerview
+            员工履历：集成tableview用footerview显示
+        end note
+
+        note top of cercellview
+            资质证书cell
+        end note
+
+        headerview *--left-> infovc:合成 <
+        cercellview *-right-> infovc:合成 <
+        footerview *-left-> infovc:合成 <
+        careerview *-up-> footerview:合成 <
+
+    }
+
+    class "StoreUpLoadInfoViewController" as infoeditvc {
+        -- property --
+        var userName:String;
+        var userId:String;
+        var model:StoreUserCertificateInfoModel;
+        var isNew:BOOL;
+        var SDelegate:id<StoreUpLoadInfoViewControllerDelegate>;
+        __func__
+        func
+    }
+    class "StoreMoreCertificateViewController" as morecervc {
+        -- property --
+        var dataArray:Array;
+        var userTypes:UserType;
+        var userName:String;
+        var userId:String;
+        var SDDelegate:id<StoreMoreCertificateViewControllerDelegate>;
+        __func__
+        func
+    }
+
+
+
+    note left of usertype
+        进入人员档案的权限
+    end note
+
+    note left of infoeditvc
+        编辑员工信息
+    end note
+    note left of workervc
+        档案列表
+        @"食安管理员":@"员工档案列表";
+    end note
+
+    note left of morecervc
+        查看更多更证书列表
+    end note
+
+
+
+    '关系
+    usertype *--> workervc:合成 <
+    workervc <---- infovc:关联 <
+
+    infovc ...down.> infoeditvc:依赖 <
+    infovc ...down.> morecervc:依赖 <
+
+
+    @enduml
