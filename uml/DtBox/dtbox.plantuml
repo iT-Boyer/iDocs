@@ -1,5 +1,5 @@
 @startuml
-scale 1
+scale 0.5
 page 1x1
 title
     人员档案
@@ -34,6 +34,86 @@ title
             __func__
             -(void)createView;
         }
+        'package，node，folder，frame，cloud，database'
+        folder "Models" as vm{
+            class "EmplBaseSectionCellVM" as sectionvm {
+                -- property --
+                + NSString *Id;
+                + NSString *title;
+                + NSString *celltypeId;
+                + EmployeeCellType celltype;
+                + NSMutableArray<EmployeeBaseCellVM *> *dataArray;
+                __func__
+            }
+            class "EmployeeBaseCellVM" as basevm {
+                -- property --
+                __func__
+            }
+            class "EmployeeCardVM" as cardvm {
+                -- property --
+                var date;
+                var result;
+                var cardUrl;
+                __func__
+            }
+            class "EmployeeCareerVM" as careervm {
+                -- property --
+                var startDate;
+                var store;
+                __func__
+                func
+            }
+            note right of sectionvm
+                员工信息，基于tableViw来实现，
+                以section为基础单位定义viewmodel
+            end note
+
+            note left of basevm
+                在cell的viewmodel基类
+            end note
+
+            note right of cardvm
+                员工证件viewmodel
+            end note
+            note right of careervm
+                员工履历viewmodel
+            end note
+            sectionvm o--> basevm:聚合 <
+            basevm <|-- cardvm:继承 <
+            basevm <|-- careervm:继承 <
+        }
+        'package，node，folder，frame，cloud，database'
+        folder "详情Views" as detailview{
+            class "EmployeeBaseDetailCell" as basedetailcell {
+                -- property --
+                var model:EmployeeBaseCellVM;
+            }
+            class "EmployeeCardDetailCell" as carddetailcell {
+                -- property --
+                var id;
+                __func__
+                func
+            }
+            class "EmployeeCareerDetailCell" as careerdetailcell {
+                -- property --
+                var id;
+                __func__
+                func
+            }
+            note right of basedetailcell
+                员工详情页证书和履历cell的基类
+            end note
+            note left of carddetailcell
+                证书cell
+            end note
+            note right of careerdetailcell
+                履历cell
+            end note
+
+            basedetailcell <|-- carddetailcell:继承 <
+            basedetailcell <|-- careerdetailcell:继承 <
+            basedetailcell .left.> sectionvm:依赖 <
+        }
         folder "详情" as detail{
             class "EmployeeDetailBaseContrller" as basedetail {
                 -- property --
@@ -57,14 +137,8 @@ title
                 __ func __
                 -(void)loadDrugData;
             }
-            class "详情model" as detailm {
-                -- property --
-                +validDate
-                +health
-                +idCard
-                __func__
-                +init();
-            }
+
+
             note left of basedetail
                 1、展示员工“健康证”、“执业药师证”、“执业药师注册证”三个维度的信息
                 2、工作履历：支持编辑修改，与阳光餐饮展示效果一致
@@ -79,9 +153,10 @@ title
                 增加药店安全管理员，并上传证件
             end note
 
-            basedetail .right.> detailm:依赖 <
             basedetail <|-- empeledetail:继承 <
             basedetail <|-- empdrugdetail:继承 <
+            basedetail o-left-> basedetailcell:聚合 <
+
         }
 
         folder "编辑" as edit{
@@ -154,10 +229,10 @@ title
             note left of basecell
                 展示雇员的基本信息
             end note
-            note bottom of empDCell
+            note right of empDCell
                 药店管理员cell
             end note
-            note bottom of empelecell
+            note right of empelecell
                 电梯雇员cell
             end note
 
@@ -191,9 +266,8 @@ title
         '编辑'
         empeledetail ..> baseedit:依赖 <
         empdrugdetail ..> baseedit:依赖 <
+
     }
-
-
 
 
     @enduml
