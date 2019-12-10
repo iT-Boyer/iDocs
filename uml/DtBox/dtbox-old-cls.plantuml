@@ -15,6 +15,13 @@ title
         FromManage //食安管理员
     }
 
+    class "JHDrugEmployeeListController" as druglistvc <?id> {
+    }
+
+    class "JHElevatorEmployeeController" as elevatorlistvc <?id> {
+    }
+
+
     class "StoreWorkersViewController" as workervc {
         -- property --
         + var storeOrgId:String;
@@ -128,10 +135,18 @@ title
         查看更多更证书列表
     end note
 
+    note left of druglistvc
+        药店反射类
+    end note
+    note left of elevatorlistvc
+        电梯反射类
+    end note
 
 
+    workervc <.down. druglistvc:依赖 <
+    workervc <.down. elevatorlistvc:依赖 <
     '关系
-    usertype *--> workervc:合成 <
+    usertype <-* workervc:合成 >
     workervc <---- infovc:关联 <
 
     infovc ...down.> infoeditvc:依赖 <
