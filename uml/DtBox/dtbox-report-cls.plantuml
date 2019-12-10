@@ -1,0 +1,89 @@
+@startuml
+scale 0.5
+page 1x1
+title
+    电梯上报类图
+    创建时间: 2019-12-10 16:07
+    endtitle
+    left header
+        在青龙桥上报模块中，实现电梯上报业务流程
+    endheader
+    'type:package，node，folder，frame，cloud，database
+    folder "电梯上报API" as api{
+        class "GBCityTreatLibrary" as api {
+            __func__
+            + + (void)showReportTypePage;
+            //类方法：电梯入口
+            + + (void)showReportByElevator:addr:lat:lon:;
+            //定位回调
+            - +(void)address:isElevator:name:eleAddr:lat:lon:;
+            //进入上报页：智能上报/普通上报
+            - +(void)showReportisElevator:name:addr:lat:lon:;
+        }
+    }
+    'type:package，node，folder，frame，cloud，database
+    folder "电梯上报" as report{
+        class "GBCityReportViewController" as reportvc {
+            -- property --
+            + var forPage:String
+            + var isElevator:BOOL
+            + var elevatorName:String
+            + var lon:String
+            + var lat:String
+            + var elevatorAddr:String
+            __func__
+            + - (id)initWithEvents:;
+        }
+
+        class "GBReportTypeOldController" as reporttypevc {
+            -- property --
+            + var forPage:String
+            + var isElevator:BOOL
+            + var elevatorName:String
+            + var lon:String
+            + var lat:String
+            + var elevatorAddr:String
+        }
+        class "GBCityReportOldEventView" as reportview {
+            -- property --
+            + NSString *forPage;
+            + NSString *photoImageUrl;
+            __func__
+            //isElevator：电梯标识
+            //handler:更改changeAddrHandler
+            + -initWith:handler:;
+        }
+        class "JHChangeElvatorController" as changevc <?viewcontroller> {
+            -- property --
+            + NSString *Lat;
+            + NSString *Lon;
+            + void(^ChangeAddrHandler)(JHElevatorModel *model);
+            __func__
+           
+        }
+
+        note left of reportvc
+            上报页面，
+            更改电梯，不支持拖动地图
+        end note
+        note right of reporttypevc
+            上报类型页面，
+            当非智能上报，会先选择问题类型
+        end note
+        note left of reportview
+            1. 修改电梯名称/电梯位置
+            2. 地图显示电梯坐标
+            3. 更改电梯
+        end note
+        note right of changevc
+            获取电梯列表
+        end note
+
+        reportvc .> reporttypevc:依赖 <
+        api <.up. reportvc:依赖 <
+        api <.up. reporttypevc:依赖 <
+        reportview <-down-* reportvc:合成 >
+        changevc <.down. reportvc:依赖 <
+
+    }
+    @enduml
