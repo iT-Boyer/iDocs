@@ -12,7 +12,9 @@ title
     enum "UserType" as usertype {
         FromOther  = 0,//主体自律等
         FromHealth ,//健康证
-        FromManage //食安管理员
+        FromManage , //食安管理员
+        FromElevator ,//电梯3
+        FromDrug , //药店4
     }
 
     class "JHDrugEmployeeListController" as druglistvc <?id> {
@@ -119,7 +121,7 @@ title
 
 
 
-    note left of usertype
+    note right of usertype
         进入人员档案的权限
     end note
 
@@ -135,7 +137,7 @@ title
         查看更多更证书列表
     end note
 
-    note left of druglistvc
+    note right of druglistvc
         药店反射类
     end note
     note left of elevatorlistvc
@@ -146,7 +148,7 @@ title
     workervc <.down. druglistvc:依赖 <
     workervc <.down. elevatorlistvc:依赖 <
     '关系
-    usertype <-* workervc:合成 >
+    usertype <-right-* workervc:合成 >
     workervc <---- infovc:关联 <
 
     infovc ...down.> infoeditvc:依赖 <
