@@ -1,0 +1,48 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        金和通知新版本类图
+        创建时间: 2020-04-10 07:23
+        endtitle
+        left header
+                使用类图梳理金和消息的存储，读取，展示，更新相关逻辑。检查可以简化的封装死角，提取可以封装整合的功能，简化调用接口。达到下次使用时能够快速集成调用。
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        'type:package，node，folder，frame，cloud，database
+        folder "基类模块" as base{
+                class "JHNotifyDBManager" as baseDao <?NSObject> {
+                        -- property --
+                        BCORMHelper* helper;
+                        Class entityClass;
+                        NSString *notReadCount;
+                        NSString *notifyId;
+                        NSString *userId;
+                        __数据库操作增删改查__
+                        - (void)addMsgWith:(JHNotifyDBBaseModel *)msg;
+                        - (NSArray *)allMsgsForLoginUser;
+                        - (JHNotifyDBBaseModel *)getTheLastMessage;
+                        - (void)uppdateAllMsgToHasRead;
+                        - (void)updateMsgWithDetail:(JHNotifyDBBaseModel *)model;
+                        - (void)deleteLitegralMsgWithUserId:(NSString *)userId; //根据userId删除当前用户的数据
+                }
+                class "JHNotifyDBBaseModel" as 消息体基类 <?JSONModel> {
+                        -- property --
+                        NSString *msgId;
+                        NSInteger msgNo;
+                        NSString *msgTime;
+                        NSString *receiveUserId;
+                        BOOL isReadOrConfirm;
+                        //消息id：JinherEpidemicCode
+                        NSString *notifyId;
+                        //消息号： 113
+                        NSString *productType;
+                        //消息子类型：1
+                        NSString *productSecondType;
+                }
+                BCORMEntityProtocol o-- 消息体基类
+
+        }
+        @enduml
