@@ -45,4 +45,18 @@ title
                 BCORMEntityProtocol o-- 消息体基类
 
         }
+
+
+        'type:package，node，folder，frame，cloud，database
+        folder "LocalNotificationMsg" as localNotify{
+                class "UNLocalNotificationMsgHandler" as umlocal <?id> {
+                        -- property --
+                        MCCCommonBusinessMessage *mccBmsg;
+                        NSString *categoryIndentifier;
+                        __func__
+                        //通知title和金和消息体model
+                        -(void)sendNotify:msg:(MCCCommonBusinessMessage *)msg;
+                }
+
+        }
         @enduml
