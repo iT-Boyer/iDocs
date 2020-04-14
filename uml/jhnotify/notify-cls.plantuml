@@ -56,7 +56,14 @@ title
                         __func__
                         //通知title和金和消息体model
                         -(void)sendNotify:msg:(MCCCommonBusinessMessage *)msg;
+                        /** * 描述 使用 UNNotification 本地通知(iOS 10) * @param alerTime 多长时间后进行推送 **/
+                        -(void)registerNotification:name:
+                        -- delegates --
+                        //不实现，通知不会有提示
+                        - (void)userNotificationCenter:willPresentNotification:withCompletionHandler:
+                        // 对通知进行响应
+                        - (void)userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
                 }
-
+                UNUserNotificationCenterDelegate ()-- umlocal
         }
         @enduml
