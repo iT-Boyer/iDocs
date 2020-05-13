@@ -1,0 +1,23 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        smallAPP类图
+        创建时间: 2020-05-13 20:31
+        endtitle
+        left header
+                梳理small实现原理，排除无法加载Framework的问题
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        'type:package，node，folder，frame，cloud，database
+        folder "API" as api{
+                class "Small" as small <?id> {
+                      -- property --
+                      __func__
+                }
+
+        }
+        
+        @enduml
