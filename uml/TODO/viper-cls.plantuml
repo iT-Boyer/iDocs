@@ -1,0 +1,179 @@
+@startuml
+page 1x1
+title
+        VIPER设计模式
+        创建时间：2019-07-25 19:27:00+0800
+        endtitle
+        left header
+                通过TODO案例APP梳理类图,充分理解VIPER相关设计模式
+        endheader
+        class "VTDAppDependencies" as VTDAppDependencies {
+                --属性组 --
+                __ 函数组__
+                - (void)configureDependencies
+                + (void)installRootViewControllerIntoWindow:(UIWindow *)window;
+        }
+        add o-up-> VTDAppDependencies
+        list o-up-> VTDAppDependencies
+        package "TODO清单" as list{
+        }
+        package "新建TODO" as add {
+
+                note as images
+                # VIPER 基于用例的应用设计
+                  VIPER 则用来描述这些组件的作用是什么，如何进行交互。
+                利用 VIPER 建立一个应用需要实施一组套件来满足所有的用例.
+                1. 应用逻辑是实现用例的主要组成部分，但却不是唯一。
+                2. 用例也会影响用户界面。
+                3. 考虑用例如何与其他应用程序的核心组件相互配合，例如网络和数据持久化。
+                   组件就好比用例的插件，VIPER 则用来描述这些组件的作用是什么，如何进行交互。
+                
+                VIPER 的主要部分是：
+
+                视图：根据展示器的要求显示界面，并将用户输入反馈给展示器。
+                交互器：包含由用例指定的业务逻辑。
+                展示器：包含为显示（从交互器接受的内容）做的准备工作的相关视图逻辑，并对用户输入进行反馈（从交互器获取新数据）。
+                实体：包含交互器要使用的基本模型对象。
+                路由：包含用来描述屏幕显示和显示顺序的导航逻辑。
+                <img:https://objccn.io/images/issues/issue-13/2014-06-07-viper-intro.jpg>
+                <img:https://objccn.io/images/issues/issue-13/2014-06-07-viper-wireframe.png>
+        end note
+
+        package "Application Logic应用逻辑" as logic{
+
+                package "Interactor交互器" as Interactor {
+                        class "AddInteractor" as AddInteractor{
+                                --属性组 --
+                                + VTDAddDataManager *addDataManager;
+                                __ 函数组__
+                                - (void)saveNewEntryWithName:dueDate:
+                        }
+                        note left of AddInteractor
+                                1. 交互器永远不会传输实体至表现层 (比如说展示器)。
+                                2. 交互器不应与 NSManageObjects 协同工作
+                        end note
+
+                }
+                'package，node，folder，frame，cloud，database'
+                package "持久化工具器" as Manager{
+                        class "AddDataManager" {
+                                --属性组 --
+                                + VTDCoreDataStore *dataStore;
+                                __ 函数组__
+                                - (void)addNewEntry:(VTDTodoItem *)entry;
+                        }
+                }
+                AddInteractor ..up> AddDataManager
+        }
+        package "实体 (Entity)模型协议" as Models{
+                interface "VTDAddModuleDelegate"{
+                        __ 函数组__
+                        - (void)addModuleDidCancelAddAction;
+                        - (void)addModuleDidSaveAddAction;
+                }
+                interface "VTDAddModuleInterface"{
+                        __ 函数组__
+                        - (void)cancelAddAction;
+                        - (void)saveAddActionWithName:dueDate:
+                }
+                note as ModelsNote
+                1. 实体是被交互器操作的模型对象，并且它们只被交互器所操作
+                2. 实体不应该传输到表现层 (比如说展示器)。
+                3. 实体仅仅是数据结构，任何依赖于应用的逻辑都应该放到交互器中
+        end note
+}
+package "View视图" as View{
+        class "VTDAddViewController" as  VTDAddViewController{
+                --属性组 --
+                + id<VTDAddModuleInterface> eventHandler;
+                + UIView *transitioningBackgroundView;
+        }
+
+        interface "VTDAddViewInterface" as VTDAddViewInterface{
+                __ 函数组 __
+                + (void)setEntryName:(NSString *)name;
+                + (void)setEntryDueDate:(NSDate *)date;
+                + (void)setMinimumDueDate:(NSDate *)date;
+        }
+        VTDAddViewInterface o-right VTDAddViewController
+        VTDAddModuleInterface *--> VTDAddViewController
+        note as Viewnote
+        1. 视图一般是被动,通过展示器触发更新数据
+        2. 视图：是一个抽象的接口,在OC中使用协议定义
+        一个 UIViewController 或者它的一个子类会实现视图协议
+        视图所定义的方法应该允许展示器在高度抽象的层次与之交流
+        3. 视图和展示器之间边界处是一个使用 ReactiveCocoa 的好地方
+        在不打破职责分离的前提下轻松地对那些信号进行响应
+end note
+}
+
+
+package "User Interface" as userIn {
+package "Presenter展示器" as Presenter{
+        class "VTDAddPresenter" as VTDAddPresenter {
+                --属性组 --
+                VTDAddInteractor *addInteractor;
+                VTDAddWireframe *addWireframe;
+                id<VTDAddModuleDelegate> addModuleDelegate;
+                __函数组__
+                - (void)configureUserInterfaceForPresentation:
+        }
+        VTDAddModuleInterface o-- VTDAddPresenter
+        VTDAddModuleDelegate *-up-> VTDAddPresenter
+        AddInteractor *-up-> VTDAddPresenter
+        note as PresenterNote
+        1. 驱动用户界面的逻辑的 PONSO
+        1.1 何时呈现用户界面
+        1.2 基于其收集来自用户交互的输入功能
+        1.3 它可以在合适的时候更新用户界面并向交互器发送请求
+        2. 展示器还会从交互器接收结果并将结果转换成能够在视图中有效显示的形式
+        2.1 展示器不会接收实体，只接收在视图里显示的结果数据
+        2.2 展示器通过内容进行表达，不关心内容所显示的样子
+        展示器不知道 UILabel等的存在，它只知道其中包含的内容以及何时需要显示。
+end note
+}
+
+package "转场" as Transition{
+class "VTDAddDismissalTransition" as VTDAddDismissalTransition {
+        - (NSTimeInterval)transitionDuration:
+        - (void)animateTransition:
+}
+class "VTDAddPresentationTransition" as VTDAddPresentationTransition {
+
+        - (NSTimeInterval)transitionDuration:
+        - (void)animateTransition:
+}
+}
+
+package "路由+线框:Wireframe" as Wireframe{
+class "VTDAddWireframe"{
+        -- 属性组 --
+        + VTDAddPresenter *addPresenter;
+        __ 函数组 __
+        + (void)presentAddInterfaceFromViewController:
+        + (void)dismissAddInterface
+}
+VTDAddWireframe ..> Transition
+VTDAddWireframe *-up-> VTDAddPresenter
+VTDAddViewController *-> VTDAddWireframe:eventHandler = self.addPresenter <
+note as WireframeNote
+在 VIPER 中，路由是由两个部分来负责的：展示器和线框
+1. 线框
+一个线框对象包括 UIWindow，UINavigationController，UIViewController 等部分
+1.1 它负责创建视图/视图控制器并将其装配到窗口中
+1.2 它实现界面之间如何进行导航
+1.3 它是一个处理导航转场动画的地方
+2. 路由
+2.1 展示器：响应用户输入的操作
+知晓何时导航至另一个屏幕以及具体是哪一个屏幕的能力
+2.2 路由：展示器使用线框来进行实现导航功能，描述了从一个屏幕至另一个屏幕的路由过程
+
+end note
+}
+
+}
+
+}
+
+
+@enduml
