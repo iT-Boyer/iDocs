@@ -5,7 +5,7 @@ title
         创建时间: 2020-05-16 09:44
         endtitle
         left header
-          梳理small的使用原理，解决加载framework获取printclass为nil的问题
+                梳理small的使用原理，解决加载framework获取printclass为nil的问题
                 iOS之后，无法加载
                 NSBundle无法读取NSPrincipalClass
         endheader
@@ -22,7 +22,7 @@ title
                 :syncLoadBundles:;
         else(NO)
         :开子线程一步加载;
-        endif
+endif
 
 |SMbundle|
 :initWithDictionary:;
@@ -39,19 +39,19 @@ if (包含pkg) then (YES)
         :库文件;
 endif
 :NSBundle initWithPath:加载bundle;
-        else(NO)
-        :;
-        endif
+else(NO)
+:;
+endif
 else(NO)
 :其他资源包;
 endif
 
-        :解析Framework类型;
+:解析Framework类型;
 else(NO)
 :main模块;
 endif
 
 
-        |加载|
+|加载|
 
-        @enduml
+@enduml

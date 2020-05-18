@@ -1,0 +1,26 @@
+'时序图
+@startuml
+scale 1
+title
+        VIPER框架的时序图
+        创建时间: 2020-05-18 15:00
+        endtitle
+        left header
+                通过作图，了解框架组件之间交互方式和消息传递的时间顺序
+                注：用对象间的交互来描述用例,描述了对象之间传递消息的时间顺序，它用来表示用例的行为顺序。
+        endheader
+
+        autonumber 0
+        'type：actor,boundary,control,entity,database
+        'define object
+        actor 人 as admin
+        control 创建 as add
+        boundary 列表 as list
+
+        'send msg
+        ===添加==
+
+        activate admin
+                admin -[#black]>> add :添加todo
+        deactivate admin
+        @enduml
