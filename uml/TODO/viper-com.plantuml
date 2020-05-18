@@ -1,0 +1,16 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        viper图名类图
+        创建时间: 2020-05-18 16:35
+        endtitle
+        left header
+                desc
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        upkg
+
+        @enduml

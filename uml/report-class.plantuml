@@ -1,357 +1,344 @@
+@startuml
+scale 1
+page 1x1
+title
+        拍抢干业务实现梳理,知识点分享
+        创建时间: <2019-11-04 16:39>
+        endtitle
+        left header
+                梳理任务
+        endheader
+        'package，node，folder，frame，cloud，database'
+        folder "上报管理" as reportM{
 
-#+BEGIN_SRC plantuml :file ~/Desktop/test.png
-  @startuml
-  scale 1
-  page 1x1
-  title
-          拍抢干业务实现梳理,知识点分享
-          创建时间: <2019-11-04 16:39>
-          endtitle
-          left header
-                  梳理任务
-          endheader
-          'package，node，folder，frame，cloud，database'
-          folder "上报管理" as reportM{
-
-                  class "ReportOpenAPI" as reportapi {
-                          --类方法--
-                          +(void)open:(ReportVCType)vcType from:(UIViewController *)vc;
-                          +(void)openReportMapWithLayout:(NSString *)layoutId;
-                  }
-                  enum "ReportVCType" as reporttype {
-                          ReportManager, //上报管理
-                          TaskManager,   //精确治理
-                          MyContriInfo,  //我的贡献
-                          ReportUserMap, //人员管理地图
-                  }
+                class "ReportOpenAPI" as reportapi {
+                        --类方法--
+                        +(void)open:(ReportVCType)vcType from:(UIViewController *)vc;
+                        +(void)openReportMapWithLayout:(NSString *)layoutId;
+                }
+                enum "ReportVCType" as reporttype {
+                        ReportManager, //上报管理
+                        TaskManager,   //精确治理
+                        MyContriInfo,  //我的贡献
+                        ReportUserMap, //人员管理地图
+                }
 
 
-                  note left of reportapi
-                          封装调用上报管理和人员地图的相关的页面跳转逻辑 
-                  end note
-                  note right of reporttype
-                          枚举所有相关的类型 
-                  end note
+                note left of reportapi
+                        封装调用上报管理和人员地图的相关的页面跳转逻辑
+                end note
+                note right of reporttype
+                        枚举所有相关的类型
+                end note
 
-                  reportapi .right.> reporttype:依赖<
+                reportapi .right.> reporttype:依赖<
 
-          }
-          'package，node，folder，frame，cloud，database'
-          folder "任务列表" as tasklist{
-                  class "ReportManagerController" as reportmag {
-                          --属性组 --
-                          UITableView *tableView;
-                          NSMutableArray<ReportSectionModel *>  *dataArray; 
-                          __ 定制section header方法__
-                          -(UIView *)createHeadView:(NSString *)text;
-                          -(CGFloat)tableView:heightForHeaderInSection:
-                          -(UIView *)tableView:viewForHeaderInSection:
-                  }
-                  class "ReportTaskListController" as baselist {
-                          --属性组 --
-                          +TaskFlagType flag;
-                          +UITableView *tableView;
-                          +NSArray<ReportTaskModel *> *dataArray;
-                          __ 函数组__
-                          -(void)customBarButton;
-                  }
-
-
-                  class "TaskManagerController" as taskmger {
-                          --属性组 --
-                          BOOL isAdmin;//判断是否为管理员,显示底部按钮
-                  }
-                  class "MyContributionController" as mycon {
-                          --属性组 --
-
-                          __ 函数组__
-                  }
-                  class "MyContriModel" as myconmodel {
-                          --属性组 --
-                          //累计被采纳次数
-                          NSNumber *AdoptNumber;
-                          //上报次数
-                          NSNumber *ReportNumber;
-                          //待办次数
-                          NSNumber *WaitingNumber;
-                          NSMutableArray<ReportTaskModel *> *Questions;
-                          __ 函数组__
-                  }
-                  class "ClientReportDetailController" as clientdetail {
-                          --属性组 --
-                          +NSString *reportId;
-                          __ 函数组__
-                          -(UIView *)infoView;
-                          -(UIView *)detailView;
-                  }
-                  class "ReportTaskListCell" as basecell {
-                          --属性组 --
-                          UILabel *taskTypeLabel;
-                          UILabel *nameLabel;
-                          UILabel *addressLabel;
-                          UILabel *renLabel;
-                          UILabel *timeLabel;
-                          UILabel *danhaoLabel;
-                          ReportTaskModel *model;
-                          __ 函数组__
-                  }
-                  class "MyContricell" as myconcell {
-                          --属性组 --
-
-                          __ 函数组__
-                  }
-                  class "ReportTaskModel" as basecellmodel {
-                          --属性组 --
-                          NSString *Id;
-                          NSString *ClassifId;
-                          NSString *ClassifName;
-                          NSString *EventName;
-                          NSString *QuestionSubDate;
-                          NSString *QuestionOffDate;
-                          NSString *AppId;
-                          NSString *EventId;
-                          NSString *QuestionDesc;
-                          NSString *QuestionIcon;
-                          NSString *QuestionLocationIcon;
-                          NSString *QuestionStatus;
-                          NSString *QuestionReporterCode;
-                          NSString *QuestionReporterName;
-                          NSString *QuestionAreaCode;
-                          NSString *QuestionAreaName;
-                          NSString *QuestionFixedLocation;
-                          NSString *QuestionFixedLongitude;
-                          NSString *QuestionFixedLatitude;
-                          __ 函数组__
-                  } 
-                  enum "TaskFlagType" as tasktype1 {
-                          Task_TODO,     //待检查
-                          Task_IsNotMy,  //不是自己的
-                          Task_CantDo,   //不能做
-                          Task_Doing,    //待检查
-                          Task_Done,      //已检查
-                          Task_CanClose,  //可结案
-                          Task_Closed,    //已结案
-                          Task_TimeOut,   //超时未查
-                          Task_Invalid,   //无效上报
-                  }
-                  note left of reportmag
-                          任务统计页面，跳转到具体的任务中
-                          包括：已查，待查，超期未查，已结案 
-                  end note
-
-                  note left of baselist
-                          状态列表 
-                          任务列表的基础类
-                          任务：
-                          初始化tableview，定制tableView样式和基础代理
-                          声明数据数组
-                          抽象话自定义Navbar方法
-                  end note
-                  note bottom of tasktype1
-                          作用：上报详情的几种情况，待检查，可领取，已检查，无效上报，超期未查，已结案 
-                  end note
-                  note left of mycon
-                          我的贡献页
-                  end note
-                  note left of basecell
-                          自定义列表中的cell
-                  end note
-                  note left of basecellmodel
-                          cell对应的数据model 
-                  end note
-                  note right of myconcell
-                          自定义贡献页面的cell 
-                  end note
-                  note bottom of clientdetail
-                          我上报的相关详情信息 
-                  end note
-                  note left of myconmodel
-                          我的贡献也的数据模型
-                  end note
-
-                  baselist o--> basecell:聚合<
-                  mycon o--> myconcell:聚合<
-                  basecell ..> basecellmodel:依赖<
-                  basecell <|-up- myconcell:继承< 
-                  reportapi o--> taskmger:聚合<
-                  baselist ..> tasktype1:依赖<
-                  baselist <|-up- taskmger:继承<
-                  reportmag o--> baselist:聚合<
-                  reportapi o--> reportmag:聚合<
-                  mycon o--> clientdetail:聚合<
-                  mycon ..> myconmodel:依赖<
-                  myconmodel o--> basecellmodel:聚合< 
-          }
-
-          'package，node，folder，frame，cloud，database'
-          folder "详情模块" as detailM{
-                  class "ReportedDetailController" as detail {
-                          --属性组 --
-                          /// 上报记录id
-                          NSString *reportId;
-                          /// view数据model
-                          ReportDoingModel *reportModel;
-                          /// 分割线
-                          UIView *line;
-                          /// 根视图容器
-                          UIScrollView *scrollView;
-                          /// 底部约束:为动态显示上传按钮提供空间高度
-                          MASConstraint *scrollView_mas_Bottom;
-                          __ 函数组__
-                          -(void)installView;
-                          -(void)loadData;
-                          -(void)reloadDetailViewData;
-                          -(void)loadDoingView{}; 
-                  }
-                  class "ReportDetailView" as detailview {
-                          --属性组 --
-                          UIView *line;
-                          __ 函数组__
-                          +-(void)reloadData:(ReportDetailViewModel *)model;
-                  }
-                  class "ReportDetailViewModel" as detailmodel {
-                          --属性组 --
-                          NSString *type;
-                          NSString *preImgUrl;
-                          NSString *name;
-                          NSString *status;
-                          NSString *time;
-                          NSString *address;
-                          NSString *detailImgUrl;
-                          NSString *detailText;
-                          NSString *ren;
-                          NSString *shixian;
-                          __ 函数组__
-                  }
-                  class "ReportedDoingController" as Doing {
-                          --属性组 --
-                          /// 是否为管理员
-                          BOOL isAdmin;
-                          /// 任务类型
-                          TaskFlagType flag;
-                          __ 函数组__
-                          -(void)loadDoingView;
-                          -(void)reloadThreeBtnView;
-                          //无效上报/领取任务/检查结果上传
-                          -(void)installThreeBtnView;
-                          --按钮事件--
-                          -(void)commitAction;
-                          -(void)editNoteAction;
-                          -(void)closereportAction;
-                          -(void)todoAction;
-                  }
-
-                  class "ReportBottomView" as bottomview {
-                          --属性组 --
-                          StoreTypeColView *_storeTypeView;
-                          ReportCameraView *_cameraView;
-
-                          __ 函数组__
-                          //构造器，通过多态和view数据初始化,通过block刷新底部UI
-                          -(id)initWith:(NSArray *)typeArray
-                          and:(NSArray *)bodyArray
-                          isDetail:(void(^)(BOOL isDetail))handler;
-                          //根据任务状态显示底部UI样式
-                          -(void)show:(TaskFlagType)type;
-                  }
-                  class "STypeBodyModel" as bottommodel {
-                          --属性组 --
-                          +NSString *typeId;
-                          +StoreTypeFlag flag;
-                          +NSMutableArray<ReportCameraModel *> *cameraArray;
-                          +NSString *pepleName;
-                          +NSString *address;
-                          +NSString *time;
-                          +NSString *note;
-                          __ 函数组__
-                  }
-                  class "StoreTypeColView" as typecolview {
-                          --属性组 --
-                          NSArray<StoreTypeModel *> *dataArray;
-                          __ 函数组__
-                          -(id)initWith:(void(^)(NSString*))handler;
-                          -(void)reloadData;
-                  }
-                  class "StoreTypeCell" as typecell {
-                          --属性组 --
-                          StoreTypeModel *model;
-                          __ 函数组__
-                  }
-                  class "StoreTypeModel" as typemodel {
-                          --属性组 --
-                          NSString *typeId;
-                          StoreTypeFlag flag;
-                          NSString *title;
-                          __ 函数组__
-                  }
-                  enum "TaskFlagType" as tasktype {
-                          Task_TODO,     //待检查
-                          Task_IsNotMy,  //不是自己的
-                          Task_CantDo,   //不能做
-                          Task_Doing,    //待检查
-                          Task_Done,      //已检查
-                          Task_CanClose,  //可结案
-                          Task_Closed,    //已结案
-                          Task_TimeOut,   //超时未查
-                          Task_Invalid,   //无效上报
-                  } 
-                  enum "StoreTypeFlag" as storetype {
-                          SType_CanDo,    //有权限
-                          SType_CantDo,   //无权限
-                          SType_Invalid,  //无效上报
-                          SType_Completed,//已完成
-                          SType_CanClose, //可结案
-                          SType_Closed,   //已结案
-                  }
-
-                  note top of detail
-                          通过reportId,拉去详情的数据,并展示任务详情UI 
-                  end note
-                  note bottom of tasktype
-                          作用：上报详情的几种情况，待检查，可领取，已检查，无效上报，超期未查，已结案 
-                  end note
-
-                  note bottom of storetype
-                          作用：多业态权限类型，可待查，不能检查，已完成
-                          对应状态会呈现出不同的UI样式 
-                  end note
-                  note left of Doing
-                          上报页/详情页
-                  end note
-                  note top of detailview
-                          上报详情页：个人信息，问题描述，上报情况模块UI业务实现
-                  end note
-                  note right of detailmodel
-                          上报详情页顶部UI模块的数据model
-                  end note
-                  note top of bottomview
-                          上报详情多业态模块 
-                  end note
-                  note right of typecolview
-                          多业态标签页UI 
-                  end note
-
-                  bottomview *-left-> Doing:合成<
-                  bottomview .> bottommodel:依赖<
-                  typecolview *-up-> bottomview:合成<
-                  typecolview o--> typecell:聚合<
-                  typecell ..> typemodel:依赖<
-                  detailview *-left-> detail:合成<
-                  detailview .right.> detailmodel:依赖<
-                  detail <|-- Doing:继承<
-                  baselist o--> detail:聚合<
-                  typecell .> storetype:依赖<
-          }
+        }
+        'package，node，folder，frame，cloud，database'
+        folder "任务列表" as tasklist{
+                class "ReportManagerController" as reportmag {
+                        --属性组 --
+                        UITableView *tableView;
+                        NSMutableArray<ReportSectionModel *>  *dataArray;
+                        __ 定制section header方法__
+                        -(UIView *)createHeadView:(NSString *)text;
+                        -(CGFloat)tableView:heightForHeaderInSection:
+                        -(UIView *)tableView:viewForHeaderInSection:
+                }
+                class "ReportTaskListController" as baselist {
+                        --属性组 --
+                        +TaskFlagType flag;
+                        +UITableView *tableView;
+                        +NSArray<ReportTaskModel *> *dataArray;
+                        __ 函数组__
+                        -(void)customBarButton;
+                }
 
 
+                class "TaskManagerController" as taskmger {
+                        --属性组 --
+                        BOOL isAdmin;//判断是否为管理员,显示底部按钮
+                }
+                class "MyContributionController" as mycon {
+                        --属性组 --
 
+                        __ 函数组__
+                }
+                class "MyContriModel" as myconmodel {
+                        --属性组 --
+                        //累计被采纳次数
+                        NSNumber *AdoptNumber;
+                        //上报次数
+                        NSNumber *ReportNumber;
+                        //待办次数
+                        NSNumber *WaitingNumber;
+                        NSMutableArray<ReportTaskModel *> *Questions;
+                        __ 函数组__
+                }
+                class "ClientReportDetailController" as clientdetail {
+                        --属性组 --
+                        +NSString *reportId;
+                        __ 函数组__
+                        -(UIView *)infoView;
+                        -(UIView *)detailView;
+                }
+                class "ReportTaskListCell" as basecell {
+                        --属性组 --
+                        UILabel *taskTypeLabel;
+                        UILabel *nameLabel;
+                        UILabel *addressLabel;
+                        UILabel *renLabel;
+                        UILabel *timeLabel;
+                        UILabel *danhaoLabel;
+                        ReportTaskModel *model;
+                        __ 函数组__
+                }
+                class "MyContricell" as myconcell {
+                        --属性组 --
 
+                        __ 函数组__
+                }
+                class "ReportTaskModel" as basecellmodel {
+                        --属性组 --
+                        NSString *Id;
+                        NSString *ClassifId;
+                        NSString *ClassifName;
+                        NSString *EventName;
+                        NSString *QuestionSubDate;
+                        NSString *QuestionOffDate;
+                        NSString *AppId;
+                        NSString *EventId;
+                        NSString *QuestionDesc;
+                        NSString *QuestionIcon;
+                        NSString *QuestionLocationIcon;
+                        NSString *QuestionStatus;
+                        NSString *QuestionReporterCode;
+                        NSString *QuestionReporterName;
+                        NSString *QuestionAreaCode;
+                        NSString *QuestionAreaName;
+                        NSString *QuestionFixedLocation;
+                        NSString *QuestionFixedLongitude;
+                        NSString *QuestionFixedLatitude;
+                        __ 函数组__
+                }
+                enum "TaskFlagType" as tasktype1 {
+                        Task_TODO,     //待检查
+                        Task_IsNotMy,  //不是自己的
+                        Task_CantDo,   //不能做
+                        Task_Doing,    //待检查
+                        Task_Done,      //已检查
+                        Task_CanClose,  //可结案
+                        Task_Closed,    //已结案
+                        Task_TimeOut,   //超时未查
+                        Task_Invalid,   //无效上报
+                }
+                note left of reportmag
+                        任务统计页面，跳转到具体的任务中
+                        包括：已查，待查，超期未查，已结案
+                end note
 
+                note left of baselist
+                        状态列表
+                        任务列表的基础类
+                        任务：
+                        初始化tableview，定制tableView样式和基础代理
+                        声明数据数组
+                        抽象话自定义Navbar方法
+                end note
+                note bottom of tasktype1
+                        作用：上报详情的几种情况，待检查，可领取，已检查，无效上报，超期未查，已结案
+                end note
+                note left of mycon
+                        我的贡献页
+                end note
+                note left of basecell
+                        自定义列表中的cell
+                end note
+                note left of basecellmodel
+                        cell对应的数据model
+                end note
+                note right of myconcell
+                        自定义贡献页面的cell
+                end note
+                note bottom of clientdetail
+                        我上报的相关详情信息
+                end note
+                note left of myconmodel
+                        我的贡献也的数据模型
+                end note
 
-          @enduml
-#+END_SRC
+                baselist o--> basecell:聚合<
+                mycon o--> myconcell:聚合<
+                basecell ..> basecellmodel:依赖<
+                basecell <|-up- myconcell:继承<
+                reportapi o--> taskmger:聚合<
+                baselist ..> tasktype1:依赖<
+                baselist <|-up- taskmger:继承<
+                reportmag o--> baselist:聚合<
+                reportapi o--> reportmag:聚合<
+                mycon o--> clientdetail:聚合<
+                mycon ..> myconmodel:依赖<
+                myconmodel o--> basecellmodel:聚合<
+        }
 
-#+RESULTS:
-[[file:~/Desktop/test.png]]
+        'package，node，folder，frame，cloud，database'
+        folder "详情模块" as detailM{
+                class "ReportedDetailController" as detail {
+                        --属性组 --
+                        /// 上报记录id
+                        NSString *reportId;
+                        /// view数据model
+                        ReportDoingModel *reportModel;
+                        /// 分割线
+                        UIView *line;
+                        /// 根视图容器
+                        UIScrollView *scrollView;
+                        /// 底部约束:为动态显示上传按钮提供空间高度
+                        MASConstraint *scrollView_mas_Bottom;
+                        __ 函数组__
+                        -(void)installView;
+                        -(void)loadData;
+                        -(void)reloadDetailViewData;
+                        -(void)loadDoingView{};
+                }
+                class "ReportDetailView" as detailview {
+                        --属性组 --
+                        UIView *line;
+                        __ 函数组__
+                        +-(void)reloadData:(ReportDetailViewModel *)model;
+                }
+                class "ReportDetailViewModel" as detailmodel {
+                        --属性组 --
+                        NSString *type;
+                        NSString *preImgUrl;
+                        NSString *name;
+                        NSString *status;
+                        NSString *time;
+                        NSString *address;
+                        NSString *detailImgUrl;
+                        NSString *detailText;
+                        NSString *ren;
+                        NSString *shixian;
+                        __ 函数组__
+                }
+                class "ReportedDoingController" as Doing {
+                        --属性组 --
+                        /// 是否为管理员
+                        BOOL isAdmin;
+                        /// 任务类型
+                        TaskFlagType flag;
+                        __ 函数组__
+                        -(void)loadDoingView;
+                        -(void)reloadThreeBtnView;
+                        //无效上报/领取任务/检查结果上传
+                        -(void)installThreeBtnView;
+                        --按钮事件--
+                        -(void)commitAction;
+                        -(void)editNoteAction;
+                        -(void)closereportAction;
+                        -(void)todoAction;
+                }
 
+                class "ReportBottomView" as bottomview {
+                        --属性组 --
+                        StoreTypeColView *_storeTypeView;
+                        ReportCameraView *_cameraView;
 
+                        __ 函数组__
+                        //构造器，通过多态和view数据初始化,通过block刷新底部UI
+                        -(id)initWith:(NSArray *)typeArray
+                        and:(NSArray *)bodyArray
+                        isDetail:(void(^)(BOOL isDetail))handler;
+                        //根据任务状态显示底部UI样式
+                        -(void)show:(TaskFlagType)type;
+                }
+                class "STypeBodyModel" as bottommodel {
+                        --属性组 --
+                        +NSString *typeId;
+                        +StoreTypeFlag flag;
+                        +NSMutableArray<ReportCameraModel *> *cameraArray;
+                        +NSString *pepleName;
+                        +NSString *address;
+                        +NSString *time;
+                        +NSString *note;
+                        __ 函数组__
+                }
+                class "StoreTypeColView" as typecolview {
+                        --属性组 --
+                        NSArray<StoreTypeModel *> *dataArray;
+                        __ 函数组__
+                        -(id)initWith:(void(^)(NSString*))handler;
+                        -(void)reloadData;
+                }
+                class "StoreTypeCell" as typecell {
+                        --属性组 --
+                        StoreTypeModel *model;
+                        __ 函数组__
+                }
+                class "StoreTypeModel" as typemodel {
+                        --属性组 --
+                        NSString *typeId;
+                        StoreTypeFlag flag;
+                        NSString *title;
+                        __ 函数组__
+                }
+                enum "TaskFlagType" as tasktype {
+                        Task_TODO,     //待检查
+                        Task_IsNotMy,  //不是自己的
+                        Task_CantDo,   //不能做
+                        Task_Doing,    //待检查
+                        Task_Done,      //已检查
+                        Task_CanClose,  //可结案
+                        Task_Closed,    //已结案
+                        Task_TimeOut,   //超时未查
+                        Task_Invalid,   //无效上报
+                }
+                enum "StoreTypeFlag" as storetype {
+                        SType_CanDo,    //有权限
+                        SType_CantDo,   //无权限
+                        SType_Invalid,  //无效上报
+                        SType_Completed,//已完成
+                        SType_CanClose, //可结案
+                        SType_Closed,   //已结案
+                }
+
+                note top of detail
+                        通过reportId,拉去详情的数据,并展示任务详情UI
+                end note
+                note bottom of tasktype
+                        作用：上报详情的几种情况，待检查，可领取，已检查，无效上报，超期未查，已结案
+                end note
+
+                note bottom of storetype
+                        作用：多业态权限类型，可待查，不能检查，已完成
+                        对应状态会呈现出不同的UI样式
+                end note
+                note left of Doing
+                        上报页/详情页
+                end note
+                note top of detailview
+                        上报详情页：个人信息，问题描述，上报情况模块UI业务实现
+                end note
+                note right of detailmodel
+                        上报详情页顶部UI模块的数据model
+                end note
+                note top of bottomview
+                        上报详情多业态模块
+                end note
+                note right of typecolview
+                        多业态标签页UI
+                end note
+
+                bottomview *-left-> Doing:合成<
+                bottomview .> bottommodel:依赖<
+                typecolview *-up-> bottomview:合成<
+                typecolview o--> typecell:聚合<
+                typecell ..> typemodel:依赖<
+                detailview *-left-> detail:合成<
+                detailview .right.> detailmodel:依赖<
+                detail <|-- Doing:继承<
+                baselist o--> detail:聚合<
+                typecell .> storetype:依赖<
+        }
+
+        @enduml

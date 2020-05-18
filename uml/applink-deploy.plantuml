@@ -1,0 +1,17 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        苹果Applink配置的部署图
+        创建时间: 2020-05-18 17:46
+        endtitle
+        left header
+                分析部署的设备需求
+        endheader
+
+        'type:package，node，folder，frame，cloud，database
+        folder "name" as pkg{
+                class
+        }
+
+        @enduml

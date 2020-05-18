@@ -2,7 +2,7 @@
 caption 学习org-mode的基本使用和导出操作
 title 增强vim管理项目的功能
 center header
-    头部描述
+        头部描述
 endheader
 * Termux
 ** ADR:项目决策记录工具
@@ -21,9 +21,9 @@ endheader
 *** 安装spacemacs`git clone spacemacs.git ~/.emacs.d/`
 '给图表添加备注
 legend right
-    增强termux工具集,着重说明orgmode的安装和使用
+        增强termux工具集,着重说明orgmode的安装和使用
 endlegend
 center footer
-    谢谢观看
+        谢谢观看
 endfooter
 @endmindmap
