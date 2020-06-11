@@ -27,7 +27,7 @@ title
                 2. 用例也会影响用户界面。
                 3. 考虑用例如何与其他应用程序的核心组件相互配合，例如网络和数据持久化。
                    组件就好比用例的插件，VIPER 则用来描述这些组件的作用是什么，如何进行交互。
-                
+
                 VIPER 的主要部分是：
 
                 视图：根据展示器的要求显示界面，并将用户输入反馈给展示器。
@@ -41,6 +41,26 @@ title
 
         package "Application Logic应用逻辑" as logic{
 
+                'type:package，node，folder，frame，cloud，database
+                folder "实体" as Models{
+                        class "TodoItem" as todom <?NSObject> {
+                                -- property --
+                                var dueDate:Date
+                                var name:String
+                        }
+                        enum "NearTermDateRelation" as termdate {
+                                case OutOfRange,
+                                Today,
+                                Tomorrow,
+                                LaterThisWeek,
+                                NextWeek
+                        }
+                        note as ModelsNote
+                        1. 实体是被交互器操作的模型对象，并且它们只被交互器所操作
+                        2. 实体不应该传输到表现层 (比如说展示器)。
+                        3. 实体仅仅是数据结构，任何依赖于应用的逻辑都应该放到交互器中
+                        end note
+                }
                 package "Interactor交互器" as Interactor {
                         class "AddInteractor" as AddInteractor{
                                 --属性组 --
@@ -48,7 +68,7 @@ title
                                 __ 函数组__
                                 - (void)saveNewEntryWithName:dueDate:
                         }
-                        note left of AddInteractor
+                        note right of AddInteractor
                                 1. 交互器永远不会传输实体至表现层 (比如说展示器)。
                                 2. 交互器不应与 NSManageObjects 协同工作
                         end note
@@ -63,9 +83,11 @@ title
                                 - (void)addNewEntry:(VTDTodoItem *)entry;
                         }
                 }
-                AddInteractor ..up> AddDataManager
+                AddDataManager <. AddInteractor
+                todom <.. AddInteractor:依赖 <
         }
-        package "实体 (Entity)模型协议" as Models{
+
+        package "Add模块用例接口" as interface{
                 interface "VTDAddModuleDelegate"{
                         __ 函数组__
                         - (void)addModuleDidCancelAddAction;
@@ -76,13 +98,12 @@ title
                         - (void)cancelAddAction;
                         - (void)saveAddActionWithName:dueDate:
                 }
-                note as ModelsNote
-                1. 实体是被交互器操作的模型对象，并且它们只被交互器所操作
-                2. 实体不应该传输到表现层 (比如说展示器)。
-                3. 实体仅仅是数据结构，任何依赖于应用的逻辑都应该放到交互器中
-        end note
+
 }
-package "View视图" as View{
+
+package "User Interface" as userIn {
+
+  package "View视图" as View{
         class "VTDAddViewController" as  VTDAddViewController{
                 --属性组 --
                 + id<VTDAddModuleInterface> eventHandler;
@@ -95,7 +116,7 @@ package "View视图" as View{
                 + (void)setEntryDueDate:(NSDate *)date;
                 + (void)setMinimumDueDate:(NSDate *)date;
         }
-        VTDAddViewInterface o-right VTDAddViewController
+        VTDAddViewInterface o- VTDAddViewController
         VTDAddModuleInterface *--> VTDAddViewController
         note as Viewnote
         1. 视图一般是被动,通过展示器触发更新数据
@@ -108,7 +129,6 @@ end note
 }
 
 
-package "User Interface" as userIn {
 package "Presenter展示器" as Presenter{
         class "VTDAddPresenter" as VTDAddPresenter {
                 --属性组 --
@@ -133,17 +153,7 @@ package "Presenter展示器" as Presenter{
 end note
 }
 
-package "转场" as Transition{
-class "VTDAddDismissalTransition" as VTDAddDismissalTransition {
-        - (NSTimeInterval)transitionDuration:
-        - (void)animateTransition:
-}
-class "VTDAddPresentationTransition" as VTDAddPresentationTransition {
 
-        - (NSTimeInterval)transitionDuration:
-        - (void)animateTransition:
-}
-}
 
 package "路由+线框:Wireframe" as Wireframe{
 class "VTDAddWireframe"{
@@ -154,7 +164,7 @@ class "VTDAddWireframe"{
         + (void)dismissAddInterface
 }
 VTDAddWireframe ..> Transition
-VTDAddWireframe *-up-> VTDAddPresenter
+VTDAddWireframe *--> VTDAddPresenter
 VTDAddViewController *-> VTDAddWireframe:eventHandler = self.addPresenter <
 note as WireframeNote
 在 VIPER 中，路由是由两个部分来负责的：展示器和线框
@@ -171,6 +181,18 @@ note as WireframeNote
 end note
 }
 
+
+package "转场" as Transition{
+class "VTDAddDismissalTransition" as VTDAddDismissalTransition {
+        - (NSTimeInterval)transitionDuration:
+        - (void)animateTransition:
+}
+class "VTDAddPresentationTransition" as VTDAddPresentationTransition {
+
+        - (NSTimeInterval)transitionDuration:
+        - (void)animateTransition:
+}
+}
 }
 
 }
