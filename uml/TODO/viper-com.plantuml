@@ -2,15 +2,42 @@
 scale 0.5
 page 1x1
 title
-        viper图名类图
-        创建时间: 2020-05-18 16:35
+        TODO组件图
+        创建时间: 2020-06-12 13:16
         endtitle
         left header
-                desc
-                概念：类是具有相同属性和行为的对象集合。
-                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+                练习VIPER组件式开发，熟悉各模块的职责和业务关系
+                组件图的主要目的是显示系统组件间的结构关系
+                设计模式的图形表达方式，例如VIPER即是一套组件，描述了各组件的依赖关系和交互方式.
         endheader
 
-        upkg
+        '组件
+        'type:package，node，folder，frame，cloud，database
+        'type:package，node，folder，frame，cloud，database
+        folder "用例业务逻辑" as moduleInter{
+                () 模块接口 as moduleInterface
+                () 模块代理 as moduleDelegate
+        }
+        folder "交互器逻辑层" as moduleinteractor{
+                [交互器] as Interactor
+                [实体] as entity
+                '..、--、-->
+                entity ..> Interactor:实体仅在交互器中处理
+        }
+        'type:package，node，folder，frame，cloud，database
+        folder "UI交互逻辑" as userInterface{
+                [展示器] as presenter
+                [视图] as views
+                [线框路由] as router
+                () 视图接口 as viewinterface
+        }
+
+        '关系
+        '..、--、-->
+        viewinterface ..> views:VC遵循协议实现视图的接口方法
+        moduleInterface .up.> views:视图中UIaction调用接口对象（展示器来实现接口）
+        moduleDelegate .up.> presenter:模块代理由模块中的展示器实现
+        router --> presenter:线框路由展示界面结合展示器处理跳转的逻辑
+
 
         @enduml
