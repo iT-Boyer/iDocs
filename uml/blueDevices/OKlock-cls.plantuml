@@ -1,0 +1,84 @@
+@startuml
+scale 0.5
+page 1x1
+title
+         蓝牙锁类图
+        创建时间: 2020-07-18 16:54
+        endtitle
+        left header
+                梳理蓝牙锁封装模式，查漏补缺引出设计模式的学习
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        'type:package，node，folder，frame，cloud，database
+        folder "JHBluetoothLibrary" as ble{
+                class "JHBleLibrary" as blelib <?id> {
+                        -- property --
+                        __func__
+                }
+                'type:package，node，folder，frame，cloud，database
+                folder "Models" as blemodel{
+                        class "CC2PrintModel" as pmod <?id> {
+                                -- property --
+                                /// mac地址
+                                NSString *macAddress;
+                                /// 打印机uuid
+                                NSString *deviceType;
+                                /// 标题
+                                NSString *title;
+                                /// 单号
+                                NSString *orderNo;
+                                /// 食品名
+                                NSString *mealName;
+                                /// 留样时间
+                                NSString *prototypeDate;
+                                /// 截止时间
+                                NSString *dealEndDate;
+                                /// 打印时间
+                                NSString *printDate;
+                                /// 操作员
+                                NSString *operateName;
+                                __func__
+                                -(void)setValue:(id)value forUndefinedKey:(NSString *)key
+                        }
+                        class "OKLockModel" as lockmod <?id> {
+                                -- property --
+                                /// 蓝牙锁
+                                /// 锁类型:这次不需要,后期拓展多类型锁需要该字段
+                                NSString *lockType;
+                                /// mac地址
+                                NSString *macAddress;
+                                /// 开锁密码
+                                NSString *openLockPsw;
+                                /// 加密秘钥
+                                NSString *aesSecretKey;
+
+                                __func__
+                                -(void)setValue:(id)value forUndefinedKey:(NSString *)key
+                        }
+                }
+
+                'type:package，node，folder，frame，cloud，database
+                folder "OKLok" as oklok{
+                        class "JHOKLocker" as locker <?id> {
+                                -- property --
+                                __func__
+                                + (JHOKLocker *)shared;
+                                -(void)openCirleLock:(OKLockModel *)model handler:(void(^)(BOOL))handler;
+                                -(void)openByMac:(NSString *)macaddr pwd:(NSString *)pwd key:(NSString *)key;
+                        }
+                        class "JHCC2Printer" as printer <?id> {
+                                __func__
+                                + (JHCC2Printer *)shared;
+                                -(void)scanBy:(CC2PrintModel *)model handler:(void(^)(BOOL result))handler;
+                        }
+                }
+                locker <-down-* blelib:合成 >
+                printer <-down-* blelib:合成 >
+                lockmod <.down. locker:依赖 <
+                pmod <.down. printer:依赖 <
+
+        }
+        
+        @enduml
