@@ -25,3 +25,6 @@
 
 ### 电梯项目
 ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/DtBox/dtbox.plantuml)
+
+### 智慧通知
+![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml)
