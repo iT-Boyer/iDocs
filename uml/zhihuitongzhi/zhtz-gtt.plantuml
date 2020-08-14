@@ -12,22 +12,22 @@ title
         project starts 2020-08-12
         Sunday are closed
         Saturday are closed
-        [需求评审] as [design] on {hsg:100%} lasts 3 days
+        [需求评审] as [design] on {产品:100%} lasts 3 days
         [立项] happens at [design]'s end
         --开发阶段--
         then [创建--发送--查看] as [develop] on {移动端:100%} lasts 7 days
-        [详情] as [detail] on {hsg:100%}  lasts 3 days
+        [详情] as [detail] lasts 3 days
         [detail] starts at [develop]'s start
-        then [选择对象] on {hsg:100%} lasts 2 days
-        then [发送通知] on {hsg:100%} lasts 2 days
-        [联调] as [lt2] on {hsg:100%} {zhyr} {zpc} lasts 1 days
+        then [选择对象] lasts 2 days
+        then [发送通知]  lasts 2 days
+        [联调] as [lt2] on {移动端:100%} {平台} {后台} lasts 1 days
         [lt2] starts at [develop]'s end
         [自测] happens at [lt2]'s end
         --提测发布--
-        [提测] as [test] on {测试组} lasts 4 days
+        [提测] as [test] on {测试:100%} lasts 4 days
         [test] starts at [lt2]'s end
-        [测试] as [first] on {zhfq:100%} lasts 2 days
+        [测试] as [first] lasts 2 days
         [first] starts at [test]'s start
-        then [正式] on {zhfq:100%} lasts 2 days
+        then [正式] lasts 2 days
         [发布] happens at [正式]'s end
         @endgantt
