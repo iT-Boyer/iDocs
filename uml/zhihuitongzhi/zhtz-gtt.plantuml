@@ -14,15 +14,26 @@ title
         Saturday are closed
         [需求评审] as [design] on {产品:100%} lasts 3 days
         [立项] happens at [design]'s end
-        --开发阶段--
+        --移动端--
         then [创建--发送--查看] as [develop] on {移动端:100%} lasts 7 days
         [详情] as [detail] lasts 3 days
         [detail] starts at [develop]'s start
         then [选择对象] lasts 2 days
         then [发送通知]  lasts 2 days
+
+        --后台--
+        [后台实现] as [api] on {后台组} lasts 6 days
+        [接口定义] as [define] lasts 2 days
+        then [详情接口] as [detailAPi] lasts 2 days
+        then [新建通知接口] as [newAPI] lasts 2 days
+        design --> api
+        [define] starts at [api]'s start
+
         [联调] as [lt2] on {移动端:100%} {平台} {后台} lasts 1 days
         [lt2] starts at [develop]'s end
+        [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
+
         --提测发布--
         [提测] as [test] on {测试:100%} lasts 4 days
         [test] starts at [lt2]'s end
