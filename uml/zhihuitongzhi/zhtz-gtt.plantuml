@@ -22,14 +22,15 @@ title
         then [发送通知]  lasts 2 days
 
         --后台--
-        [后台实现] as [api] on {后台组} lasts 6 days
-        [接口定义] as [define] lasts 2 days
-        then [详情接口] as [detailAPi] lasts 2 days
-        then [新建通知接口] as [newAPI] lasts 2 days
+        [接口] as [api] on {后台组} lasts 6 days
+        [API定义] as [define] lasts 2 days
+        [详情API] as [detailAPi] lasts 2 days
+        [新建API] as [newAPI] lasts 2 days
         design --> api
         [define] starts at [api]'s start
-
-        [联调] as [lt2] on {移动端:100%} {平台} {后台} lasts 1 days
+        define --> detailAPi
+        detailAPi --> newAPI
+        [联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
         [lt2] starts at [develop]'s end
         [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
