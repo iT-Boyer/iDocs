@@ -6,7 +6,13 @@
   2. 需求变更风险：
 2. 发布
 
-![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml)
+<img src="http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml"
+alt="" align="left"
+title="image title"
+class="img"
+</img>
+
+
 
 *** 过程跟踪
 1. 周例会（15~30 分钟）。
