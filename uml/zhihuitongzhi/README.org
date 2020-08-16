@@ -1,17 +1,14 @@
 ** 项目计划
 *** 两个里程碑
-1. 联调
-  需要规避的风险
-  1. 快速定义接口：提前设计，有难度风险和问题及时反馈。
-  2. 需求变更风险：
-2. 发布
+:PROPERTIES:
+:ID:       7b0734e5-382f-486b-b90f-6a6dd46ecb8f
+:END:
+1. 接口定义
+   预定义接口：提前设计，有难度风险和问题及时反馈。
+2. 联调自测
+3. 发布
 
-#+caption: 甘特图
-[[img:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][ddd]
-[[http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml]]
-
-[[gimages:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][dsdsd]]
-[[download:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][ddd]]
+[[file:zhtz-gtt.png][任务甘特图]]
 *** 过程跟踪
 1. 周例会（15~30 分钟）。
 每周一两次例会的方式，实施团队的反馈信息，及时解决问题和纠正偏差。

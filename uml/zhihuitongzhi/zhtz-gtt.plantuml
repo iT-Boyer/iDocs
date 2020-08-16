@@ -15,11 +15,11 @@ title
         [需求评审] as [design] on {产品:100%} lasts 3 days
         [立项] happens at [design]'s end
         --移动端--
-        then [创建--发送--查看] as [develop] on {移动端:100%} lasts 7 days
+        then [创建->通知->详情] as [develop] on {移动端:100%} lasts 7 days
         [详情] as [detail] lasts 3 days
         [detail] starts at [develop]'s start
         then [选择对象] lasts 2 days
-        then [发送通知]  lasts 2 days
+        then [发布通知]  lasts 2 days
 
         --后台--
         [接口] as [api] on {后台组} lasts 6 days
