@@ -7,7 +7,10 @@
 2. 发布
 
 #+caption: 甘特图
-[[img:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][ddd]]
+[[img:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][ddd]
+[[http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml]]
+
+[[gimages:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml][dsdsd]]
 *** 过程跟踪
 1. 周例会（15~30 分钟）。
 每周一两次例会的方式，实施团队的反馈信息，及时解决问题和纠正偏差。
