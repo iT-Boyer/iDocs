@@ -7,7 +7,7 @@
 2. 发布
 
 #+caption: 甘特图
-[[file:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml]]
+[[[[file:http://www.plantuml.com/plantuml/proxy?cache=no&src=https://it-boyer.github.io/iDocs/uml/zhihuitongzhi/zhtz-gtt.plantuml]]]]
 
 *** 过程跟踪
 1. 周例会（15~30 分钟）。
