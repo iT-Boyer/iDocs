@@ -1,0 +1,124 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        智慧通知详情和创建类图
+        创建时间: 2020-08-19 22:57
+        endtitle
+        left header
+
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        'type:package，node，folder，frame，cloud，database
+        folder "通知列表模块" as list{
+                class "JHNotificationBaseListController" as listbase <?id> {
+                        -- property --
+                        UITableView *tableView;
+                        NSMutableArray *dataArray;
+                        ReqBaseNotifyM *reqM;
+                        __func__
+                        -(void)loadData;
+                        -(void)createView;
+                }
+                class "JHNotificationListsController" as list <?id> {
+                        -- property --
+                        var
+                        __func__
+                        -(void)createBtnClicked;
+                        -(void)searchBtnClicked;
+                }
+
+                class "JHNotifySearchHistoryController" as history <?id> {
+                        -- property --
+                        StoreDSelSearchBar *searchBar;
+                        UIView *historyView;
+                        UIView *operationView;
+                        YZTagList *itemsView;
+                        void(^historyCompleted)(NSString *);
+                        __func__
+                        -(void)refreshHistoryView;
+                        - (void)btnClearClick:(UIButton *)btn;
+                        - (void)btnClearClick:(UIButton *)btn;
+                }
+
+                listbase <|-- list:继承 <
+                listbase <|-- history:继承 <
+
+        }
+        folder "通知详情模块" as detail{
+                class "JHNewNotifyBaseController" as detailbase <?Class> {
+                        -- property --
+                        UITableView *tableView;
+                        UIView *notfiView;
+                        JHNewNotfiType notifyType;
+                        NSString *unit;
+
+                        UIButton *selectBtn;
+                        NSInteger allCount;
+                        UILabel *selctNumLab;
+
+                        NSMutableArray *dataArray;
+
+                        __func__
+                        -(void)createView;
+                        -(void)checkAllAction:(BOOL)isAll;
+                        -(void)refreshCheckCount;
+                        -(void)sendData:(NSArray *)array;
+
+                        -(void)loadData;
+                }
+
+                class "JHNewWorkerNotifyDetailController" as persondetail <?id> {
+                        -- property --
+                        NSString *Id;
+
+                        ZhhNotifyState notifyState;
+                        ReqNotifyByStateM *reqStateM;
+
+                        BOOL isShowBottom;
+
+                        __func__
+                        -(void)refreshTagCount:(NSInteger)count;
+                        -(void)loadListData;
+                }
+                class "JHNewStoreNotifyDetailController" as storedetail <?id> {
+                        -- property --
+                        var
+                        __func__
+                        func
+                }
+                detailbase <|-- persondetail:继承 <
+                persondetail <|-- storedetail:继承 <
+        }
+
+        'type:package，node，folder，frame，cloud，database
+        folder "创建通知模块" as createNotify{
+                class "createVC" as create <?id> {
+                        -- property --
+                        var
+                        __func__
+                        func
+                }
+                class "JHCreateNotifyBaseListController" as selectbase <?id> {
+                        -- property --
+                        ReqBaseNotifyM *reqM;
+                        void(^searchHandler)(NSString *);
+                        NSString *searchholder;
+                        NSString *searchkeyword;
+                        StoreDSelSearchBar *searchBar;
+
+                        __func__
+                }
+                class "JHCreateNotifyPersonController" as selectperson <?id> {
+                        -- property --
+                        NSString *groupId;
+                        __func__
+                        func
+                }
+                detailbase <|-- selectbase:继承 <
+                selectbase <|-- selectperson:继承 <
+        }
+
+        @enduml
