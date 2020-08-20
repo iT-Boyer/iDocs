@@ -1,3 +1,4 @@
+@startuml
 '新建甘特图
 @startgantt
 scale 2
@@ -8,6 +9,10 @@ title
         endtitle
         left header
                 通过甘特图梳理工作进度安排
+                iOS 完成移动端详情UI/API前期联调
+                需求调整：
+                1. 详情页面附件模块
+                2. 通知对象中门店选择器UI样式
         endheader
         project starts 2020-08-12
         Sunday are closed
@@ -20,7 +25,10 @@ title
         [detail] starts at [develop]'s start
         then [选择对象] lasts 2 days
         then [发布通知]  lasts 2 days
+        [初步联调] happens at [detail]'s end
 
+        '前端进度
+        [develop] is 40% completed
         --后台--
         [接口] as [api] on {后台组} lasts 6 days
         [API定义] as [define] lasts 2 days
@@ -34,12 +42,14 @@ title
         [lt2] starts at [develop]'s end
         [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
-
+        '接口进度
+        [api] is 40% completed
         --提测发布--
-        [提测] as [test] on {测试:100%} lasts 4 days
+        [提测] as [test] on {测试:100%} lasts 3 days
         [test] starts at [lt2]'s end
         [测试] as [first] lasts 2 days
         [first] starts at [test]'s start
-        then [正式] lasts 2 days
+        then [正式] lasts 1 days
         [发布] happens at [正式]'s end
         @endgantt
+@enduml
