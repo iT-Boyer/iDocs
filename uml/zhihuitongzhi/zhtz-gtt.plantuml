@@ -40,7 +40,7 @@ title
         --web端--
         [短信web] as [dxweb] on {web端} lasts 1 days
         --平台端--
-        [平台端] as [pt] on {平台端} lasts 2 days
+        [平台API] as [pt] on {平台组} lasts 2 days
         [用户列表] as [guser] lasts 1 days
         [网格员] as [wguser] lasts 1 days
         '接口进度
