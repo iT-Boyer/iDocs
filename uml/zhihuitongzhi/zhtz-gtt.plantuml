@@ -25,26 +25,44 @@ title
         [detail] starts at [develop]'s start
         then [选择对象] lasts 2 days
         then [发布通知]  lasts 2 days
-        [初步联调] happens at [detail]'s end
-
         '前端进度
-        [develop] is 40% completed
+        [develop] is 70% completed
+
         --后台--
-        [接口] as [api] on {后台组} lasts 6 days
+        [接口] as [api] on {后台组} lasts 7 days
         [API定义] as [define] lasts 2 days
         [详情API] as [detailAPi] lasts 2 days
         [新建API] as [newAPI] lasts 2 days
+        [短信] as [duanxin] lasts 1 days
+        '接口进度
+        [api] is 90% completed
+
+        --web端--
+        [短信web] as [dxweb] on {web端} lasts 1 days
+        --平台端--
+        [平台端] as [pt] on {平台端} lasts 2 days
+        [用户列表] as [guser] lasts 1 days
+        [网格员] as [wguser] lasts 1 days
+        '接口进度
+        [pt] is 100% completed
+
+        '关系
+        design --> pt
+        [guser] starts at [pt]'s start
+        guser --> wguser
+
         design --> api
         [define] starts at [api]'s start
         define --> detailAPi
         detailAPi --> newAPI
+        newAPI --> duanxin
+        [dxweb] starts at [duanxin]'s start
+
+        --提测发布--
         [联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
         [lt2] starts at [develop]'s end
         [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
-        '接口进度
-        [api] is 40% completed
-        --提测发布--
         [提测] as [test] on {测试:100%} lasts 3 days
         [test] starts at [lt2]'s end
         [测试] as [first] lasts 2 days
