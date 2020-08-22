@@ -243,13 +243,13 @@ title
                         /// 退场
                         -(void)chromeViewTaped:
                 }
-                note left of transition
+                note bottom of transition
                         动画控制器负责添加视图以及执行动画
                         遵守UIViewControllerAnimatedTransitioning协议
                         1. 返回动画时间
                         2. 定义动画逻辑
                 end note
-                note left of delegate
+                note right of delegate
                         转场中的具体
                         1. 返回控制器页面
                         2. 返回进场时动画逻辑
@@ -267,10 +267,10 @@ title
                 end note
 
                 delegate <.. transition:依赖 <
-                delegate <. presentation:依赖 <
+                delegate <.. presentation:依赖 <
         }
 
         storedetail <--* listbase:合成 >
         selectperson -- filter
-        animate ---up--- filterVC
+        animate -up- filterVC
         @enduml
