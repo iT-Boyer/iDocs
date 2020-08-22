@@ -1,5 +1,5 @@
 @startuml
-scale 1
+scale 0.5
 page 1x1
 title
         智慧通知详情和创建类图
