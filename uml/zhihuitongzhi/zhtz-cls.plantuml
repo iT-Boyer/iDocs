@@ -147,7 +147,7 @@ title
                         -(void)loadPerson
                         -(void)sendData:(NSArray *)array
                 }
-                note right of checkobstate
+                note bottom of checkobstate
                         定义选择对象列表基类中会出现的四种状态
                 end note
                 note left of selectbase
