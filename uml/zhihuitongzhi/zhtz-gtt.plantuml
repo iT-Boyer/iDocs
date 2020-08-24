@@ -26,7 +26,7 @@ title
         then [选择对象] lasts 2 days
         then [发布通知]  lasts 2 days
         '前端进度
-        [develop] is 70% completed
+        [develop] is 90% completed
 
         --后台--
         [接口] as [api] on {后台组} lasts 7 days
@@ -35,7 +35,7 @@ title
         [新建API] as [newAPI] lasts 2 days
         [短信] as [duanxin] lasts 1 days
         '接口进度
-        [api] is 90% completed
+        [api] is 100% completed
 
         --web端--
         [短信web] as [dxweb] on {web端} lasts 1 days
