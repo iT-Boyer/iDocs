@@ -279,7 +279,7 @@ title
                         主要在model转场和交互转场取消时使用
                         1. 定制 进场页面的presentedView 的外观和尺寸
                         2. 在 containerView 中添加自定义视图并为这些视图添加动画；
-                           1. 实现遮照背景/和点击退场事件
+                        1. 实现遮照背景/和点击退场事件
                         3. 执行动画进场时/退场时的遮照动画
                 end note
 
@@ -291,3 +291,300 @@ title
         selectperson -- filter
         animate -up- filterVC
         @enduml
+        @startuml
+        scale 0.5
+        page 1x1
+        title
+                智慧通知详情和创建类图
+                创建时间: 2020-08-19 22:57
+                endtitle
+                left header
+
+                        概念：类是具有相同属性和行为的对象集合。
+                        作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+                endheader
+
+                'type:package，node，folder，frame，cloud，database
+                folder "通知列表模块" as list{
+                        class "JHNotificationBaseListController" as listbase <?id> {
+                                -- property --
+                                UITableView *tableView;
+                                NSMutableArray *dataArray;
+                                ReqBaseNotifyM *reqM;
+                                __func__
+                                -(void)loadData;
+                                -(void)createView;
+                        }
+                        class "JHNotificationListsController" as listnotify <?id> {
+                                -- property --
+                                var
+                                __func__
+                                -(void)createBtnClicked;
+                                -(void)searchBtnClicked;
+                        }
+
+                        class "JHNotifySearchHistoryController" as history <?id> {
+                                -- property --
+                                StoreDSelSearchBar *searchBar;
+                                UIView *historyView;
+                                UIView *operationView;
+                                YZTagList *itemsView;
+                                void(^historyCompleted)(NSString *);
+                                __func__
+                                -(void)refreshHistoryView;
+                                - (void)btnClearClick:(UIButton *)btn;
+                                - (void)btnClearClick:(UIButton *)btn;
+                        }
+                        note left of listbase
+                                通知列表
+                                1. 实现分页逻辑
+                                2. cell业务跳转逻辑
+                        end note
+                        note left of listnotify
+                                分页加载通知列表
+                        end note
+                        note right of history
+                                分页加载搜索到的通知列表
+                        end note
+
+                        listbase <|-- listnotify:继承 <
+                        listbase <|-- history:继承 <
+
+                }
+                class "JHNewNotifyBaseController" as detailbase <?Class> {
+                        -- property --
+                        UITableView *tableView;
+                        UIView *notfiView;
+                        JHNewNotfiType notifyType;
+                        NSString *unit;
+
+                        UIButton *selectBtn;
+                        NSInteger allCount;
+                        UILabel *selctNumLab;
+
+                        NSMutableArray *dataArray;
+
+                        __func__
+                        -(void)createView;
+                        -(void)checkAllAction:(BOOL)isAll;
+                        -(void)refreshCheckCount;
+                        -(void)sendData:(NSArray *)array;
+
+                        -(void)loadData;
+                }
+                note left of detailbase
+                        ### 通知详情页列表的基类
+                        1. 实现列表样式的统一
+                        2. 全选按钮 业务复用
+                end note
+
+                folder "通知详情模块" as detail{
+                        class "JHNewWorkerNotifyDetailController" as persondetail <?id> {
+                                -- property --
+                                NSString *Id;
+
+                                ZhhNotifyState notifyState;
+                                ReqNotifyByStateM *reqStateM;
+
+                                BOOL isShowBottom;
+
+                                __func__
+                                -(void)refreshTagCount:(NSInteger)count;
+                                -(void)loadListData;
+                        }
+                        class "JHNewStoreNotifyDetailController" as storedetail <?id> {
+                                -- property --
+                                var
+                                __func__
+                                func
+                        }
+                        note left of persondetail
+                                查看通知给人员的通知详情情况
+                                1. 加载通知详情的基本数据
+                                1. 控制底部再次发送的显示
+                                2. 刷新已选中的条数
+                                3. 加载人员通知的列表数据
+                        end note
+
+                        note left of storedetail
+                                查看通知给门店的详情情况
+                                1. 加载门店通知的列表数据
+                        end note
+                        enum "NotifySectionStyle" as sectionstype {
+                                Notify_Detail_Check,        //详情页显示单选按钮
+                                Notify_Detail_Checked,      //详情页显示已选中按钮
+                                Notify_Detail_NoCheck,      //详情页隐藏按钮
+                                Notfiy_Filter_NoCheck,      //筛选器中隐藏按钮
+                        }
+                        note left of sectionstype
+                                使用headview实现折叠效果
+                                支持四种情况的枚举样式
+                        end note
+                        class "ConditionSectionView" as sectionv <?UIView> {
+                                -- property --
+                                //block
+                                void(^checkHandler)(NSInteger index);
+                                void(^openHandler)(NSInteger index);
+                                __func__
+                                func
+                                -(id)initWithTag:name:open:style:(NotifySectionStyle)style;
+                        }
+
+                        detailbase <|-- persondetail:继承 <
+                        persondetail <|-- storedetail:继承 <
+                        sectionv <.. storedetail:依赖 <
+                        sectionstype <.down. sectionv:依赖 <
+
+                }
+                folder "创建通知模块" as createNotify{
+                        enum "JHCheckObjectState" as checkobstate {
+                                JHCheckStoreNotifyState //门店列表
+                                JHCheckSearchStoreNotifyState //门店搜索列表
+                                JHCheckPersonNotifyState  //人员列表
+                                JHCheckSearchPersonNotifyState //人员搜索列表
+                        }
+                        class "JHCheckForNotifyBaseListController" as selectbase <?id> {
+                                -- property --
+                                ReqBaseNotifyM *reqM;
+                                //暂存筛选器
+                                JHNewBookCondtionsController *condtionVC;
+                                NSMutableDictionary *dataDics;
+
+                                NSNumber *pageIndex;
+                                NSString *searchkeyword;
+                                JHCheckObjectState checkState;
+                                __func__
+                        }
+                        class "JHCheckObjectForNotifyListController" as selectperson <?id> {
+                                __func__
+                                -(void)loadStore
+                                -(void)loadPerson
+                                -(void)sendData:(NSArray *)array
+                        }
+                        note bottom of checkobstate
+                                定义选择对象列表基类中会出现的四种状态
+                        end note
+                        note left of selectbase
+                                选择对象的基类列表
+                                1. 实现门店/人员列表UI样式
+                                2. 实现底部全选逻辑
+                        end note
+                        note left of selectperson
+                                选择对象列表
+                                1. 加载门店列表数据
+                                2. 加载人员列表数据
+                        end note
+
+                        detailbase <|-- selectbase:继承 <
+                        selectbase <|-- selectperson:继承 <
+                        checkobstate <.right. selectbase:依赖 <
+
+                }
+                folder "过滤器" as filter{
+                        class "JHFilterCheckobBaseController" as filterbase <?id> {
+                                -- property --
+                                //true： 门店筛选  false:人员筛选
+                                BOOL isPersonal;
+                                UIView *switchBtn;
+                                UIView * bottomView;
+                                UIButton * submitBtn;
+                                __func__
+                                -(void)createView;
+                                -(void)switchAction:(UIButton *)sender;
+                                -(void)resetAction;
+                                -(void)confirmAction;
+                        }
+
+                        class "JHNewBookCondtionsController" as filterVC <?id> {
+                                -- property --
+                                var
+                                id<StoreCMBookViewControllerDelegate> delegate;
+                                NSMutableDictionary* selectedDic; //已选择cell
+                                NSMutableDictionary *dataDics;
+                                __func__
+                                func
+                        }
+                        note left of filterbase
+                                实现选择对象中过滤器的UI业务交互
+                                1. 实现选择门店/选择人员分组UI和切换逻辑
+                                2. 实现底部确定/重置UI和交互逻辑
+                        end note
+                        note right of filterVC
+                                实现筛选器中条件数据的加载
+                                1. 加载区域/经营业态/角色数据
+                                2. 加载用户分组数据
+                                3. 实现底部确认/重置具体业务
+                        end note
+
+                        filterbase <|-down- filterVC:继承 <
+                }
+                folder "转场动画" as animate{
+                        class "JHFilterAnimatedTransitioning" as transition <?UIViewControllerContextTransitioning> {
+                                --property--
+                                BOOL isPresentation;
+                                __func__
+                                //返回动画时间
+                                -(NSTimeInterval)transitionDuration:
+                                // 定义动画逻辑
+                                -(void)animateTransition:
+                        }
+                        class "JHFilterTransitioningDelegate" as delegate <?UIViewControllerTransitioningDelegate> {
+                                __func__
+                                //返回presentation控制器
+                                -(UIPresentationController *)presentationControllerForPresentedViewController:presentingViewController:sourceViewController:
+                                //返回进场时的动画逻辑
+                                -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:presentingController:sourceController:
+                                //返回退场时的动画逻辑
+                                -(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:
+                        }
+                        class "JHFilterPresentationViewController" as presentation <?UIPresentationController,UIAdaptivePresentationControllerDelegate> {
+                                -- property --
+                                //遮照
+                                UIView *chromeView;
+                                __func__
+                                -(instancetype)initWithPresentedViewController:presentingViewController:
+                                --动画布局方法--
+                                //重载存储属性：get方法返回登场页面的位置和大小
+                                - (CGRect)frameOfPresentedViewInContainerView
+                                -(CGSize)sizeForChildContentContainer:withParentContainerSize:
+                                ///设置整个转场动画是否将覆盖全屏幕
+                                -(BOOL)shouldPresentInFullscreen
+                                - (UIModalPresentationStyle)adaptivePresentationStyle
+                                -- 动画节点方法 --
+                                -(void)presentationTransitionWillBegin
+                                //转场结束时 1. 添加消失时转场动画
+                                -(void)dismissalTransitionWillBegin
+                                /// 退场
+                                -(void)chromeViewTaped:
+                        }
+                        note bottom of transition
+                                动画控制器负责添加视图以及执行动画
+                                遵守UIViewControllerAnimatedTransitioning协议
+                                1. 返回动画时间
+                                2. 定义动画逻辑
+                        end note
+                        note right of delegate
+                                转场中的具体
+                                1. 返回控制器页面
+                                2. 返回进场时动画逻辑
+                                3. 返回退场时动画逻辑
+                        end note
+                        note bottom of presentation
+                                转场动画的过渡控制器
+                                转场协调器UIAdaptivePresentationControllerDelegate
+                                遵守转场协调代理可在转场动画发生的同时执行其他动画。
+                                主要在model转场和交互转场取消时使用
+                                1. 定制 进场页面的presentedView 的外观和尺寸
+                                2. 在 containerView 中添加自定义视图并为这些视图添加动画；
+                                1. 实现遮照背景/和点击退场事件
+                                3. 执行动画进场时/退场时的遮照动画
+                        end note
+
+                        delegate <.. transition:依赖 <
+                        delegate <.. presentation:依赖 <
+                }
+
+                storedetail <--* listbase:合成 >
+                selectperson -- filter
+                animate -up- filterVC
+                @enduml
