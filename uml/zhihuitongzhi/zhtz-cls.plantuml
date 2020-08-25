@@ -117,10 +117,27 @@ title
                         查看通知给门店的详情情况
                         1. 加载门店通知的列表数据
                 end note
-
+                enum "NotifySectionStyle" as sectionstype {
+                        Notify_Detail_Check,        //详情页显示单选按钮
+                        Notify_Detail_Checked,      //详情页显示已选中按钮
+                        Notify_Detail_NoCheck,      //详情页隐藏按钮
+                        Notfiy_Filter_NoCheck,      //筛选器中隐藏按钮
+                }
+                class "ConditionSectionView" as sectionv <?UIView> {
+                        -- property --
+                        //block
+                        void(^checkHandler)(NSInteger index);
+                        void(^openHandler)(NSInteger index);
+                        __func__
+                        func
+                        -(id)initWithTag:name:open:style:(NotifySectionStyle)style;
+                }
 
                 detailbase <|-- persondetail:继承 <
                 persondetail <|-- storedetail:继承 <
+                sectionv <.. storedetail:依赖 <
+                sectionstype <.. sectionv:依赖 <
+
         }
         folder "创建通知模块" as createNotify{
                 enum "JHCheckObjectState" as checkobstate {
