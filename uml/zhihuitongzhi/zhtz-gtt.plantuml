@@ -59,7 +59,7 @@ title
         [dxweb] starts at [duanxin]'s start
 
         --提测发布--
-        [系统联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
+        [集成联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
         [系统测试] as [xitongces] on {测试} lasts 1 days
         [UI验收] as [UIcheck] on {UI组} lasts 1 days
         [xitongces] starts at [develop]'s end
