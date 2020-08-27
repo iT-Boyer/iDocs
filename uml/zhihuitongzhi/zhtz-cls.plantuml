@@ -435,6 +435,7 @@ title
                         sectionv <.. storedetail:依赖 <
                         sectionstype <.down. sectionv:依赖 <
 
+
                 }
                 folder "创建通知模块" as createNotify{
                         enum "JHCheckObjectState" as checkobstate {
