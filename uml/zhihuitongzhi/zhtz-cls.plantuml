@@ -13,11 +13,7 @@ title
 
         'type:package，node，folder，frame，cloud，database
         folder "通知列表模块" as list{
-                class "JHNotificationBaseListController" as listbase <?id> {
-                        -- property --
-                        UITableView *tableView;
-                        NSMutableArray *dataArray;
-                        ReqBaseNotifyM *reqM;
+  ReqBaseNotifyM *reqM;
                         __func__
                         -(void)loadData;
                         -(void)createView;
@@ -156,18 +152,64 @@ title
                         //暂存筛选器
                         JHNewBookCondtionsController *condtionVC;
                         NSMutableDictionary *dataDics;
-
                         NSNumber *pageIndex;
                         NSString *searchkeyword;
                         JHCheckObjectState checkState;
-                        __func__
                 }
+                class "JHFilterCheckobBaseController" as filterBaseVC <?id> {
+                        -- property --
+                        //true： 门店筛选  false:人员筛选
+                        BOOL isPersonal;
+                        UIView *switchBtn;
+                        UIView * bottomView;
+                        UIButton * submitBtn;
+                        void(^DissFilterViewHandler)(void);
+                        __func__
+                        -(void)createView;
+                        -(void)switchAction:(UIButton *)sender;
+                        -(void)resetAction;
+                        -(void)confirmAction;
+                }
+
+                class "JHNewBookCondtionsControlle r" as filtervc <?id> {
+                        -- property --
+                        var
+                        id<StoreCMBookViewControllerDelegate> delegate;
+                        NSMutableDictionary* selectedDic; //已选择cell
+                        NSMutableDictionary *dataDics;
+                }
+
                 class "JHCheckObjectForNotifyListController" as selectperson <?id> {
                         __func__
                         -(void)loadStore
                         -(void)loadPerson
                         -(void)sendData:(NSArray *)array
                 }
+        class "BookCondtionsView" as condtionsv <?id> {
+                -- property --
+                UIView * containsView;
+                UITableView * tableView;
+                NSMutableArray * dataBookList;
+                NSArray * newAreaList;//新的区域数据
+                NSMutableArray * selectAreaList;//新的选中的数组
+                BlockNewAreaModel * areaModel;
+                NSMutableDictionary *dataDics;
+                StoreBookConditionsResponseModel * responseModel;
+                id<BookCondtionsViewDelegate>delegate;
+                __func__
+                -(id)initWithData:(NSMutableDictionary *)data;
+                - (void)requestData;
+                - (void)refreshBooks;
+                - (void)clickReset;
+                -(void)showisError:(BOOL)isError;
+
+                - (void)showConditionView;
+        }
+        class "NotifCondtionsView" as notifcondtionsv <?id> {
+                -- property --
+                __func__
+        }
+
                 note bottom of checkobstate
                         定义选择对象列表基类中会出现的四种状态
                 end note
@@ -181,12 +223,27 @@ title
                         1. 加载门店列表数据
                         2. 加载人员列表数据
                 end note
+                note left of filterBaseVC
+                        封装过滤器中的UI交互逻辑UI
+                end note
+                note left of filtervc
+                        过滤器数据搜集数据，回传页面业务
+                end note
+        note left of condtionsv
+                筛选UI根视图
+        end note
+        note left of notifcondtionsv
+                重写根视图,将tableView全屏化
+        end note
 
-                detailbase <|-- selectbase:继承 <
-                selectbase <|-- selectperson:继承 <
-                checkobstate <.right. selectbase:依赖 <
-
-        }
+        detailbase <|-- selectbase:继承 <
+        selectbase <|-- selectperson:继承 <
+        checkobstate <.right. selectbase:依赖 <
+        selectbase <.. filterVC:依赖 <
+        filterBaseVC <|-up- filtervc:继承 <
+        filterBaseVC <.. condtionsv:依赖 <
+        condtionsv <|-up- notifcondtionsv:继承 <
+ }
         folder "过滤器" as filter{
                 class "JHFilterCheckobBaseController" as filterbase <?id> {
                         -- property --
