@@ -60,14 +60,14 @@ title
 
         --提测发布--
         [集成联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
-        [系统测试] as [xitongces] on {测试} lasts 1 days
+        [辅助测试] as [fuzhutest] on {测试} lasts 1 days
         [UI验收] as [UIcheck] on {UI组} lasts 1 days
-        [xitongces] starts at [develop]'s end
+        [fuzhutest] starts at [develop]'s end
         [UIcheck] starts at [develop]'s end
         [lt2] starts at [develop]'s end
         [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
-        [提测] as [test] on {测试:100%} lasts 3 days
+        [系统测试] as [test] on {测试:100%} lasts 3 days
         [test] starts at [lt2]'s end
         [测试] as [first] lasts 2 days
         [first] starts at [test]'s start
