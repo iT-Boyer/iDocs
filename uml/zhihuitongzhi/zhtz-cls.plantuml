@@ -13,12 +13,17 @@ title
 
         'type:package，node，folder，frame，cloud，database
         folder "通知列表模块" as list{
-  ReqBaseNotifyM *reqM;
+                class "JHNotificationBaseListController" as listbase <?id> {
+                        -- property --
+                        UITableView *tableView;
+                        NSMutableArray *dataArray;
+                        ReqBaseNotifyM *reqM;
                         __func__
                         -(void)loadData;
                         -(void)createView;
                 }
-                class "JHNotificationListsController" as listnotify <?id> {
+
+               class "JHNotificationListsController" as listnotify <?id> {
                         -- property --
                         var
                         __func__
