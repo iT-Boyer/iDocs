@@ -1,5 +1,4 @@
-@startuml
-scale 0.5
+@startuml scale 0.5
 page 1x1
 title
         智慧通知详情和创建类图
@@ -161,59 +160,12 @@ title
                         NSString *searchkeyword;
                         JHCheckObjectState checkState;
                 }
-                class "JHFilterCheckobBaseController" as filterBaseVC <?id> {
-                        -- property --
-                        //true： 门店筛选  false:人员筛选
-                        BOOL isPersonal;
-                        UIView *switchBtn;
-                        UIView * bottomView;
-                        UIButton * submitBtn;
-                        void(^DissFilterViewHandler)(void);
-                        __func__
-                        -(void)createView;
-                        -(void)switchAction:(UIButton *)sender;
-                        -(void)resetAction;
-                        -(void)confirmAction;
-                }
-
-                class "JHNewBookCondtionsControlle r" as filtervc <?id> {
-                        -- property --
-                        var
-                        id<StoreCMBookViewControllerDelegate> delegate;
-                        NSMutableDictionary* selectedDic; //已选择cell
-                        NSMutableDictionary *dataDics;
-                }
-
                 class "JHCheckObjectForNotifyListController" as selectperson <?id> {
                         __func__
                         -(void)loadStore
                         -(void)loadPerson
                         -(void)sendData:(NSArray *)array
                 }
-        class "BookCondtionsView" as condtionsv <?id> {
-                -- property --
-                UIView * containsView;
-                UITableView * tableView;
-                NSMutableArray * dataBookList;
-                NSArray * newAreaList;//新的区域数据
-                NSMutableArray * selectAreaList;//新的选中的数组
-                BlockNewAreaModel * areaModel;
-                NSMutableDictionary *dataDics;
-                StoreBookConditionsResponseModel * responseModel;
-                id<BookCondtionsViewDelegate>delegate;
-                __func__
-                -(id)initWithData:(NSMutableDictionary *)data;
-                - (void)requestData;
-                - (void)refreshBooks;
-                - (void)clickReset;
-                -(void)showisError:(BOOL)isError;
-
-                - (void)showConditionView;
-        }
-        class "NotifCondtionsView" as notifcondtionsv <?id> {
-                -- property --
-                __func__
-        }
 
                 note bottom of checkobstate
                         定义选择对象列表基类中会出现的四种状态
@@ -228,26 +180,10 @@ title
                         1. 加载门店列表数据
                         2. 加载人员列表数据
                 end note
-                note left of filterBaseVC
-                        封装过滤器中的UI交互逻辑UI
-                end note
-                note left of filtervc
-                        过滤器数据搜集数据，回传页面业务
-                end note
-        note left of condtionsv
-                筛选UI根视图
-        end note
-        note left of notifcondtionsv
-                重写根视图,将tableView全屏化
-        end note
 
-        detailbase <|-- selectbase:继承 <
+                detailbase <|-- selectbase:继承 <
+          checkobstate <.right. selectbase:依赖 <
         selectbase <|-- selectperson:继承 <
-        checkobstate <.right. selectbase:依赖 <
-        selectbase <.. filterVC:依赖 <
-        filterBaseVC <|-up- filtervc:继承 <
-        filterBaseVC <.. condtionsv:依赖 <
-        condtionsv <|-up- notifcondtionsv:继承 <
  }
         folder "过滤器" as filter{
                 class "JHFilterCheckobBaseController" as filterbase <?id> {
@@ -257,6 +193,7 @@ title
                         UIView *switchBtn;
                         UIView * bottomView;
                         UIButton * submitBtn;
+                        void(^DissFilterViewHandler)(void);
                         __func__
                         -(void)createView;
                         -(void)switchAction:(UIButton *)sender;
@@ -266,14 +203,36 @@ title
 
                 class "JHNewBookCondtionsController" as filterVC <?id> {
                         -- property --
-                        var
                         id<StoreCMBookViewControllerDelegate> delegate;
                         NSMutableDictionary* selectedDic; //已选择cell
                         NSMutableDictionary *dataDics;
-                        __func__
-                        func
                 }
-                note left of filterbase
+                class "BookCondtionsView" as condtionsv <?id> {
+                        -- property --
+                        UIView * containsView;
+                        UITableView * tableView;
+                        NSMutableArray * dataBookList;
+                        NSArray * newAreaList;//新的区域数据
+                        NSMutableArray * selectAreaList;//新的选中的数组
+                        BlockNewAreaModel * areaModel;
+                        NSMutableDictionary *dataDics;
+                        StoreBookConditionsResponseModel * responseModel;
+                        id<BookCondtionsViewDelegate>delegate;
+                        __func__
+                        -(id)initWithData:(NSMutableDictionary *)data;
+                        - (void)requestData;
+                        - (void)refreshBooks;
+                        - (void)clickReset;
+                        -(void)showisError:(BOOL)isError;
+
+                        - (void)showConditionView;
+                }
+                class "NotifCondtionsView" as notifcondtionsv <?id> {
+                        -- property --
+                        __func__
+                }
+
+                note right of filterbase
                         实现选择对象中过滤器的UI业务交互
                         1. 实现选择门店/选择人员分组UI和切换逻辑
                         2. 实现底部确定/重置UI和交互逻辑
@@ -285,7 +244,15 @@ title
                         3. 实现底部确认/重置具体业务
                 end note
 
+                note left of condtionsv
+                        筛选UI根视图
+                end note
+                note left of notifcondtionsv
+                        重写根视图,将tableView全屏化
+                end note
                 filterbase <|-down- filterVC:继承 <
+                filterbase <.up. condtionsv:依赖 <
+                condtionsv <|-up- notifcondtionsv:继承 <
         }
         folder "转场动画" as animate{
                 class "JHFilterAnimatedTransitioning" as transition <?UIViewControllerContextTransitioning> {
