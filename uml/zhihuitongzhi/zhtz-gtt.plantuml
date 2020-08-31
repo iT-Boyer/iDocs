@@ -72,7 +72,7 @@ title
         [测试] as [first] lasts 2 days
         [first] starts at [test]'s start
         then [正式] lasts 1 days
-        [申请发布-->UI-->产品-->测试-->压力测试-->运维] as [deloyreq] on {hsg:400%} lasts 1 days
+        [申请发布-->UI-->产品-->测试-->压力测试-->运维] as [deloyreq] on {hsg} lasts 1 days
         [压力测试] as [yltest] on {平台组} lasts 1 days
         [合并主线->正式服务器] as [deloymaster] on {平台组} {后台组} {移动端} lasts 1 days
         [deloymaster] starts at [正式]'s start
