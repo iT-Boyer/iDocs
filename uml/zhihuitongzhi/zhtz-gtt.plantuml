@@ -79,5 +79,12 @@ title
         [deloyreq] starts at [正式]'s start
         [yltest] starts at [正式]'s start
         [发布] happens at [正式]'s end
+
+
+        [deloymaster] is 100% completed
+        [deloyreq] is 100% completed
+        [yltest] is 100% completed
+
+        [first] is 100% completed
         @endgantt
 @enduml
