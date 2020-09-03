@@ -58,7 +58,7 @@ title
         newAPI --> duanxin
         [dxweb] starts at [duanxin]'s start
 
-        --提测发布--
+        --提测--
         [集成联调] as [lt2] on {移动端:100%} {平台组} {后台组} lasts 1 days
         [辅助测试] as [fuzhutest] on {测试} lasts 1 days
         [UI验收] as [UIcheck] on {UI组} lasts 1 days
@@ -67,17 +67,30 @@ title
         [lt2] starts at [develop]'s end
         [lt2] starts at [api]'s end
         [自测] happens at [lt2]'s end
-        [系统测试] as [test] on {测试:100%} lasts 3 days
+        [系统测试] as [test] on {测试:100%} lasts 5 days
         [test] starts at [lt2]'s end
         [测试] as [first] lasts 2 days
         [first] starts at [test]'s start
-        then [正式] lasts 1 days
+        then [正式] lasts 3 days
+        --发布流程--
+        [代码部署] as [deloymaster] on {平台组} {后台组} {移动端} lasts 1 days
+        [产品验收] as [product] on {产品组} {移动端} lasts 1 days
+        [android部署问题] as [androidbug] on {hsg:100%} lasts 1 days
+        [接口遗漏部署] as [apideloy] on {平台组} lasts 1 days
+        [跨馆消息联调和配置] as [childstore] on {测试组} {后台组} {平台组} lasts 1 days
+        [消息服务问题] as [notfiyserver] on {消息平台} lasts 1 days
+
         [申请发布-->UI-->产品-->测试-->压力测试-->运维] as [deloyreq] on {hsg} lasts 1 days
         [压力测试] as [yltest] on {平台组} lasts 1 days
-        [合并主线->正式服务器] as [deloymaster] on {平台组} {后台组} {移动端} lasts 1 days
+
         [deloymaster] starts at [正式]'s start
-        [deloyreq] starts at [正式]'s start
+        [product] starts at [正式]'s start
         [yltest] starts at [正式]'s start
+        product --> androidbug
+        androidbug --> apideloy
+        androidbug --> childstore
+        androidbug --> notfiyserver
+        [deloyreq] starts at [正式]'s start
         [发布] happens at [正式]'s end
 
 
