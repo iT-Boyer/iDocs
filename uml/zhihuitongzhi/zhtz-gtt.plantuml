@@ -77,7 +77,6 @@ title
         [申请发布>UI>产品>测试>压力测试>运维] as [deloyreq] on {hsg} lasts 1 days
         [压力测试] as [yltest] on {平台组} lasts 1 days
         [android部署问题] as [androidbug] on {android} lasts 1 days
-        [发布] happens at [androidbug]'s end
         --回归问题--
         [跨馆消息联调和配置] as [childstore] on {测试组} {后台组} {平台组} lasts 1 days
         [接口遗漏部署] as [apideloy] on {平台组} lasts 1 days
@@ -93,6 +92,7 @@ title
         childstore --> apideloy
         childstore --> notfiyserver
         childstore --> product
+        [发布] happens at [androidbug]'s end
         [封版] happens at [product]'s end
 
         [deloymaster] is 100% completed
