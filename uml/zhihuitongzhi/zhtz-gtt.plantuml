@@ -86,13 +86,13 @@ title
 
 
         [deloymaster] starts at [正式]'s start
+        [deloyreq] starts at [正式]'s start
         [product] starts at [正式]'s start
         [yltest] starts at [正式]'s start
         product --> androidbug
         androidbug --> apideloy
         androidbug --> childstore
         androidbug --> notfiyserver
-        [deloyreq] starts at [正式]'s start
         [发布] happens at [正式]'s end
 
 
