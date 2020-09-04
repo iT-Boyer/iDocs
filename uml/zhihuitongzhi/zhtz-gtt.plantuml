@@ -73,9 +73,9 @@ title
         [first] starts at [test]'s start
         then [正式] lasts 3 days
         --发布流程--
-        [代码部署] as [deloymaster] on {平台组} {后台组} {移动端} lasts 1 days
-        [申请发布>UI>产品>测试>压力测试>运维] as [deloyreq] on {hsg} lasts 1 days
         [压力测试] as [yltest] on {平台组} lasts 1 days
+        [申请发布>UI>产品>测试>压力测试>运维] as [deloyreq] on {hsg} lasts 1 days
+        [代码部署] as [deloymaster] on {平台组} {后台组} {移动端} lasts 1 days
         [android部署问题] as [androidbug] on {android} lasts 1 days
         [deloymaster] starts at [正式]'s start
         [deloyreq] starts at [正式]'s start
