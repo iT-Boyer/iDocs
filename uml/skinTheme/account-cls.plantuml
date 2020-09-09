@@ -1,0 +1,102 @@
+@startuml
+scale 0.5
+page 1x1
+title
+        账号安全类图
+        创建时间: 2020-09-09 23:17
+        endtitle
+        left header
+                梳理手机号绑定，修改登录密码，设置交易密码，修改交易密码之间的相互依赖。
+                概念：类是具有相同属性和行为的对象集合。
+                作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+        endheader
+
+        class "JHAccountBaseViewController" as basevc <?id> {
+                -- property --
+                UIButton *submmitBtn;
+                __func__
+                -(void)createView;
+        }
+        enum "JHAccountFieldStyle" as style {
+                JHPhoneStyle,
+                JHVerificationCodeStyle,
+                JHPasswordStyle,
+        }
+        note left of style
+                1. 手机号样式
+                2. 数字样式
+                3. 密码样式
+        end note
+
+        class "JHAccountFieldView" as afview <?id> {
+                -- property --
+                -initWithStyle:name:placeholder:
+                id<UITextFieldDelegate> delegate;
+                __func__
+                -(void)startCode;
+                -(void)reset;   
+        }
+        style <.. afview:依赖 <
+        note left of afview
+                实现手机号/验证码样式的输入框
+                实现密码输入框样式
+        end note
+        'type:package，node，folder，frame，cloud，database
+        folder "手机号绑定" as phone{
+                class "PhoneAccountBindViewController" as phonevc <?id> {
+                        -- property --
+                        var
+                        __func__
+                        func
+                }
+                basevc <|-up- phonevc:继承 <
+        }
+        'type:package，node，folder，frame，cloud，database
+        folder "修改密码" as change{
+                class "ChangeLoginPWDViewController" as changepwd <?id> {
+                        -- property --
+                        JHAccountFieldView *oldPwdFld;
+                        __func__
+                        func
+                }
+                note left of changepwd
+                        修改登录密码
+                end note
+        }
+        'type:package，node，folder，frame，cloud，database
+        folder "设置交易密码" as jiaoyi{
+                class "JHLRSetTradePWDViewController" as setjypwd <?id> {
+                        -- property --
+                        JHAccountFieldView *newPwdFld;
+                        JHAccountFieldView *tryPwdFld;
+                        __func__
+                        -(void)updateMasonry;
+                }
+                class "ChangeTradePWDViewController" as changejypwd <?id> {
+                        -- property --
+                        var
+                        __func__
+                        func
+                }
+                class "LoginGetBackPassword" as findjypwd <?h> {
+                        -- property --
+                        var
+                        __func__
+                        func
+                }
+                note left of setjypwd
+                        新建交易密码，继承基类
+                end note
+                note left of changej
+                        修改交易密码，继承修改登录密码的类,
+                        复用UI逻辑
+                end note
+                note left of findjypwd
+                        找回交易密码的提示，客服电话
+                end note
+
+                basevc <|-up- setjypwd:继承 <
+                setjypwd <|-up- changepwd:继承 <
+                changepwd <|-up- changejypwd:继承 <
+        }
+        @enduml
