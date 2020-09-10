@@ -87,7 +87,7 @@ title
                 note left of setjypwd
                         新建交易密码，继承基类
                 end note
-                note left of changej
+                note left of changejypwd
                         修改交易密码，继承修改登录密码的类,
                         复用UI逻辑
                 end note
@@ -95,8 +95,10 @@ title
                         找回交易密码的提示，客服电话
                 end note
 
-                basevc <|-up- setjypwd:继承 <
-                setjypwd <|-up- changepwd:继承 <
-                changepwd <|-up- changejypwd:继承 <
+                basevc <|-- setjypwd:继承 <
+                setjypwd <|-- changepwd:继承 <
+                changepwd <|-- changejypwd:继承 <
+                basevc <|-- findjypwd:继承 <
+
         }
         @enduml
