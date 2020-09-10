@@ -49,7 +49,7 @@ title
                         __func__
                         func
                 }
-                basevc <|-up- phonevc:继承 <
+                basevc <|-- phonevc:继承 <
         }
         'type:package，node，folder，frame，cloud，database
         folder "修改密码" as change{
@@ -84,14 +84,14 @@ title
                         __func__
                         func
                 }
-                note left of setjypwd
+                note bottom of setjypwd
                         新建交易密码，继承基类
                 end note
-                note left of changejypwd
+                note bottom of changejypwd
                         修改交易密码，继承修改登录密码的类,
                         复用UI逻辑
                 end note
-                note left of findjypwd
+                note bottom of findjypwd
                         找回交易密码的提示，客服电话
                 end note
 
