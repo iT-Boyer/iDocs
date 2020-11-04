@@ -1,0 +1,25 @@
+ @startuml
+scale 0.5
+page 1x1
+title
+    类高常用结构类图
+    创建时间: 2020-11-04 23:02
+    endtitle
+    left header
+        梳理结构在项目中使用
+        概念：类是具有相同属性和行为的对象集合。
+        作用：类图是描述类、接口已经他们之间关系的图，它显示了系统中各个类的静态结构，是一种静态模型。
+    endheader
+
+    'type:package，node，folder，frame，cloud，database
+    folder "lego" as lego{
+        class "clas" as 别名 <?id> {
+            -- property --
+            var
+            __func__
+            func
+        }
+
+    }
+    
+    @enduml
