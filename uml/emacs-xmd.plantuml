@@ -1,0 +1,35 @@
+'新建脑图 https://plantuml.com/zh/mindmap-diagram
+@startmindmap
+scale 1
+title
+        emacs-xmd脑图
+        创建时间: 2021-08-05 23:02
+        endtitle
+
+        center header
+                整理emacs相关重点知识框架，加固理解和运用emacs改变现状
+        endheader
+
+        * emacs
+        ** 时间管理
+        *** agenda
+        ** 项目管理
+        *** todo
+        ** 目标管理
+        *** 使命宣言
+        *** 愿景
+        ** 知识体系管理
+        *** 博客管理
+        *** ox-hugo
+
+
+        '给图表添加备注
+        legend right
+                图表备注区域
+        endlegend
+
+        caption 说明文字
+        center footer
+                页眉描述
+        endfooter
+        @endmindmap
