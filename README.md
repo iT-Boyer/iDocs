@@ -1,3 +1,10 @@
+使用代理的方式
+代理路径： http://www.plantuml.com/plantuml/proxy?cache=no
+代理参数：
+cache=no
+&fmt=svg  png, svg, eps, epstext and txt 默认：png
+&src
+参考：![Proxy service](https://plantuml.com/zh/server#f2965a0e-2e2a-d8e4-7619-b00fed70dc4f) 
 #  文档集合
 
 ### APP应用类型
