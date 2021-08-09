@@ -1,0 +1,36 @@
+skinparam svgLinkTarget _parent
+@startmindmap
+caption hugo图片资源托管方案
+title hugo 资源托管的图解
+center header
+        汇总托管图片的几种方案，梳理相互之间的依赖关系。
+endheader
+*_ 托管
+**_ git
+***_ submodule
+***_ subtree
+**_ hugo
+***_ content
+***_ static
+****_ [[https://www.gohugo.org/doc/themes/creation/#toc_4 hugo static 问题]]
+**_ org-download
+***_ method
+****_ attach
+****_ directory
+*****_ org-download-image-dir
+*****_ org-download-heading-lvl
+**_ ox-hugo
+***_ [[https://ox-hugo.scripter.co/doc/images-in-content ox-hugo 图片资源]]
+****_ [[https://ox-hugo.scripter.co/doc/image-links/#references-to-files-outside-the-static-directory static 导出定义]]
+****_ [[https://ox-hugo.scripter.co/doc/image-links/#source-path-contains-static /static/ 导出规范]]
+***_ [[https://ox-hugo.scripter.co/https://ox-hugo.scripter.co/test/posts/inlined-svg/ ox-hugo SVG 支持超链接]]
+****_ png
+****_ svg(暂不支持脑图/wbs)
+*****_ [[https://github.com/kaushalmodi/ox-hugo/issues/253 issue]]
+legend right
+        图表备注区域
+endlegend
+center footer
+        页眉描述
+endfooter
+@endmindmap
