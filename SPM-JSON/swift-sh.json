@@ -1,0 +1,19 @@
+{
+    "name": "终端工具依赖库",
+    "packages": [
+        {
+            "url": "https://github.com/apple/swift-argument-parser.git"
+        },{
+            "url": "https://github.com/tuist/XcodeProj.git"
+        },{
+            "url": "https://github.com/SwiftyJSON/SwiftyJSON.git"
+        },{
+            "url": "https://github.com/sharplet/Regex.git"
+        },{
+            "url": "https://github.com/iT-Boyer/AlfredSwift.git"
+        },
+        {
+            "url": "https://github.com/pvieito/PythonKit"
+        }
+    ]
+}
