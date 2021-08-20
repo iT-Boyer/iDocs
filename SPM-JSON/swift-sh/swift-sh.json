@@ -11,9 +11,11 @@
             "url": "https://github.com/sharplet/Regex.git"
         },{
             "url": "https://github.com/iT-Boyer/AlfredSwift.git"
-        },
-        {
+        },{
             "url": "https://github.com/pvieito/PythonKit"
+        },{
+            "url": "https://github.com/kylef/PathKit.git"
         }
+
     ]
 }
