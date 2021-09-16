@@ -1,0 +1,8 @@
+{
+    "name": "金和开发相关库",
+    "packages": [
+        {
+            "url": "https://github.com/SnapKit/SnapKit.git"
+        }
+    ]
+}

@@ -1,0 +1,131 @@
+{
+    "formatVersion": "1.0", 
+    "generatedAt": "2021-09-16T04:35:10Z", 
+    "name": "金和开发相关库", 
+    "packages": [
+        {
+            "keywords": [
+                "auto", 
+                "autolayout", 
+                "cocoapods", 
+                "constraints", 
+                "dsl", 
+                "layout", 
+                "snapkit", 
+                "swift", 
+                "ui", 
+                "xcode"
+            ], 
+            "license": {
+                "name": "MIT", 
+                "url": "https://raw.githubusercontent.com/SnapKit/SnapKit/develop/LICENSE"
+            }, 
+            "readmeURL": "https://raw.githubusercontent.com/SnapKit/SnapKit/develop/README.md", 
+            "summary": "A Swift Autolayout DSL for iOS & OS X", 
+            "url": "https://github.com/SnapKit/SnapKit.git", 
+            "versions": [
+                {
+                    "defaultToolsVersion": "5.0.0", 
+                    "manifests": {
+                        "5.0.0": {
+                            "minimumPlatformVersions": [
+                                {
+                                    "name": "ios", 
+                                    "version": "10.0"
+                                }, 
+                                {
+                                    "name": "macos", 
+                                    "version": "10.12"
+                                }, 
+                                {
+                                    "name": "tvos", 
+                                    "version": "10.0"
+                                }
+                            ], 
+                            "packageName": "SnapKit", 
+                            "products": [
+                                {
+                                    "name": "SnapKit", 
+                                    "targets": [
+                                        "SnapKit"
+                                    ], 
+                                    "type": {
+                                        "library": [
+                                            "automatic"
+                                        ]
+                                    }
+                                }
+                            ], 
+                            "targets": [
+                                {
+                                    "moduleName": "SnapKit", 
+                                    "name": "SnapKit"
+                                }
+                            ], 
+                            "toolsVersion": "5.0.0"
+                        }
+                    }, 
+                    "version": "5.0.1"
+                }, 
+                {
+                    "defaultToolsVersion": "5.0.0", 
+                    "manifests": {
+                        "5.0.0": {
+                            "packageName": "SnapKit", 
+                            "products": [
+                                {
+                                    "name": "SnapKit", 
+                                    "targets": [
+                                        "SnapKit"
+                                    ], 
+                                    "type": {
+                                        "library": [
+                                            "automatic"
+                                        ]
+                                    }
+                                }
+                            ], 
+                            "targets": [
+                                {
+                                    "moduleName": "SnapKit", 
+                                    "name": "SnapKit"
+                                }
+                            ], 
+                            "toolsVersion": "5.0.0"
+                        }
+                    }, 
+                    "version": "5.0.0"
+                }, 
+                {
+                    "defaultToolsVersion": "4.0.0", 
+                    "manifests": {
+                        "4.0.0": {
+                            "packageName": "SnapKit", 
+                            "products": [
+                                {
+                                    "name": "SnapKit", 
+                                    "targets": [
+                                        "SnapKit"
+                                    ], 
+                                    "type": {
+                                        "library": [
+                                            "automatic"
+                                        ]
+                                    }
+                                }
+                            ], 
+                            "targets": [
+                                {
+                                    "moduleName": "SnapKit", 
+                                    "name": "SnapKit"
+                                }
+                            ], 
+                            "toolsVersion": "4.0.0"
+                        }
+                    }, 
+                    "version": "4.0.1"
+                }
+            ]
+        }
+    ]
+}
