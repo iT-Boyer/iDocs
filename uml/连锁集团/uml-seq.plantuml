@@ -1,0 +1,122 @@
+@startuml
+scale 1
+title
+        连锁集团时序图
+        创建时间: 2021-09-27 19:02
+        endtitle
+        left header
+                梳理角色和页面跳转流程，确认页面的新建和释放逻辑
+                注：用对象间的交互来描述用例,描述了对象之间传递消息的时间顺序，它用来表示用例的行为顺序。
+        endheader
+
+        autonumber 0
+        '自动激活关键字（autoactivate），这需要与return关键字配合
+        autoactivate off
+
+        'type：actor（角色）,boundary（边界）,control（控制）,entity（实体）,database（数据库）,collections（集合）,queue（队列）
+        'define object
+        actor 人员 as user
+        entity 信息维护 as info
+        entity 选择身份页 as join
+        entity 搜索公司列表 as search
+        entity 管理页 as manager
+        entity 更换公司列表 as change
+        database 服务器 as server
+        'send msg
+        '激活、撤销和创建的快捷语法:
+        '++ 激活目标（可选择在后面加上#color）
+        '-- 撤销激活源
+        '** 创建目标实例
+        '!! 摧毁目标实例
+        ===无关联时,选择身份，加入组织==
+
+        user -[#black]>> info ++
+        info -[#black]>> join ++ :无组织时
+        loop
+                join -[#black]>> search ++ :添加上级组织
+                search -[#black]>> server ++ :公司名称
+                return 公司列表
+                search -> search :仅支持单选
+                search -[#black]>> server ++ :添加上级
+                return 成功
+                search -[#black]>> manager ++ :进入我的上级页面
+                manager -[#black]>> server ++ :获取上级列表
+                return 上级列表
+                loop
+                        create change
+                        manager -[#black]>> change ++ :更换上级
+                        change -[#black]>> server ++ :公司名称
+                        return 公司列表
+                        change --> change :选择公司，仅支持单选
+                        change -[#black]>> server ++ :加入公司
+                        return 加入成功
+                        change -[#black]>> manager :返回
+                deactivate change
+        end
+        manager -[#black]>> server ++ :删除上级
+        return 删除成功
+        manager -[#black]>> join :选择身份(无上级时)
+end
+manager -[#black]>> info :返回
+deactivate  manager
+deactivate  search
+deactivate  search
+
+loop
+join -[#black]>> search ++ :添加下级组织
+search -[#black]>> server ++ :公司名称
+return 公司列表
+search -> search :选中要加入的公司，支持多选
+search -[#black]>> server ++ :添加下级组织
+return 添加成功
+search -[#black]>> manager ++ :我的下级
+manager -[#black]>> server ++ :获取下级列表
+return 下级列表
+loop
+manager -[#black]>> server ++ :删除上级
+return 删除成功
+end
+manager -[#black]>> join :选择身份(无下级时)
+end
+manager -[#black]>> info :返回
+deactivate  manager
+deactivate  join
+deactivate  search
+deactivate  search
+
+
+===有关联时,直接进入管理==
+info -[#black]>> manager ++ :进入我的上级页面
+manager -[#black]>> server ++ :获取上级列表
+return 上级列表
+loop
+create change
+manager -[#black]>> change ++ :更换上级
+change -[#black]>> server ++ :公司名称
+return 公司列表
+change --> change :选择公司，仅支持单选
+change -[#black]>> server ++ :加入公司
+return 加入成功
+change -[#black]>> manager :返回
+deactivate change
+end
+loop
+manager -[#black]>> server ++ :删除上级
+return 删除成功
+manager -[#black]>> join :选择身份(无上级时)
+end
+manager -[#black]>> info :返回
+deactivate  manager
+
+info -[#black]>> manager ++ :进入我的下级页面
+manager -[#black]>> server ++ :获取下级列表
+return 下级列表
+loop
+manager -[#black]>> server ++ :删除上级
+return 删除成功
+manager -[#black]>> join :选择身份(无上级时)
+end
+manager -[#black]>> info :返回
+deactivate  manager
+
+@enduml
