@@ -2,7 +2,9 @@
     "name": "金和开发相关库",
     "packages": [
         {
-            "url": "https://github.com/SnapKit/SnapKit.git"
+            "url": "https://github.com/it-boyer/JHBasePackagae.git"
+        },{
+            "url": "https://github.com/it-boyer/JHThirdPackage.git"
         }
     ]
 }
