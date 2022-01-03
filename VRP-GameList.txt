@@ -1,0 +1,573 @@
+Game Name;Release Name;Package Name;Version Code;Last Updated;Size (MB)
+1976 Back to Midway;1976 Back to Midway v12+1.2 -VRP;com.IvanovichGames.game1976;12;2021-09-24 13:43 UTC;773
+2MD - VR Football Unleashed;2MD - VR Football Unleashed v114+1.42 -FFA;com.truantpixel.twomdquest;114;2021-11-28 16:59 UTC;1681
+51 Aliens TV;51 Aliens TV v4+0.4 -QU;com.fiftyonealiens.fiftyonealienstvquest;4;2021-06-02 20:23 UTC;313
+A Fisherman's Tale;A Fisherman's Tale v16+1.064 -QU;com.innerspacevr.afishermanstale;16;2021-06-02 20:22 UTC;2187
+A Lullaby of Colors;A Lullaby of Colors v1+1.2.2 -unknown;com.idumpling.a_lullaby_of_colors;1;2021-06-10 22:40 UTC;149
+A Rogue Escape;A Rogue Escape v104+1.0 -FFA;com.armorgames.nauticrawlVR;104;2021-11-06 01:48 UTC;1136
+A Township Tale;A Township Tale v552+quest-0.0.2.3 -FFA;com.Alta.ATownshipTale;552;2021-12-21 02:04 UTC;653
+A102;A102 v54+1.0.4 -FFA;red.chesco.a102;54;2021-10-16 04:03 UTC;1143
+AFFECTED - The Manor - Complete Edition;AFFECTED - The Manor - Complete Edition v85+1.3 -FFA;com.fallen.manorquest;85;2021-10-29 14:22 UTC;1277
+ALTDEUS - Beyond Chronos;ALTDEUS - Beyond Chronos v477+1.1.477 -QU;com.MyDearest.Altdeus;477;2021-07-08 15:05 UTC;2044
+AUDICA;AUDICA v128543601+1.0.3.2 -QU (with DLC);com.harmonixmusic.kata;128543601;2021-06-02 20:22 UTC;657
+Accounting+;Accounting+ v35+1.24.35 -QU;com.crowscrowscrows.AccountingPlus;35;2021-11-09 14:04 UTC;812
+Acron - Attack of the Squirrels!;Acron - Attack of the Squirrels! v114094392+1.14.94392 -QU;com.resolutiongames.codenamelazarus;114094392;2021-06-02 20:23 UTC;162
+Active Shooter Survival;Active Shooter Survival v9+21.5.24 -QU;com.incitevr.activeshooter;9;2021-06-23 10:03 UTC;517
+Air Brigade 2;Air Brigade 2 v20+0.2 -unknown;com.OnlyHuman.AirBrigade2vr;20;2021-06-02 20:23 UTC;395
+Air Brigade;Air Brigade v192+1.92 -VRP;com.OnlyHumanStudios.AirBrigadeVR;192;2021-09-19 14:58 UTC;1133
+Alien Squatters;Alien Squatters v4+0.2 -FFA;com.ReedGaming.AlienSquatters;4;2021-10-16 03:58 UTC;237
+Alienation;Alienation v23+1.293 -QU;com.fiftyonealiens.alienationgame;23;2021-05-31 21:05 UTC;240
+All Hail the Cook-o-tron;All Hail the Cook-o-tron v7+1.2.3 -VRP;com.SlapJak.CookOtron;7;2021-06-02 20:22 UTC;791
+All-In-One Sports;All-In-One Sports v26+0.8.1 -FFA;com.Appnori.AllInOneSports;26;2021-12-09 15:56 UTC;414
+Alpine Acceleration;Alpine Acceleration v11+1.1 -QU;com.sai.AlpineAcceleration;11;2021-10-13 13:22 UTC;131
+Ancient Dungeon;Ancient Dungeon v53+ea0.1.0.14 -FFA;de.erthu.ancientdungeonfull;53;2021-11-26 15:25 UTC;217
+Angry Birds VR - Isle of Pigs;Angry Birds VR - Isle of Pigs v305100058+3.5.100058 -QU;com.resolutiongames.abvriop.santacruz;305100058;2021-06-02 20:23 UTC;356
+Apex Construct;Apex Construct v45+45.0 -VRP;com.fasttravelgames.apexconstruct;45;2021-06-02 20:23 UTC;1368
+Apollo 11;Apollo 11 v22+2.3 -Q2Patched-90Hz-CustomRes -QU;com.immersivevreducation.Apollo11QuestFinal;22;2021-06-02 20:22 UTC;1867
+Arcaxer;Arcaxer v154+1.40.6 -FFA;com.Overrungames.Arcaxer;154;2021-12-12 15:10 UTC;1068
+Arcsmith;Arcsmith v128+1.128 -VRMOO;com.BithellGames.Arcsmith;128;2021-08-17 13:29 UTC;684
+Arizona Sunshine®;Arizona Sunshine® v21686+1.6 -QU (with DLC, v.2);com.vertigogames.azsq;21686;2021-06-02 20:23 UTC;4517
+Art Studio VR;Art Studio VR v70+0.2.961 -FFA;com.DanielyAna.ArtstudioVR;70;2021-12-21 02:23 UTC;126
+Ashtar UFO;Ashtar UFO v1+1.0 -unknown;com.test.mj12;1;2021-06-02 20:22 UTC;460
+Audio Trip;Audio Trip v264+1.0.3192 -FFA;com.KinemotikStudios.AudioTripQuest;264;2021-11-28 16:57 UTC;755
+Audioshield;Audioshield v126+126 -VRP;com.Audiosurf.Audioshield;126;2021-10-11 02:00 UTC;296
+Axegend;Axegend v1+3.0.5 -unknown;com.SubversionSquads.Axegend;1;2021-06-02 20:22 UTC;811
+B-Team;B-Team v68+20.03.19.356857 -QU;com.twistedpixelgames.BTEAM_App;68;2021-10-13 13:22 UTC;1012
+BATTLESCAR - Punk Was Invented By Girls;BATTLESCAR - Punk Was Invented By Girls v1255+_1255_3142 -VRP;com.atlas.Battlescar.Quest;1255;2021-08-17 13:29 UTC;2042
+BEAT ARENA;BEAT ARENA v71+1.5.1 -FFA;jp.konami.bvr;71;2021-12-01 00:15 UTC;951
+BOW MAN;BOW MAN v224+1.4.0-224 -QU;com.dmm.bowman;224;2021-06-02 20:23 UTC;95
+BRINK Traveler;BRINK Traveler v146+1.1.0 -FFA;com.brink.vr.oculus.quest;146;2021-12-21 02:05 UTC;580
+Baba Yaga;Baba Yaga v3500+1.0.3500 -QU;com.baobab.babayaga;3500;2021-06-02 20:23 UTC;1025
+Baby Hands;Baby Hands v8+0.02 -VRP;com.ChickenWaffle.BabyHands;8;2021-06-02 20:23 UTC;98
+Bacon Roll;Bacon Roll v3+1.15.30 -QU;com.fieldofvision.baconroll;3;2021-06-02 20:23 UTC;203
+Ballista;Ballista v42+20.42 -QU (b);com.HighVoltage.Crossbow;42;2021-06-02 20:22 UTC;1955
+Balloon Gunner;Balloon Gunner v117+1.8.8 -ITCH;com.bobw.balloon.appovr;117;2021-10-17 18:27 UTC;12
+Ballooning Adventures;Ballooning Adventures v5+1.1.2 -QU;com.vector3up.BallooningAdventures;5;2021-06-02 20:23 UTC;113
+BanditSix;BanditSix v130+1.1.0 -unknown;com.climaxstudios.BanditSix;130;2021-06-02 20:23 UTC;298
+BangSquash PRO;BangSquash PRO v12+2.2 -VRP;com.lebersoftware.bangsquashpro;12;2021-08-17 13:28 UTC;149
+Barbershop Simulator;Barbershop Simulator v1+0.1 -VRP;com.MKaram.TheBarberVR;1;2021-11-16 13:50 UTC;460
+Basket VR;Basket VR v2+0.2 -unknown;com.realdragon.basketlittle;2;2021-06-02 20:22 UTC;79
+Beat Blaster;Beat Blaster v9+1.0 -QU;com.IvanovichGames.BeatBlasterVR;9;2021-08-23 07:38 UTC;864
+Beat Saber;Beat Saber v250+1.17.1 -FFA (All DLC + BMBF);com.beatgames.beatsaber;250;2021-10-13 13:01 UTC;1961
+Beat Saber;Beat Saber v269+1.19.0 -FFA (With DLC);com.beatgames.beatsaber;269;2021-12-12 15:10 UTC;2118
+Big Ballers Basketball;Big Ballers Basketball v861+2021.11.31 -FFA;com.dogelabs.bigballersbasketball;861;2021-12-13 14:46 UTC;445
+Big Bat VR;Big Bat VR v4+1.0 -FFA;com.AVRspot.BigBatVR;4;2021-10-16 04:04 UTC;308
+Big Breezy Boat;Big Breezy Boat v189+1.0.189 -VRP;com.marineverse.morequest;189;2021-10-21 13:51 UTC;643
+Bionic Hunter;Bionic Hunter v6+2.5 -FFA;com.AnomosStudios.BionicHunter;6;2021-11-09 14:07 UTC;1388
+Black Hole Pool;Black Hole Pool v203008+2.3.8 -FFA;com.el.blackholepool;203008;2021-12-21 02:05 UTC;319
+Blade & Sorcery - Nomad;Blade & Sorcery - Nomad v50+10.2 -FFA;com.Warpfrog.BladeAndSorcery;50;2021-11-25 14:17 UTC;4343
+Blair Witch;Blair Witch v49+1.46 -FFA;pl.bloober.blairwitch;49;2021-10-16 04:04 UTC;3874
+Blaston;Blaston v113124478+1.13.124478 -VRP;com.resolutiongames.ignis;113124478;2021-10-01 18:09 UTC;461
+Blockami VR;Blockami VR v1+0.1 -unknown;com.aardVRk.blockami;1;2021-06-02 20:22 UTC;161
+Blueplanet VR Explore;Blueplanet VR Explore v7+7 -QU;com.blueplanetvr.blueplanetvr_explore_alpha;7;2021-06-02 20:22 UTC;18126
+Bodyguard 2;Bodyguard 2 v1+1.5 -unknown;com.studio3DD.bodyguard2;1;2021-06-02 20:23 UTC;182
+Bonfire;Bonfire v542+1.0.542 -QU;com.baobab.bonfire;542;2021-06-02 20:22 UTC;420
+Bonsai Desk;Bonsai Desk v57+0.2.1 -VRP;com.HyperMesa.BonsaiDesk;57;2021-08-23 01:38 UTC;130
+BoomBox;BoomBox v1+1. -QU;com.cyberspline.boombox;1;2021-07-08 15:06 UTC;448
+Boule Petanque;Boule Petanque v218+1.0.0 -VRP;com.KaiKramhoeft.Boulepetanque;218;2021-10-17 19:45 UTC;177
+Boxed;Boxed v4+0.4 -FFA;com.GlobeOtter.Blocked;4;2021-10-16 04:04 UTC;57
+Breakout VR;Breakout VR v3+1.0 -QU;com.nerdvisiongames.breakoutvr;3;2021-06-02 20:22 UTC;117
+BricksVR;BricksVR v38+0.2.40 -VRP;com.BricksVR.BricksVR;38;2021-08-28 06:20 UTC;81
+Bubble Boogie;Bubble Boogie v200003+0.1 -VRP;com.VStars.BubbleBoogie;200003;2021-11-07 15:10 UTC;219
+Bullet Roulette;Bullet Roulette v2+1.0 -ITCH;com.fibrum.bulletroulette;2;2021-11-02 13:53 UTC;216
+CPR Simulator;CPR Simulator v2+1.02 -QU;com.AATEVR.SundSim.CPR;2;2021-06-23 12:19 UTC;121
+Cake Mouse;Cake Mouse v5+0.23 -QU;com.StudioHORANG.CakeMouseQuest;5;2021-06-02 20:22 UTC;45
+Can You Do It;Can You Do It v6+1.15 -QU;com.tgs.vr.canyoudoit;6;2021-08-17 12:22 UTC;153
+Candy Puzzle;Candy Puzzle v3+1.01 -QU;com.tgs.vr.candy;3;2021-06-11 16:10 UTC;69
+Captain Hardcore;Captain Hardcore v1+0.4 -VRP;com.AntiZeroGames.CH;1;2021-06-02 20:22 UTC;2020
+Captain ToonHead vs The Punks from Outer Space;Captain ToonHead vs The Punks from Outer Space v18+1.0 -FFA;com.TeravisionGames.NeonFuryVR;18;2021-11-15 19:11 UTC;2052
+Car Parking Simulator;Car Parking Simulator v9+1.6.3 -QU;com.sloppy.carparkingsimulator;9;2021-06-02 20:22 UTC;405
+Carly and the Reaperman;Carly and the Reaperman v1221124755+1.22.124755 -VRP;com.resolutiongames.catr.ovr.quest;1221124755;2021-10-13 02:16 UTC;390
+Carrolls Riddles;Carrolls Riddles v439+1.51 -QU;com.sciencevr.carroll.quest;439;2021-06-02 20:23 UTC;355
+Carve Snowboarding;Carve Snowboarding v579+1.09 -FFA;com.ViteiBackroom.Powder;579;2021-12-13 14:46 UTC;2830
+Catan VR;Catan VR v11842+1.1.842 -VRP;com.Experiment7.Aurora;11842;2021-09-24 13:45 UTC;225
+Cave Digger;Cave Digger v72+2.18 -QU;com.mekiwi.cavedigger;72;2021-06-21 15:43 UTC;332
+Chess Club;Chess Club v1300+1.3.00 -FFA;com.odders.livechess;1300;2021-11-18 04:28 UTC;431
+Chunky Orbits;Chunky Orbits v1+0.94 -VRP;com.BrainBlinks.ChunkyOrbitsQuest;1;2021-09-26 22:18 UTC;88
+Chupa Chupa VR;Chupa Chupa VR v1+2.0 -VRP;com.kan.kikuchi.ChupaChupaVR;1;2021-06-02 20:23 UTC;633
+Circle1;Circle1 v401+0.4.1 -FFA (prerelease);com.HitLabs.Circle1;401;2021-11-17 06:03 UTC;171
+Cirque du Soleil;Cirque du Soleil v1001018+1.01.18 -FFA;com.felixandpaul.quest.cds_portal;1001018;2021-11-11 22:11 UTC;71
+City Avenger;City Avenger v2+1.0.1 -unknown;com.Chesstar.CityAvenger.itch;2;2021-06-02 20:22 UTC;97
+City Run VR;City Run VR v1+1.0 -FFA;com.oculus.CityRunVR;1;2021-11-23 02:29 UTC;402
+Clash of Chefs VR;Clash of Chefs VR v26+1.1.0 -FFA;com.flathillgames.clashofchefsvr;26;2021-11-28 16:58 UTC;577
+Cloudlands 2;Cloudlands 2 v35+1.31 -QU;com.Futuretown.Cloudlands2;35;2021-06-02 20:23 UTC;306
+Coaster Combat;Coaster Combat v708443+1.0 -QU;com.forcefieldxr.coastercombatquest;708443;2021-06-02 20:23 UTC;1145
+Color Space;Color Space v316+1.5.3 -QU;us.lighthaus.colorspace;316;2021-06-02 20:22 UTC;918
+Colorball;Colorball v5+0.3.3 -QU;at.AppScore.Colorball;5;2021-06-02 20:22 UTC;132
+ComeCloser;ComeCloser v1+0.7 -FFA;com.ComeCloserTeam.ComeCloser;1;2021-11-06 01:50 UTC;1126
+Contractors;Contractors v105+3.1 -FFA;com.CaveManStudio.ContractorsVR;105;2021-12-01 00:15 UTC;11793
+Control Tower VR;Control Tower VR v18+0.61 -unknown;com.DigitalEmergence.ControlTower_Alpha;18;2021-06-02 20:23 UTC;187
+Cook-Out;Cook-Out v111133347+1.11.133347 -FFA;com.resolutiongames.cookinggame;111133347;2021-12-12 15:11 UTC;693
+Cosmic Sugar;Cosmic Sugar v7+3 -FFA;com.LightClinic.CosmicSugar;7;2021-11-02 13:53 UTC;225
+Cosmodread;Cosmodread v10019+1.0.0.19 -FFA;com.WhiteDoorGames.Cosmodread;10019;2021-10-29 14:21 UTC;761
+Cosmos Crash;Cosmos Crash v3+1.0.3 -VRMOO;com.supzero.vr.quest.CosmosCrash;3;2021-08-17 13:23 UTC;213
+Counter Fight ICHIRAN;Counter Fight ICHIRAN v96+1.1.0_96 -QU;jp.tricol.IchiranVR;96;2021-05-31 21:42 UTC;620
+Cover Drive Cricket;Cover Drive Cricket v293+1.1.13 -VRP;io.mphillips.CoverDriveCricket21;293;2021-08-29 12:42 UTC;160
+Crash Course Coordination;Crash Course Coordination v6+1.6 -FFA;com.lobaki.c3q;6;2021-12-21 02:23 UTC;306
+Crashland;Crashland v72+1.016 -QU;com.LACGames.Crashland;72;2021-06-21 17:02 UTC;759
+Crazy Croquet VR;Crazy Croquet VR v2+0.2 -QU;de.selfox.crazycroquet;2;2021-06-02 20:23 UTC;69
+Crazy Kung Fu;Crazy Kung Fu v41+0.85.14 -FFA;com.fieldofvision.crazykungfu;41;2021-11-23 02:29 UTC;406
+Crazy World VR;Crazy World VR v1067+1.067 -VRP;com.pixelpimps.psn;1067;2021-09-24 13:45 UTC;428
+Creed - Rise to Glory;Creed - Rise to Glory v247262+1 -QU;com.survios.Creed;247262;2021-06-02 20:23 UTC;1447
+CricVRX - Virtual Cricket with Real Talents;CricVRX - Virtual Cricket with Real Talents v2+1.0.1 -VRP;com.skippyapps.cricvrx;2;2021-08-17 13:22 UTC;105
+Crisis VRigade 2;Crisis VRigade 2 v72+1.34 -FFA;com.sumalab.CrisisVRigade2;72;2021-12-21 02:06 UTC;3261
+Crisis VRigade;Crisis VRigade v11+1.24 -VRP;com.sumalab.CrisisVRigade;11;2021-08-17 13:23 UTC;1089
+Crop Craze - VR Farming Simulator;Crop Craze - VR Farming Simulator v130+1.3.0 -VRP;com.PicoPlanetDeveloping.FarmGame;130;2021-06-02 20:22 UTC;80
+Cubism;Cubism v136+1.4.1 -FFA;com.tvb.cubism;136;2021-10-29 14:21 UTC;93
+Custom Home Mapper;Custom Home Mapper v1+0.1 -unknown;com.curiousvr.homespace;1;2021-06-02 20:22 UTC;345
+Cyber Cycle;Cyber Cycle v1+0.1 -unknown;com.syntheon.cc2;1;2021-06-02 20:23 UTC;167
+Cyber Tennis;Cyber Tennis v199+1.7.4 -FFA;jp.co.techarts.cybertennis;199;2021-12-21 02:06 UTC;518
+DAVID;DAVID v14+2021.11.05_R14 -FFA;com.twoguys.david;14;2021-12-21 02:24 UTC;472
+DVR Simulator;DVR Simulator v52+0.13.2 -FFA;net.demonixis.dvrsimulator;52;2021-10-22 18:53 UTC;434
+Daedalus;Daedalus v3+1.0.002 -VRP;com.VerticalRobot.DaedalusQuest;3;2021-09-24 13:45 UTC;895
+Dance Central;Dance Central v121011401+1.2.1 -QU (b);com.HarmonixMusic.DCVRQuest;121011401;2021-06-02 20:22 UTC;2883
+Dance Collider;Dance Collider v9+1.0 -FFA;com.EmergeWorlds.DanceCollider;9;2021-10-29 14:21 UTC;825
+Dance Dance Maker;Dance Dance Maker v9+0.9 -unknown;com.novia.vr.ddm;9;2020-09-09 01:17 UTC;709
+Dark Harvest;Dark Harvest v1+1 -QU;com.KitungoStudios.DarkHarvest;1;2021-10-13 13:21 UTC;526
+David Slade Mysteries - Case Files;David Slade Mysteries - Case Files v14+2.6a -FFA;com.GearWorxProductions.DSMCaseFiles;14;2021-12-21 02:10 UTC;1070
+Dead Effect 2 VR;Dead Effect 2 VR v1700000087+210517.1355 -QU;com.badflyinteractive.deadeffect2;1700000087;2021-06-11 16:42 UTC;2890
+Dead Second;Dead Second v82+0.190 -FFA;com.spunge.projectshooter;82;2021-12-21 02:24 UTC;1299
+Dead and Buried II;Dead and Buried II v3008396+2.0.8396 -QU;com.oculus.dab2;3008396;2021-06-02 20:22 UTC;1643
+Death Horizon - Reloaded;Death Horizon - Reloaded v119+0.9.30.3 -FFA;com.dreamdev.deathhorizon.quest;119;2021-12-21 02:08 UTC;1023
+Death Lap;Death Lap v936+9.36 -VRP;com.ozwe.deathlap;936;2021-06-02 20:22 UTC;1696
+Deism;Deism v57+1.35 -VRP;com.MyronSoftware.Deisim;57;2021-08-17 13:22 UTC;131
+Demeo;Demeo v109134520+1.9.134520 -FFA;com.resolutiongames.demeo;109134520;2021-12-21 02:09 UTC;819
+Descending;Descending v5+1.62 -QU;com.DungeonGames.Descending;5;2021-06-04 22:39 UTC;821
+Descent Alps;Descent Alps v36+0.4.6 -VRP;com.Sutur.DescentAlps;36;2021-09-24 13:46 UTC;412
+Deus Ex Machina - Episode 1;Deus Ex Machina - Episode 1 v5+1.5 -QU;com.Looksten.DEM_Q_Ep100;5;2021-10-13 13:20 UTC;1438
+Directive Nine;Directive Nine v5+0.2.3 -QU;com.rooftoppanda.directivenine;5;2021-06-02 20:22 UTC;121
+Disc Benders - Ace Run;Disc Benders - Ace Run v11+1.3.20 -VRP;com.FreeFallStudios.DiscBenders;11;2021-11-06 01:44 UTC;1126
+Disc Ninja;Disc Ninja v979+Q.979 -FFA;com.Immersion.NinjaChallenge;979;2021-12-21 02:09 UTC;915
+DiscGolfVR;DiscGolfVR v1+0.1 -unknown;com.AlexV.DiscGolfVR;1;2021-06-02 20:23 UTC;133
+Discovery;Discovery v22+2.7.1.0 -VRP;com.noowanda.discovery;22;2021-09-26 22:43 UTC;65
+Dissection Simulator - Cat Edition;Dissection Simulator - Cat Edition v1+1.0 -QU;com.VictoryXR.CatDissection;1;2021-10-13 13:20 UTC;1360
+Dissection Simulator - Frog Edition;Dissection Simulator - Frog Edition v2+1.0 -FFA;com.VictoryXR.FrogDissectionQuest;2;2021-10-13 13:19 UTC;624
+Dissection Simulator - Invertibrate Edition;Dissection Simulator - Invertibrate Edition v10+1.0 -QU;com.VictoryXR.SquidDissection;10;2021-10-13 13:20 UTC;998
+Dissection Simulator - Pig Edition;Dissection Simulator - Pig Edition v2+1.0 -QU;com.VictoryXR.PigDissection;2;2021-10-13 13:20 UTC;1145
+Dissection Simulator - Shark Edition;Dissection Simulator - Shark Edition v100+1.0 -QU;com.VictoryXR.DogfishDissection;100;2021-10-13 13:20 UTC;1237
+Doctor Who The Edge of Time;Doctor Who The Edge of Time v368+368 -QU (b);com.mazetheory.doctorwho;368;2021-06-02 20:22 UTC;1381
+Domino's Vice VR;Domino's Vice VR v1+1.0 -unknown;samsapps.games.dominovr;1;2021-06-02 20:23 UTC;59
+Doom3Quest;Doom3Quest v25+1.2.1 -DrBeef;com.drbeef.doom3quest;25;2021-08-17 13:19 UTC;3729
+Down the Rabbit Hole;Down the Rabbit Hole v430+01.03 -QU;com.CortopiaStudios.DTRH;430;2021-06-04 22:52 UTC;670
+Dr. Zaney's Insane Labs;Dr. Zaney's Insane Labs v2+1.1 -QU;com.GearWorxProductions.Dr.ZaneysInsaneLabs;2;2021-06-02 20:23 UTC;615
+DrakaVR;DrakaVR v1+1 -unknown;com.Questeroid.DrakaVR;1;2021-06-02 20:23 UTC;58
+Draw IT!;Draw IT! v6+0.9 - QU;com.DrimEnt.DrawIT;6;2021-07-04 12:45 UTC;73
+Dreadhalls;Dreadhalls v10619+1.6.19 -QU;com.WhiteDoorGames.DreadhallsQuest;10619;2021-06-02 20:23 UTC;241
+DroneLight;DroneLight v1+0.1 -unknown;com.dronelight.map1;1;2021-06-02 20:22 UTC;602
+Drop Dead - Dual Strike Edition;Drop Dead - Dual Strike Edition v1728011718+1.4.1 -VRP;com.PixelToys.DropDead;1728011718;2021-09-24 13:45 UTC;908
+Drunkn Bar Fight;Drunkn Bar Fight v242+10.60 -VRP;com.themunky.drunknbarfightQuest;242;2021-08-20 22:51 UTC;1152
+Dungeon Chess;Dungeon Chess v58+0.0.60 -VRP;com.Experiment7.RealDungeonChess;58;2021-08-28 01:24 UTC;139
+Dungeon Train;Dungeon Train v1+0.13.19 -unknown;com.brennanhatton.dungeontrain;1;2021-06-02 20:22 UTC;140
+Electronauts;Electronauts v175667+175667 (b) -QU;com.survios.Electronauts;175667;2021-06-02 20:23 UTC;1299
+Eleven Table Tennis;Eleven Table Tennis v842+1.842 -FFA;quest.eleven.forfunlabs;842;2021-12-09 15:57 UTC;650
+Elven Assassin;Elven Assassin v147+1.4.3h_OculusQuest -FFA;com.WenklyStudio.ElvenAssassin;147;2021-11-26 15:23 UTC;2381
+End Space;End Space v26+1.0.6.1 -QU;com.endspace.quest;26;2021-06-02 20:22 UTC;618
+Energysaber Masta VR;Energysaber Masta VR v41+1.17 -QU;com.dreamteammobile.LightsaberMastaVR;41;2021-06-02 20:23 UTC;236
+Epic Roller Coasters;Epic Roller Coasters v5182+7.1.80 -QU (DLC);games.b4t.epicrollercoasters.oculus;5182;2021-10-14 01:51 UTC;8259
+Escape Legacy;Escape Legacy v37+1.35 -QU;com.StormingTech.EscapeLegacySideQuest;37;2021-06-02 20:23 UTC;657
+Escape Room - Mysteries of Egypt;Escape Room - Mysteries of Egypt v3+0.3 -VRP;com.MadCreativeSolutions.EscapeRoomMysteriesofEgypt;3;2021-08-17 13:16 UTC;239
+Escape!;Escape! v2+1.01 -unknown;com.Robbin12392.Escape;2;2021-06-02 20:23 UTC;96
+Espire 1 - VR Operative;Espire 1 - VR Operative v1728+1.9.124 -VRP;com.DigitalLode.Espire1;1728;2021-10-11 02:00 UTC;4135
+Eternal Starlight;Eternal Starlight v651+1.2.651 -FFA;com.wnas.eternalstarlight;651;2021-11-15 19:10 UTC;409
+Evryway Visualiser;Evryway Visualiser v141+0.141 -VRP;com.evryway.visualiser.oal;141;2021-09-24 13:46 UTC;74
+FREEDIVER - Triton Down;FREEDIVER - Triton Down v20+1.0 -QU (b);com.Archiact.Freediver;20;2021-06-02 20:22 UTC;851
+Face Your Fears 2;Face Your Fears 2 v487009+1.0.487009 -VRP;gg.trs.fyf2;487009;2021-08-20 20:34 UTC;2258
+Fail Factory!;Fail Factory! v54+1.0 -QU;com.Armature.FailFactory;54;2021-06-02 20:22 UTC;588
+Falcon Age;Falcon Age v31+1.01 -VRP;com.OuterloopGames.FalconAge;31;2021-08-28 01:24 UTC;1217
+Faraday's Magnets;Faraday's Magnets v5+0.23 -unknown;com.sciencevr.faraday.quest;5;2021-06-02 20:22 UTC;197
+Fast Formula;Fast Formula v1+1.0 -unknown;com.FastFormula.FastFormula;1;2021-06-02 20:23 UTC;382
+Fear Dead House;Fear Dead House v11+1.00 -QU;com.quest.tgs.vrghost;11;2021-06-02 20:22 UTC;91
+Fear Within;Fear Within v1+1.0 -unknown;com.SAAPDigital.FearWithin;1;2021-06-02 20:22 UTC;354
+Fighting Clans;Fighting Clans v1+0.3.7 -VRP;com.xocus.fightingclans;1;2021-10-01 16:44 UTC;572
+FigureOut VR;FigureOut VR v1+1.0 -QU;com.figureout.questvr;1;2021-06-02 20:22 UTC;48
+Fingers - Mini Games;Fingers - Mini Games v1+1.02 -unknown;com.dedm0zaj.FingersMiniGames;1;2021-06-02 20:22 UTC;177
+First Person Tennis - The Real Tennis Simulator;First Person Tennis - The Real Tennis Simulator v5+3.6 -FFA;com.mikorigames.firstpersontennis;5;2021-12-12 15:11 UTC;786
+FitXR - Boxing, HIIT and Dance Workouts;FitXR - Boxing, HIIT and Dance Workouts v188+1.18 -unknown;com.fitxr.boxvr;188;2021-06-02 20:23 UTC;1203
+FitrisVR;FitrisVR v142+0.9 -VRP;com.funlifejapan.fitrisvr;142;2021-08-17 13:16 UTC;430
+Five Nights at Freddy's - Help Wanted;Five Nights at Freddy's - Help Wanted v219+1.0.6 -QU;com.SteelWoolGames.fnafhw;219;2021-06-02 20:22 UTC;1828
+Flappy Flappy VR;Flappy Flappy VR v3+1.0 -unknown;com.FlappyFlappyVR.www.VRmoo.cn;3;2021-06-02 20:23 UTC;115
+Floor Plan 2;Floor Plan 2 v125+1.0.2.7 -QU;com.turbobutton.fp2;125;2021-06-02 20:22 UTC;998
+Flow Weaver;Flow Weaver v46+1.1.0 -QU;ca.StitchMedia.FlowWeaver;46;2021-06-02 20:23 UTC;749
+Flowborne - Breathing Meditation;Flowborne - Breathing Meditation v132+0.91 -VRP;com.br.flowborne;132;2021-09-24 13:46 UTC;242
+Fly XR;Fly XR v1+0.01b -unknown;com.PlayHop.FlyXR;1;2021-06-02 20:22 UTC;137
+Food Flinger;Food Flinger v1+1.0 -unknown;com.DashingCape.FoodFlinger;1;2021-06-02 20:22 UTC;59
+ForeVR Bowl;ForeVR Bowl v220+1.0.220 -QU;com.forevr.bowling;220;2021-06-28 03:16 UTC;1171
+Forklift Simulator;Forklift Simulator v10+1.0.10 -VRP;com.Chalkbites.ForkliftSimulatorQuest;10;2021-08-17 13:16 UTC;717
+Frenzy VR;Frenzy VR v30+30 -FFA;com.InnoverseLtd.FrenzyVR;30;2021-11-11 16:10 UTC;329
+Fruit Ninja;Fruit Ninja v579464+1.7.1.579464 -VRP;com.halfbrick.fruitninjavr;579464;2021-09-24 13:46 UTC;435
+Fujii;Fujii v825+1.0 -QU (b);com.funktroniclabs.fuji;825;2021-06-02 20:22 UTC;380
+Fun House;Fun House v2+1.1 -QU;com.fairview.funhouse;2;2021-05-31 21:23 UTC;113
+Fundamental Force;Fundamental Force v6+0.3 -VRMOO;com.TheRingRobotics.FundamentalForce_v2;6;2021-08-17 13:18 UTC;578
+Futbolin Revolution;Futbolin Revolution v1+0.1 -unknown;com.Pixelfun.FutbolinRevolution;1;2021-06-02 20:23 UTC;358
+GORN;GORN v1906+1.2.1906 -FFA;com.freelives.gorn;1906;2021-10-16 04:18 UTC;471
+Gadgeteer;Gadgeteer v79+1.0.17 -QU;com.metanaut.Gadgeteer;79;2021-06-02 20:23 UTC;586
+Ghost Giant;Ghost Giant v32+1.0.32 -QU;com.zoink.ghostgiant;32;2021-06-02 20:22 UTC;1152
+Gladiatus;Gladiatus v2+1.0 -QU;com.varonia.gladiatus;2;2021-05-31 21:34 UTC;351
+Gladius VR;Gladius VR v19+1.4 -VRP;com.VirtualAge.GladiusQuest;19;2021-10-12 01:12 UTC;4026
+Glitch Assassin;Glitch Assassin v1+1.0 -unknown;com.LoneWolfInteractive.GlitchAssassin;1;2021-06-02 20:22 UTC;605
+Gloomy Eyes;Gloomy Eyes v40+40 -VRP;com.arte.gloomy_eyes;40;2021-09-24 13:46 UTC;2811
+Golf 5 eClub;Golf 5 eClub v122+3.122 -VRP;com.aaagamestudios.golf5eclub;122;2021-10-01 16:32 UTC;980
+Grapple Tournament;Grapple Tournament v39+0.21 -FFA;com.tomorrowgames.gtvr;39;2021-12-21 02:12 UTC;2339
+Gravity Lab;Gravity Lab v161+1.161 -VRP;com.markschramm.gravitylab;161;2021-08-22 00:34 UTC;655
+Guardians;Guardians v129+0.10.7 -FFA;com.VirtualAge.Guardians;129;2021-12-01 00:17 UTC;2248
+Guided Meditation VR;Guided Meditation VR v201390+1.3.90 -FFA;com.CubicleNinjas.GuidedMeditationVRQuest;201390;2021-12-01 00:17 UTC;6614
+Guided Tai Chi;Guided Tai Chi v1235+1.2.35 -unknown;com.CubicleNinjas.GuidedTaiChi;1235;2020-10-19 14:35 UTC;1920
+Gun Club VR;Gun Club VR v273+1.2.92.30 -QU;com.nextgenreality.GunClubVR;273;2021-11-11 16:11 UTC;1182
+GunSpinning VR;GunSpinning VR v1+2.0 -unknown;net.demonixis.gunspinningvr;1;2021-06-02 20:22 UTC;238
+GunWorld VR;GunWorld VR v58+1.0 -FFA;com.AnthonyStudios.GunWorldVR;58;2021-12-21 02:13 UTC;1558
+Guns'n'Stories - Bulletproof VR;Guns'n'Stories - Bulletproof VR v155+1.0 -QU (b);com.MiroWin.OMT;155;2021-02-11 14:12 UTC;975
+HALLO EINSTEIN;HALLO EINSTEIN v4+0.1 -FFA;com.MasamiKuroki.HALLO_EINSTEIN;4;2021-10-13 13:18 UTC;88
+Half-Life 1 VR - Blue Shift ;Half-Life 1 VR - Blue Shift  v27+1.4.9 -DrBeef;com.drbeef.lambda1vr;27;2021-09-19 14:42 UTC;1709
+Half-Life 1 VR - Opposing Force;Half-Life 1 VR - Opposing Force v27+1.4.9 -DrBeef;com.drbeef.lambda1vr;27;2021-09-19 14:40 UTC;2021
+Half-Life 1 VR;Half-Life 1 VR v27+1.4.9 -DrBeef;com.drbeef.lambda1vr;27;2021-09-19 14:39 UTC;726
+Hand Physics Lab;Hand Physics Lab v248+1.1.0.0102 -QU;com.holonautic.HandPhysicsLab;248;2021-05-31 20:54 UTC;160
+Hand Spell;Hand Spell v1+1.0 -VRP;com.KOSMIQ.HANDSPELL;1;2021-10-01 16:39 UTC;160
+Hatsune Miku VR;Hatsune Miku VR v10+3.01 -QU (with DLC);jp.co.crypton.mikuvrq;10;2021-06-02 20:23 UTC;1082
+Hermetika VR;Hermetika VR v9+0.9 -VRP;am.benth.hermetikavr;9;2021-09-19 14:39 UTC;43
+HeroBound 2;HeroBound 2 v8+1.5.1 -unknown;com.oculus.herobound2;8;2021-06-02 20:22 UTC;365
+Hockey VR;Hockey VR v13+1.0.4 -VRP;ca.melcher.hockeyvr;13;2021-11-06 01:44 UTC;854
+Holopoint;Holopoint v132+R1.1.08 -VRP;com.AlzanStudios.HPPortable;132;2021-08-19 23:46 UTC;135
+Home Plate Baseball;Home Plate Baseball v43+4.3 -VRP;com.Beep2Bleep.HomePlateBaseball;43;2021-10-01 17:59 UTC;100
+Homestar VR - Special Edition;Homestar VR - Special Edition v41+1.03 -QU;com.pocket.homestarvrsp;41;2021-06-02 20:22 UTC;301
+Homestar VR;Homestar VR v64+1.32 -QU;com.pocket.homestarvr;64;2021-06-02 20:23 UTC;208
+Hoops Madness;Hoops Madness v5+1.0.0 -QU;com.VRstudios.HoopsMadness;5;2021-06-02 20:23 UTC;320
+Horror Nights Story;Horror Nights Story v11+0.1 -QU;cz.paperbunker.horrornights.quest;11;2021-06-11 16:13 UTC;77
+House Of Languages;House Of Languages v14+3.3.3 -unknown;com.Fox3DGames.HouseOfLanguages;14;2021-06-02 20:22 UTC;157
+HouseFlipper VR;HouseFlipper VR v93+9.3 -FFA;com.oculus.HouseFlipperVR;93;2021-12-21 02:13 UTC;155
+Human Anatomy Puzzle;Human Anatomy Puzzle v12+0.9.3 -QU;com.mgdigital.AnatomyPuzzle;12;2021-06-04 22:41 UTC;114
+Hyper Dash;Hyper Dash v495+1.22.5 -FFA;com.TriangleFactory.HyperDash;495;2021-12-09 15:57 UTC;1267
+Hyperstacks;Hyperstacks v13+Alpha0.7.2 -VRP;com.SquirrelBytes.Hyperstacks;13;2021-10-16 03:32 UTC;158
+I Expect You To Die 2;I Expect You To Die 2 v171176+1.0.0.171176 -VRP;com.schellgames.ieytd2;171176;2021-09-19 14:08 UTC;685
+I Expect You To Die;I Expect You To Die v74681+1.1.174681 -VRP;com.schellgames.ieytdquest;74681;2021-11-12 05:50 UTC;542
+Imercyve - Living with Intellectual Disability;Imercyve - Living with Intellectual Disability v19+1.0 -QU;com.VGH.ID;19;2021-06-02 20:23 UTC;591
+In Death - Unchained;In Death - Unchained v57327238+1.4.5 -FFA;com.Solfar.InDeath;57327238;2021-11-25 14:18 UTC;1793
+In da Hoop!;In da Hoop! v109+1.2.38 -FFA;io.rc.gba;109;2021-10-16 04:18 UTC;182
+Iron Rebellion;Iron Rebellion v54+.9184 -FFA;com.Black_Beach_Studio.Iron_Rebellion_VR;54;2021-12-09 15:58 UTC;368
+Ironlights;Ironlights v155+155 -FFA;com.emcneill.Ironlights;155;2021-11-11 16:12 UTC;656
+Izzys Beach Games VR;Izzys Beach Games VR v3+3 -VRP;com.nolodesign.Beach_Games;3;2021-09-24 13:47 UTC;264
+Jentrix;Jentrix v34+0.4.7 -VRP;com.SpheroomLimited.Jentrix;34;2021-09-24 13:47 UTC;553
+Jigsaw 360;Jigsaw 360 v66+4.0.1 -VRP;com.JumbliVR.Jigsaw360;66;2021-09-24 13:47 UTC;342
+Jigsaw Puzzle VR;Jigsaw Puzzle VR v20+1.04 -QU;com.Marrsbiz.JigsawPuzzleVR;20;2021-06-02 20:23 UTC;141
+Job Simulator;Job Simulator v40+1.4.0.4681 -VRP;com.owlchemylabs.jobsimulator;40;2021-08-20 01:06 UTC;967
+Journey of the Gods;Journey of the Gods v479431+1.0.479431 -QU;gg.trs.grappa;479431;2021-06-02 20:23 UTC;955
+Jurassic World Aftermath;Jurassic World Aftermath v35685+v2.1 -VRP (Includes Part 2);com.coatsink.alone;35685;2021-10-07 12:15 UTC;1221
+Just Drive;Just Drive v1+1.0 -unknown;com.JustDrive.JustDrive;1;2021-10-24 19:14 UTC;562
+KOTC VR Basketball;KOTC VR Basketball v1+0.1 -unknown;com.millennialdave.kotcvrbball;1;2021-06-02 20:22 UTC;135
+Keep Talking and Nobody Explodes;Keep Talking and Nobody Explodes v59+1.9.22 -QU;com.steelcrategames.keeptalkingandnobodyexplodes;59;2021-06-02 20:22 UTC;143
+Kid Setas;Kid Setas v1+0.1 -unknown;com.realdragonvr.setas;1;2021-06-02 20:22 UTC;66
+Kingdom of Blades;Kingdom of Blades v1+1.0.0 -unknown;com.chesstar.KingdomOfBlades.itch;1;2021-06-02 20:22 UTC;276
+Kingspray Graffiti;Kingspray Graffiti v725+71.5 (b) -QU;com.infectiousape.kingspray;725;2021-06-02 20:23 UTC;1365
+KitchenIslandVR;KitchenIslandVR v2+0.2 -QU;com.VRBuddyGames.KitchenIslandVR;2;2021-05-31 21:24 UTC;569
+Knockout League;Knockout League v34+1.0 -QU;com.grab.knockout;34;2021-06-02 20:23 UTC;1007
+Laid-Back Camp - Virtual - Lake Motosu;Laid-Back Camp - Virtual - Lake Motosu v5+1.2.0 -VRP;jp.co.gemdrops.lbcb_q;5;2021-09-19 14:37 UTC;157
+Larcenauts;Larcenauts v119630+1.40328 -FFA;com.ImpulseGear.Firestorm;119630;2021-12-14 12:52 UTC;4489
+Laser Blaze;Laser Blaze v1+1.0.0 -unknown;cz.bkral.LaserBlaze;1;2021-06-02 20:22 UTC;220
+Last Labyrinth;Last Labyrinth v34+1.02 -QU;jp.co.amata.lastlabyrinth;34;2021-06-02 20:22 UTC;1768
+Layers of Fear VR;Layers of Fear VR v36+2.0 -QU;com.bloober.layersoffearvr;36;2021-06-02 20:22 UTC;1804
+Legendary Hunter VR;Legendary Hunter VR v5+1.5 -FFA;com.FrozenDreams.legendaryhuntervr;5;2021-11-25 14:18 UTC;255
+Let's Go Chopping;Let's Go Chopping v2+.2 -unknown;com.SoaringRocStudio.LetsGoChopping;2;2021-06-02 20:23 UTC;307
+Let's Play with Anna!;Let's Play with Anna! v1+1.0 -unknown;com.vrjcc.AnnaU;1;2021-06-02 20:22 UTC;352
+Lets Create! Pottery VR;Lets Create! Pottery VR v670+1.12 -QU;com.idreams.potteryvrq;670;2021-06-02 20:22 UTC;209
+Lies Beneath;Lies Beneath v55578+1.0-55578 -QU;com.Drifter.Kodiak;55578;2021-06-02 20:23 UTC;1771
+Little Witch Academia - VR Broom Racing;Little Witch Academia - VR Broom Racing v827+1.3.0 -VRP;com.UNIVRS.LWAVR;827;2021-10-17 19:45 UTC;1965
+Loco Dojo Unleashed;Loco Dojo Unleashed v69+69 -FFA;com.makereal.LocoDojoQuest;69;2021-11-23 02:29 UTC;1069
+LoopSpace;LoopSpace v11+0.9.3 -QU;com.Chesstar.LoopSpace.Quest;11;2021-05-31 21:29 UTC;219
+Lucky's Tale;Lucky's Tale v42+1.0.53 -FFA;com.playful.LuckysTale;42;2021-11-20 18:00 UTC;3746
+Luna;Luna v8+8 -QU;com.funomena.luna;8;2021-12-09 16:00 UTC;735
+METAL MULTIBALL;METAL MULTIBALL v50+1.50 -QU;com.SteveHinanPresents.MetalMultiball;50;2021-06-10 22:40 UTC;169
+MLB VR;MLB VR v6+1.0 -VRP;com.mlb.HomeRunDerbyVR_Quest_Lab;6;2021-08-17 13:06 UTC;995
+MVP Football - The Patrick Mahomes Experience;MVP Football - The Patrick Mahomes Experience v2113+0.1.0.2113 -FFA;com.citylightsvr.patmahomes;2113;2021-10-17 12:47 UTC;483
+Madrid Noir;Madrid Noir v120+1.1.2 -ITCH;com.noghost.madridnoirvr;120;2021-10-14 02:21 UTC;695
+Mafia Bowling;Mafia Bowling v58+2.0.38 -FFA;com.proeminentcode.mafiabowling;58;2021-10-16 04:03 UTC;478
+MageVR;MageVR v5+1.6.0 -VRP;com.dengxianxr.magevr16;5;2021-07-08 17:13 UTC;900
+Mare;Mare v31+31 -QU;com.VisionTrick.Mare;31;2021-06-02 20:22 UTC;912
+MarineVerse Cup;MarineVerse Cup v515+0.515 -FFA;com.marineverse.cup;515;2021-11-09 14:13 UTC;753
+Medal of Honor™ - Above and Beyond;Medal of Honor™ - Above and Beyond v12297+0.518 -FFA;com.Virtuos.R6DLM;12297;2021-11-16 01:41 UTC;43890
+Mini Motor Racing X;Mini Motor Racing X v124+1.3.5 -QU;com.nextgenreality.mmrx;124;2021-06-02 20:22 UTC;1980
+Modulia Studio;Modulia Studio v6+1.0.5 -FFA;com.TheremixTech.ModuliaStudio;6;2021-10-19 16:10 UTC;372
+Molecule Builder;Molecule Builder v5+1.0.447 -QU;com.Xennial.Molecules;5;2021-06-23 16:49 UTC;166
+Mondly - Practice Languages in VR;Mondly - Practice Languages in VR v50002+5.0.2 -VRP;com.ATiStudios.LearnLanguagesVRbyMondly;50002;2021-12-14 12:49 UTC;383
+Monolith;Monolith v1+0.1 -unknown;com.n.monolith;1;2021-06-02 20:23 UTC;328
+Morels - Homestead;Morels - Homestead v55+1.01 -FFA;com.AbramsStudios.Morels.Homestead;55;2021-12-21 02:14 UTC;1546
+Moss;Moss v22600+1.0.0.22600 -Q2Patched-90Hz-CustomRes -QU;com.polyarc.MossGame;22600;2021-06-02 20:22 UTC;2747
+MotoX;MotoX v6+4.0 -FFA;com.EnverStudios.MotoX;6;2021-10-21 13:00 UTC;1120
+Mr. Scribbles;Mr. Scribbles v1+0.1 -unknown;com.oculus.mrscribbles;1;2021-06-02 20:23 UTC;216
+Mutated Virus;Mutated Virus v19+2.5 -FFA;com.AnomosStudios.MutatedVirus;19;2021-11-06 01:52 UTC;1291
+Myst;Myst v330+1.3.0 -VRP;com.CyanWorlds.Myst;330;2021-08-20 18:53 UTC;10217
+Myth - A Frozen Tale;Myth - A Frozen Tale v31+1.0 -QU;com.WaltDisney.MythAFrozenTale;31;2021-06-02 20:22 UTC;580
+NES Space;NES Space v5+1.0.4 -VRP;com.Chesstar.NesVR.QuestItch;5;2021-09-24 13:47 UTC;238
+National Geographic Explore VR;National Geographic Explore VR v674692+1.2.1 -VRP;com.forcefieldxr.explorevr;674692;2021-06-02 20:23 UTC;3732
+Nature Treks VR;Nature Treks VR v24+1.24 -FFA;com.GreenerGames.QuestTreks;24;2021-12-14 12:52 UTC;668
+Neon Blast VR;Neon Blast VR v31+1.0 -QU;com.Raptorsgames.NeonBlast;31;2021-06-11 16:12 UTC;77
+Neon Kite;Neon Kite v12+0.4.2.4 -FFA;com.VirtualProjection.NeonKite;12;2021-11-25 14:19 UTC;116
+Neon Sprint;Neon Sprint v17+1.0.4 -FFA;com.chesstar.NeonSprint.Quest;17;2021-10-13 13:18 UTC;198
+Nikakudori;Nikakudori v3+1.0.0 -QU;jp.co.dazzlesystem.nikakudoriVR;3;2021-06-11 16:17 UTC;198
+Ninja Legends;Ninja Legends v1084+1.0.1084 -QU;com.coinflip.ninja;1084;2021-06-02 20:22 UTC;383
+OPERATION SERPENS;OPERATION SERPENS v210312+1.2103.12 -FFA;com.GINRATECH.OPERATIONSERPENS;210312;2021-10-13 02:29 UTC;600
+Ocean Rift;Ocean Rift v55+1.68 -Q2Patched-90Hz -QU;com.picselica.OceanRiftFullQuest;55;2021-06-02 20:23 UTC;435
+OceanCraft;OceanCraft v59+v0.5.8 -FFA;com.FlodLab.OceanCraft;59;2021-10-29 14:21 UTC;79
+OhShape;OhShape v190+1.9.0 -QU;com.odders.ohshape;190;2021-07-15 12:41 UTC;489
+Omega Blade;Omega Blade v1203+1.2.0 -QU;com.paramogames.omegablade;1203;2021-06-02 20:22 UTC;337
+On Target VR Darts;On Target VR Darts v80+1.0.0 -VRmoo;com.ColugoProductionsInc.OnTargetVRDarts;80;2021-08-17 13:03 UTC;322
+OnStage Simulator;OnStage Simulator v1+0.72 -unknown;com.COMPOS3D.OnStage;1;2021-06-02 20:22 UTC;114
+Onward;Onward v10362+1.0 -FFA;com.downpourinteractive.onward;10362;2021-12-12 15:13 UTC;3338
+Operation Warcade;Operation Warcade v15+1.0 -QU;com.ivanovichgames.operationwarcade;15;2021-06-21 16:25 UTC;764
+Oxygen Dreams;Oxygen Dreams v37+1.01 -VRP;com.Fguillotine.OxygenDreamsQuest;37;2021-09-24 13:48 UTC;82
+Paint it Back;Paint it Back v12+1.0 -FFA;com.solaair.paintitback;12;2021-12-09 16:03 UTC;1588
+Painting VR;Painting VR v34+.398 -FFA;com.Oisoi.PaintingVr;34;2021-11-11 16:13 UTC;158
+Pandemic by Prisms;Pandemic by Prisms v180+0.5.61 -QU;com.prismsvr.pandemicbyprisms;180;2021-06-02 20:22 UTC;889
+Pangman;Pangman v15+1.0 -QU;com.IvanovichGames.BeatBlaster;15;2021-06-11 16:13 UTC;271
+Paper Birds - Part I & II;Paper Birds - Part I & II v72+1 -VRP;com.ThreeDAR.PaperBirdsQuest;72;2021-09-26 22:19 UTC;6945
+Paranormal Activity - The Lost Soul;Paranormal Activity - The Lost Soul v28+1.2 -FFA;com.vrwerx.paranormalactivity;28;2021-12-13 14:47 UTC;2847
+Paranormal Detective - Escape From the 80's;Paranormal Detective - Escape From the 80's v22+2.2 -FFA;com.LunaBeat.Escape80s;22;2021-12-21 02:24 UTC;1497
+Path of the Warrior;Path of the Warrior v498+21.11.10.358057 -FFA;com.twistedpixelgames.POTW_App;498;2021-11-17 06:00 UTC;1802
+PePiBo - Peregrino Pinata Bowling;PePiBo - Peregrino Pinata Bowling v2+2 -QU;com.toritogames.pepibo;2;2021-06-02 20:22 UTC;401
+Peco Peco;Peco Peco v8017+0.8.17 -VRP;am.benth.pecopeco;8017;2021-10-01 16:40 UTC;26
+Penn & Teller VR - F U, U, U, & U;Penn & Teller VR - F U, U, U, & U v1960571+1.0 -QU (b);com.GearboxSoftware.Hawthorn;1960571;2021-06-02 20:22 UTC;1853
+Percussive VR;Percussive VR v2+1.4 -QU;games.jamhack.PercussiveVR.Oculus;2;2021-06-02 20:22 UTC;152
+Perpetuum Mobile;Perpetuum Mobile v83+1.5.6 -QU;be.PetrusGames.PerpetuumMobile;83;2021-06-02 20:22 UTC;101
+Phantom - Covert Ops;Phantom - Covert Ops v49563+1.1 -QU;com.nDreams.PhantomQuest;49563;2021-06-02 20:23 UTC;3541
+PhysHand;PhysHand v2+0.1.1 -unknown;com.JorgeJGnz.PhysHand;2;2021-06-02 20:22 UTC;66
+Pickup Basketball VR;Pickup Basketball VR v944+1.0 -VRP;com.ColliderGames.PickUpBasketballVRQL;944;2021-10-11 02:01 UTC;463
+Pierhead Arcade 2;Pierhead Arcade 2 v145+2.1.45 -FFA;com.mechabit.quest.pierheadarcade2;145;2021-12-21 02:15 UTC;561
+Pigasus VR Media Player;Pigasus VR Media Player v82+3.4.4 -FFA;com.hanginghatstudios.pigasus;82;2021-11-11 16:13 UTC;83
+Pigeons;Pigeons v19+9 -VRP;com.mekiwi.vrpigeons;19;2021-08-17 12:53 UTC;54
+Pinball FX2 VR;Pinball FX2 VR v20+1.1.0 -VRP (no DLC);com.zenstudios.PinballFX2VRQuest;20;2021-10-07 11:28 UTC;533
+Pipe Dream Co.;Pipe Dream Co. v5+1.11.50 -QU;com.FieldOfVision.PipeDreamCo;5;2021-06-02 20:22 UTC;79
+Pirates on Deck VR;Pirates on Deck VR v2+1.0 -VRP;com.boltvirtual.piratesondeck;2;2021-10-01 18:03 UTC;118
+Pistol Whip;Pistol Whip v846+1.5.38.3 -VRP;com.cloudheadgames.pistolwhip;846;2021-08-24 02:25 UTC;1229
+Pixel Ripped 1995;Pixel Ripped 1995 v108+108 -FFA;io.arvore.pixelripped1995;108;2021-10-16 04:02 UTC;644
+Player 22 by Rezzil;Player 22 by Rezzil v339+1.1.52 -FFA;com.Rezzil.Quest;339;2021-12-13 14:47 UTC;1312
+Please, Don't Touch Anything;Please, Don't Touch Anything v1312+2.1 -unknown;com.ForwardXP.nuke;1312;2021-06-02 20:22 UTC;275
+Poly Star VR;Poly Star VR v15+1.0 -FFA;com.Newmatic.Polystar;15;2021-10-13 02:29 UTC;328
+Pop Shot;Pop Shot v1+1.0 -unknown;com.PixelBoogie.PopShotQuest;1;2021-06-02 20:22 UTC;831
+Pops;Pops v25+1.0i -VRP;com.MicrobeGames.Pops;25;2021-08-17 12:53 UTC;98
+Potato Party - Hash It Out;Potato Party - Hash It Out v200017+0.72.0 -VRP;com.Fanaticus.PotatoParty1;200017;2021-08-17 12:53 UTC;357
+PowerBeatsVR;PowerBeatsVR v42+3.0.1 -FFA;com.FiveMindCreationsUGhaftungsbeschrnkt.PowerBeatsVR;42;2021-12-09 16:03 UTC;829
+Prison Boss VR;Prison Boss VR v37+1.6.0.16 -QU;com.Trebuchet.PrisonBossVR;37;2020-12-14 19:20 UTC;470
+Private Agent;Private Agent v5+1.3 -QU;com.Nottie.PrivateAgent;5;2021-06-01 08:04 UTC;843
+Project TERMINUS VR;Project TERMINUS VR v474+1.5.0 -FFA;com.cvr.terminus;474;2021-11-09 14:14 UTC;2096
+ProjectZ;ProjectZ v45+1.1.0 -QU;com.slindev.projectz;45;2021-06-01 08:17 UTC;218
+Pteranodon's Flight;Pteranodon's Flight v1+1.0 -unknown;com.VictoryXR.PteranodonsFlight;1;2021-06-02 20:23 UTC;376
+Pub Darts;Pub Darts v200002+1.0 -QU;com.Ardooly.PubDarts;200002;2021-06-02 20:23 UTC;111
+Puzzle Bobble VR - Vacation Odyssey;Puzzle Bobble VR - Vacation Odyssey v262456+1.0 -FFA;com.survios.bam;262456;2021-11-02 13:55 UTC;1183
+Puzzling Paths;Puzzling Paths v17+1.0 -VRP;com.WeirdEyeStudios.PuzzlingPaths;17;2021-09-19 14:32 UTC;193
+Puzzling Places;Puzzling Places v66+1.31 -FFA (Q2 only);com.RealitiesIO.puzzlingPlaces;66;2021-11-11 16:13 UTC;9702
+Quake2Quest;Quake2Quest v18+1.0.7 -DrBeef;com.drbeef.quake2quest;18;2021-08-17 12:52 UTC;538
+QuakeQuest;QuakeQuest v16+1.4.8 -DrBeef;com.drbeef.quakequest;16;2021-08-17 12:52 UTC;65
+Quest for Runia;Quest for Runia v13+1.0 -QU;com.Cykyria.QuestForRunia;13;2021-06-02 20:23 UTC;1387
+QuestZDoom Pack;QuestZDoom Pack v29+1.3.0 -DrBeef;com.drbeef.questzdoom;29;2021-08-17 12:52 UTC;111
+RESONARK X LITE;RESONARK X LITE v10100002+1.0.1b -QU;com.sepnekoya.ResonarkXLite;10100002;2021-06-02 20:23 UTC;238
+RUSH;RUSH v282+1.2.1 -VRP;com.nextgenreality.rush;282;2021-01-19 15:24 UTC;684
+Raccoon Lagoon;Raccoon Lagoon v235238+1.0 -QU (b);com.hiddenpath.phoenix;235238;2021-06-02 20:22 UTC;1689
+Race for Fun;Race for Fun v13+0.8 -VRP;com.RaptorsGames.RaceForFun;13;2021-10-16 03:29 UTC;1210
+Racket - Nx;Racket - Nx v171+2.3.28 -FFA;com.onehamsa.RNXQ;171;2021-12-09 16:07 UTC;418
+Racket Fury - Table Tennis VR;Racket Fury - Table Tennis VR v712+7.1.2 -QU;com.RacketFury.RF_GearVR;712;2021-06-02 20:22 UTC;379
+Radial-G - Proteus;Radial-G - Proteus v29+0.1 -QU;com.Things3D.RadialGProteus;29;2021-06-02 20:22 UTC;566
+Ragnarock;Ragnarock v43+1.1.1 -FFA;com.wanadev.ragnarockquest;43;2021-11-26 15:22 UTC;2036
+Rainbow Reactor - Fusion;Rainbow Reactor - Fusion v107+1.0.4 -FFA;com.Tunermaxx.RiseoftheRainbowReactor;107;2021-11-23 02:30 UTC;564
+RamCastle;RamCastle v3+3.1 -VRP;com.curiousvr.ramcastle;3;2021-10-17 19:46 UTC;94
+Range Day VR;Range Day VR v14+1.18 -QU;com.InvidiousStudios.RangedayVRQ;14;2021-06-02 20:22 UTC;2515
+Real VR Fishing - Beta;Real VR Fishing - Beta v114+1.523 -VRP (all maps unlocked);com.Miragesoft.RealVrFishingBeta;114;2021-09-19 14:30 UTC;671
+Real VR Fishing;Real VR Fishing v161+2.016 -FFA;com.Miragesoft.RealVrFishingQ;161;2021-11-20 18:03 UTC;924
+Realfit;Realfit v110+2021.9.1632412272 -FFA;co.realfit.RealFit;110;2021-10-25 13:47 UTC;220
+Realms of Eternity;Realms of Eternity v11+0.6.4 -VRP;com.VRKemono.RealmsofEternity;11;2021-10-16 03:33 UTC;590
+Red Matter;Red Matter v32+1.0.009 -Q2Patched-90Hz -QU;com.VerticalRobot.RedMatter;32;2021-06-02 20:23 UTC;1423
+Reflex Unit 2;Reflex Unit 2 v406+4.3 -FFA;com.robosarugames.reflexunit2Lab;406;2021-10-29 14:21 UTC;531
+Refuge VR;Refuge VR v1+0.1 -unknown;com.Meditation.RefugeVRv1;1;2021-06-02 20:22 UTC;1846
+Resident Evil 4;Resident Evil 4 v119+1.0 -VRP;com.Armature.VR4;119;2021-10-21 14:54 UTC;8202
+Resilience;Resilience v20+1.0.8042 -QU;com.scale1.resilience;20;2021-05-31 21:25 UTC;114
+Resist;Resist v173+1.0.173 -FFA;com.nextgenreality.resist;173;2021-12-12 15:13 UTC;1121
+Rest In Pieces;Rest In Pieces v37+1.35 -QU;com.StormingTech.RestInPiecesSQ;37;2021-06-02 20:23 UTC;877
+Return to Castle Wolfenstein;Return to Castle Wolfenstein v48+1.2.0 -DrBeef;com.drbeef.rtcwquest;48;2021-11-09 22:39 UTC;1361
+Revolver Widow;Revolver Widow v3+1.2 -QU;com.StudioPoncho.Pinkertons;3;2021-10-26 00:10 UTC;418
+Rez Infinite;Rez Infinite v41+41.0 -unknown;com.enhanceexperience.rezquest;41;2021-06-02 20:22 UTC;618
+Rhythm of the Universe - Ionia;Rhythm of the Universe - Ionia v11129+19.0 -FFA;com.ROTU.Ionia;11129;2021-11-09 14:15 UTC;3757
+Rhythm of the Universe - Ionia;Rhythm of the Universe - Ionia v11129+19.0 -FFA;com.ROTU.Ionia;11129;2021-11-09 14:15 UTC;3757
+Richie's Plank Experience;Richie's Plank Experience v216+1.9.1 -FFA;com.ToastVR.RichiesPlankExperience;216;2021-12-09 16:07 UTC;506
+Robo Recall - Unplugged;Robo Recall - Unplugged v47091+1.0 -Q2Patched-90Hz -QU;com.YourCompany.RoboRecall;47091;2021-06-02 20:23 UTC;3624
+RoboWreckersVR;RoboWreckersVR v12+1.32 -QU;com.EdgarJLopez.RoboWreckersVR;12;2021-10-04 21:46 UTC;335
+Rodent People - Origins;Rodent People - Origins v13+v0.58 -QU;com.ZenRepublic.RodentPeopleOrigins;13;2021-07-08 17:03 UTC;297
+République VR;République VR v127622+1.2 -QU (b);com.camouflaj.republiquevr;127622;2021-06-02 20:22 UTC;3826
+SETVR;SETVR v37+1.61 -QU;com.DVNCTech.SETVR;37;2021-06-01 07:19 UTC;873
+SKYBOX VR Video Player;SKYBOX VR Video Player v465+1.1.0 -FFA;xyz.skybox.player.ovr;465;2021-12-09 16:04 UTC;140
+SPHERES;SPHERES v41+1.41 -FFA;com.Novelab.Spheres;41;2021-11-11 22:15 UTC;1818
+STRIDE;STRIDE v82+1.3 -FFA;com.JoyWay.Stride;82;2021-12-21 02:19 UTC;103
+SUPERHOT VR;SUPERHOT VR v152+1.152 -VRP;unity.SUPERHOT_Team.SUPERHOT_VR_QA;152;2021-08-20 01:09 UTC;571
+Sairento VR - Untethered;Sairento VR - Untethered v223+1.9.5 -VRP;com.mixedrealms.sairentovruntethered;223;2021-08-21 22:54 UTC;1959
+Sam and Max - This Time It's Virtual!;Sam and Max - This Time It's Virtual! v247+1.0.2 -VRP;com.happygiant.sammaxvr;247;2021-09-28 21:57 UTC;1335
+SculptrVR;SculptrVR v198+2.99 -VRP;com.sculptrvrinc.sculptrvrapp;198;2021-08-29 12:33 UTC;348
+Secret of Harrow Manor 2;Secret of Harrow Manor 2 v32+0.32 -QU;com.OnlyHuman.SoHM2vr;32;2021-07-16 19:55 UTC;1462
+Sep's Diner;Sep's Diner v23+8892 -FFA;com.scale1.sepsdinerSolo;23;2021-11-09 14:15 UTC;508
+Shadow Point;Shadow Point v43+1.1 -QU (b);com.coatsink.nexus;43;2021-06-02 20:22 UTC;969
+Shadowgate VR - The Mines of Mythrok;Shadowgate VR - The Mines of Mythrok v44+1.0.44 -FFA;com.Zojoi.ShadowgateVR;44;2021-12-21 02:17 UTC;1132
+Shelley's Creation;Shelley's Creation v4+0.75 -QU;com.sciencevr.shelley.quest;4;2021-06-02 20:23 UTC;574
+Shinobi Breaker;Shinobi Breaker v35+1.1 -QU;com.Donuts.InfinityBreaker;35;2021-06-02 20:22 UTC;91
+Shooting Therapy;Shooting Therapy v2+0.2 -QU;com.NoFlinch.ShootingTherapy;2;2021-05-31 20:51 UTC;113
+Shoottris;Shoottris v3+1.011 -QU;com.palvesoft.ShoottrisQuest;3;2021-06-02 20:22 UTC;99
+Shooty Fruity;Shooty Fruity v18+1.0 -QU;com.ndreams.shootyfruity;18;2021-06-02 20:22 UTC;2772
+Shooty Skies Overdrive;Shooty Skies Overdrive v85270+1.10.85270 -VRP;com.mightygamesgroup.shootyvr;85270;2021-08-17 12:48 UTC;291
+Shuttle Commander;Shuttle Commander v64+0.64 -QU (b);com.ivre.ssc;64;2021-06-02 20:23 UTC;1025
+SimplePlanes VR;SimplePlanes VR v100+1.12.118 -FFA;com.jundroo.SimplePlanesVR;100;2021-12-21 02:07 UTC;148
+Skyworld - Kingdom Brawl;Skyworld - Kingdom Brawl v32+1.22 -QU;com.vertigogames.skyworldbrawl;32;2021-06-02 20:22 UTC;237
+SlashMates;SlashMates v1+0.04 -unknown;com.VRight.Slashmates;1;2021-06-02 20:23 UTC;231
+Smash Drums;Smash Drums v137+2.0.2 -FFA;com.PotamWorks.SmashDrums;137;2021-12-21 02:17 UTC;920
+Smashmania;Smashmania v1+0.4 -unknown;ltd.getschwifty.smashmania.demo;1;2021-06-02 20:23 UTC;209
+Snake In a Box;Snake In a Box v56+5.6 -unknown;com.dofdev.SnakeInABox;56;2021-06-02 20:22 UTC;62
+Snakes and Ladders;Snakes and Ladders v7+1.0 -FFA;com.tgs.vr.snakesandladders;7;2021-10-14 02:21 UTC;77
+Sniper Elite VR;Sniper Elite VR v35713+1.03 -QU (Q1 ONLY);com.JustAddWater.SniperEliteVR;35713;2021-10-04 21:51 UTC;3290
+Sniper Elite VR;Sniper Elite VR v35713+1.03 -VRP (Q2 ONLY);com.JustAddWater.SniperEliteVR;35713;2021-10-01 17:19 UTC;4047
+Snow Fortress;Snow Fortress v2+1.33 -unknown;com.mythicalcitygames.snowfortress;2;2021-06-02 20:23 UTC;169
+Snowman VR;Snowman VR v1+0.6.0 -VRP;co.xocus.snowman;1;2021-06-02 20:23 UTC;229
+Solicitude Wake-up;Solicitude Wake-up v13+1.3 -QU;com.JRProduction.SolicitudeWakeupQuest;13;2021-06-02 20:22 UTC;427
+Song Beater;Song Beater v431+4.3.1 -VRP;com.Playito.SongBeater;431;2021-08-17 12:50 UTC;749
+Song in the Smoke;Song in the Smoke v72+1.5.1 -FFA;com.seventeenbit.songinthesmoke;72;2021-12-21 02:18 UTC;1910
+Space Channel 5 VR Kinda Funky News Flash!;Space Channel 5 VR Kinda Funky News Flash! v68514+1.0.3 -QU;com.grounding.ch5vrquest;68514;2021-06-02 20:23 UTC;872
+Space Junk;Space Junk v13+1.2 -QU;com.cestrian.spacejunk;13;2021-06-02 20:22 UTC;446
+Space Merchants Arena;Space Merchants Arena v1+1.0 -QU;com.Playito.SpaceMerchantsArena;1;2021-07-16 19:57 UTC;79
+Space Pilot Alliance;Space Pilot Alliance v1+2.0 -unknown;com.curiousvr.spacepilotalliance;1;2021-06-02 20:22 UTC;354
+Space Pirate Trainer DX;Space Pirate Trainer DX v1965+1.965 -FFA;com.iillusions.spacepiratetrainerquest;1965;2021-11-28 16:56 UTC;1430
+Space Pirate Trainer DX;Space Pirate Trainer DX v1965+1.965 -FFA (not working Q2);com.iillusions.spacepiratetrainerquest;1965;2021-11-17 06:00 UTC;83
+Space Shooter;Space Shooter v16+1.02 -VRP;vr.tgs.spaceshooter;16;2021-08-17 12:48 UTC;105
+Space Slurpies;Space Slurpies v169+1.3 -FFA;com.StarcadeArcadeLLC.SpaceSlurpies;169;2021-11-09 14:15 UTC;708
+Space Walk VR Experience;Space Walk VR Experience v700107+7.0.107.02 -QU;com.FTM.SpaceWalkQuest2OC;700107;2021-06-02 20:22 UTC;698
+SpaceTeam VR;SpaceTeam VR v4763+1.0 -FFA;com.CooperativeInnovations.Spaceteam;4763;2021-12-21 02:18 UTC;589
+Spacefolk City;Spacefolk City v1873+v1.6.109 -FFA;com.moonmode.spacefolkcity;1873;2021-12-09 16:05 UTC;307
+Special Delivery;Special Delivery v30+1.1 -QU;com.MeerkatGaming.SD_Quest;30;2021-06-02 20:23 UTC;1394
+Speed Cube;Speed Cube v9+0.7.1 -QU;com.Aligator.SpeedCube;9;2021-06-02 20:22 UTC;87
+Spice & Wolf VR;Spice & Wolf VR v9+1.04 -QU;com.SpicyTails.SaW;9;2021-06-02 20:23 UTC;496
+Sport Mode;Sport Mode v60+0.5.0 -FFA;com.Exo.Playground2;60;2021-12-13 14:47 UTC;643
+Sports Scramble;Sports Scramble v88+1.0 -unknown;com.Armature.SportsScramble;88;2021-06-02 20:22 UTC;1187
+Squadron One;Squadron One v1024+1.0.0 -VRMOO;com.unitedcommand.squadronone;1024;2021-09-19 14:22 UTC;231
+Squingle;Squingle v36+1.2.15 -FFA;com.SquingleStudios.Squingle;36;2021-11-15 19:11 UTC;404
+Star Chart;Star Chart v18529+1.7.7 -VRP;com.escapistgames.starchartvr.quest;18529;2021-06-02 20:23 UTC;223
+Star Wars - Tales from the Galaxy's Edge;Star Wars - Tales from the Galaxy's Edge v340801+1.1.7-600115.cl.340801 -VRP (with DLC);com.ilmxlab.tales;340801;2021-11-17 06:14 UTC;11856
+Star Wars™ Pinball VR;Star Wars™ Pinball VR v10737+1.3 -QU;com.YourCompany.SWP_VR;10737;2021-06-27 07:45 UTC;2498
+StardustVR;StardustVR v2+1.0 -QU;com.FrozenDreams.stardustvr;2;2021-05-31 21:28 UTC;218
+Starfighter Arduxim;Starfighter Arduxim v69+2.4 -FFA;com.FulTech.StarfighterArduximQuest;69;2021-10-19 16:11 UTC;54
+Steamliner;Steamliner v1+1.2.5 -VRP;com.Diamond.Steamliner;1;2021-06-02 20:23 UTC;261
+Stones Of Harlath;Stones Of Harlath v41+1.3 -VRP;com.garageCollective.myStonesOfHarlath;41;2021-08-28 01:36 UTC;316
+Submarine;Submarine v5+1.2 -FFA;com.extremesoft.submarinevr;5;2021-12-12 15:18 UTC;183
+Super Hentai Sexy Fun Time;Super Hentai Sexy Fun Time v1+1.0 -VRP;com.bhg.shsft;1;2021-09-19 14:16 UTC;135
+Supermedium;Supermedium v1+3 -unknown;com.Supermedium.Supermedium;1;2021-06-02 20:22 UTC;78
+Swarm;Swarm v1151+1151 -FFA;com.sketchbox.Grapple;1151;2021-12-13 14:47 UTC;1174
+Sweet Surrender;Sweet Surrender v656+1.656 -FFA;com.SalmiGmbH.SweetSurrenderVRTests;656;2021-12-13 14:48 UTC;281
+Symphony of Stars;Symphony of Stars v173+1.73 -unknown;com.OnlyHuman.Ensign2vr;173;2021-06-02 20:22 UTC;558
+Synth Riders;Synth Riders v386+2.3.14.a.16 -FFA;com.kluge.SynthRiders;386;2021-12-21 02:19 UTC;1219
+SynthVR;SynthVR v14+0.7.0 -VRP;com.fortytwotones.synthvr;14;2021-09-19 14:14 UTC;72
+Synthspace;Synthspace v14+1.0.5 -VRP;Rocks.BrightLight.Synthspace;14;2021-09-24 18:35 UTC;192
+TOKYO CHRONOS;TOKYO CHRONOS v31+1.0.4 -QU;com.MyDearest.ChronosQuest;31;2021-06-02 20:22 UTC;709
+TOTALLY BASEBALL;TOTALLY BASEBALL v5000+2.5000 -FFA;com.viewerready.totallybaseball;5000;2021-11-06 01:55 UTC;377
+Tarzan VR;Tarzan VR v1229+1.0 -QU;com.funtrain.tarzanvr;1229;2021-07-06 17:45 UTC;767
+Teasing Master Takagi-san VR 1st & 2nd Semesters;Teasing Master Takagi-san VR 1st & 2nd Semesters v34+1.1.1 -VRP;com.Kayac.TakagisanVR;34;2021-09-26 22:22 UTC;1167
+Terragon - Symbol Of Magic;Terragon - Symbol Of Magic v6+1.0.0 -FFA;com.RealityShiftStudios.TerragonSymbolOfMagic;6;2021-12-21 02:25 UTC;2549
+Tetris® Effect - Connected;Tetris® Effect - Connected v106+1.2.7 -FFA;com.enhanceexperience.tetriseffect;106;2021-12-21 02:20 UTC;3110
+The Brookhaven Experiment;The Brookhaven Experiment v109+1.0259 -unknown;com.Phosphor.Brookhaven;109;2021-06-02 20:23 UTC;275
+The Climb 2;The Climb 2 v746+2.1 -VRP;com.crytek.climb2;746;2021-09-19 14:13 UTC;4612
+The Climb;The Climb v663+663.0 -VRP;com.crytek.climb;663;2021-08-17 12:42 UTC;1809
+The Curious Tale of the Stolen Pets;The Curious Tale of the Stolen Pets v26+1.07 -FFA;com.fasttravelgames.diorama;26;2021-12-21 02:20 UTC;492
+The Exorcist - Legion VR;The Exorcist - Legion VR v37+1.2.0 -QU;com.wolfandwood.exorcistlegionvr;37;2021-06-02 20:23 UTC;1503
+The Fight;The Fight v2+1.08 -QU;com.adamstanulewicz.TheFight;2;2021-06-02 20:22 UTC;330
+The Final Overs;The Final Overs v9+1.44 -QU;com.Mixeal.TheFinalOvers;9;2021-06-02 20:23 UTC;339
+The Great Escape - Dragon's Dungeon;The Great Escape - Dragon's Dungeon v1273+0.8 -FFA;com.Nelsoft.TheGreatEscape;1273;2021-12-21 02:25 UTC;350
+The Island Odyssey! Hi Spec;The Island Odyssey! Hi Spec v1207+1.2.0.7 -unknown;com.VRGameStudio.TheIsland;1207;2021-06-02 20:22 UTC;68
+The Knight of Queen;The Knight of Queen v10260+1.2.6 -QU;com.VR_RPG_INC.THE_KNIGHT_OF_QUEEN_QUEST;10260;2021-04-06 01:50 UTC;204
+The Last place;The Last place v2+0.2 -unknown;br.com.mashimobi.thelastplace;2;2021-06-02 20:23 UTC;185
+The Line;The Line v57+57 -QU;io.arvore.theline;57;2021-06-11 16:46 UTC;361
+The Premium Cube;The Premium Cube v1+0.2 -QU;com.LostError.ThePremiumCube;1;2021-07-08 17:09 UTC;59
+The Purge Day;The Purge Day v90+1.0 -unknown;com.RedLimbStudio.ThePurageDay;90;2021-06-02 20:22 UTC;205
+The Room VR - A Dark Matter;The Room VR - A Dark Matter v5011+1.02 -QuestUndeground;com.FireproofStudios.TheRoomVR;5011;2021-06-02 20:23 UTC;2236
+The Secret of Retropolis;The Secret of Retropolis v6+0.563 -FFA;com.PeanutButton.Retropolis;6;2021-11-25 16:26 UTC;737
+The Thrill of the Fight;The Thrill of the Fight v210130000+210130.0 -VRP;com.fyian.TheThrillOfTheFight;210130000;2021-08-29 12:33 UTC;574
+The Twilight Zone;The Twilight Zone v3542+3542 -FFA (pre-release);com.funtrain.twilightzone;3542;2021-11-16 20:49 UTC;1235
+The VR Titty Bar;The VR Titty Bar v1+0.1 -unknown;com.ApexVR.ttBAR;1;2021-06-02 20:22 UTC;188
+The Walking Dead - Saints & Sinners;The Walking Dead - Saints & Sinners v21897700+218977 -FFA;com.SDI.TWD;21897700;2021-12-12 15:18 UTC;7133
+The Wizards - Dark Times;The Wizards - Dark Times v13+1.13 -QU;com.CarbonStudio.DarkTimes;13;2021-07-05 17:08 UTC;4485
+The Wizards;The Wizards v14+1.11 -QU;com.CarbonStudio.TheWizards;14;2021-06-02 20:22 UTC;3601
+Throw Anything;Throw Anything v7+1.0 -FFA;com.VisualLight.ThrowAnything_Quest;7;2021-12-21 02:25 UTC;613
+ThrowAnything;ThrowAnything v6+1.0 -VRP;com.VisualLight.ThrowAnything_Quest;6;2021-08-17 12:41 UTC;609
+Throwing Punches;Throwing Punches v27+1.4.8 -QU;com.KrzysztofWrona.ThrowingPunches;27;2021-06-11 16:06 UTC;93
+Thumper;Thumper v25+1.00 -QU;com.Drool.Thumper.quest;25;2021-06-02 20:23 UTC;288
+Tilt Brush;Tilt Brush v141+23.2-28f36f08b -QU;com.google.tiltbrush;141;2021-06-02 20:22 UTC;128
+Time Stall;Time Stall v631960+1.0 -QU (b);com.forcefieldxr.timestall;631960;2021-06-02 20:23 UTC;1758
+Titans of Space PLUS;Titans of Space PLUS v77+1.1.77 -VRP;com.drashvr.titansofspacevr6dof;77;2021-09-19 14:11 UTC;515
+To The Top;To The Top v20+0.20 -QU;com.electrichatgames.tothetop_al;20;2021-06-02 20:22 UTC;1782
+Together VR;Together VR v2+1.5 -unknown;com.AuroraGames.TogetherVRM;2;2021-06-02 20:22 UTC;1347
+Touring Karts PRO;Touring Karts PRO v12+1.2 -VRP;com.ivanovichgames.touringkartsPRO;12;2021-10-16 03:33 UTC;517
+Toy Clash;Toy Clash v42+1.4.0r6 -unknown;com.fiveminlab.toyclash;42;2021-06-02 20:22 UTC;124
+Traffic Jams;Traffic Jams v21050311+1.0.21050311 -QU;nl.littlechicken.trafficjams.quest;21050311;2021-06-02 20:23 UTC;882
+TrainerVR;TrainerVR v3+2.2 -FFA;com.sumalab.TrainerVR;3;2021-12-21 02:25 UTC;476
+Trash Gun;Trash Gun v11+0.11 -QU;com.JohnRayGames.TrashGun;11;2021-06-02 20:22 UTC;124
+Travel The Words!;Travel The Words! v3+1.0 -QU;com.Studio8ight.TTW.Full;3;2021-06-02 20:22 UTC;669
+Tribe XR - DJ in VR;Tribe XR - DJ in VR v956+0.09.8.2 -FFA;com.TribeXR.TribeXR;956;2021-12-12 15:19 UTC;1060
+TripeaksDreamland VR;TripeaksDreamland VR v6+1.0 -QU;de.DanielAli.TripeaksDLVRQuest;6;2021-07-17 15:57 UTC;224
+Triton;Triton v1+1.0 -unknown;com.TetraStudios.TritonVR;1;2021-06-02 20:22 UTC;630
+Trover Saves the Universe;Trover Saves the Universe v21+1.0 -QU;com.SquanchGames.Trover;21;2021-06-02 20:23 UTC;3525
+Tsuro - The Game of The Path;Tsuro - The Game of The Path v53+1.14.0 -QU;com.Thunderbox.TsuroVR;53;2021-06-02 20:23 UTC;89
+Ultra Height - Mist City Climb;Ultra Height - Mist City Climb v12+9.9 -VRP;com.UltraFunGames.UltraHeightMistCityClimb;12;2021-09-19 14:10 UTC;300
+Ultrawings 2;Ultrawings 2 v200732+0.76 -FFA (prerelease);com.BitPlanetGamesLLC.Ultrawings2;200732;2021-12-13 14:48 UTC;1261
+Ultrawings;Ultrawings v422+2.02 -QU;com.BitPlanet.Ultrawings.Quest;422;2021-06-02 20:23 UTC;730
+Unlimited Bowling;Unlimited Bowling v19+1.2 -FFA;com.SPSoftwareProductions.UnlimitedBowlingVR;19;2021-10-13 02:29 UTC;255
+Unplugged - Air Guitar;Unplugged - Air Guitar v319+1.0.319 -FFA;com.Anotherway.UnpluggedVR;319;2021-12-21 02:21 UTC;824
+Unstung;Unstung v355+1.2.1 -FFA;com.Neomajika.Unstung;355;2021-10-29 14:21 UTC;119
+Until You Fall;Until You Fall v174045+1.2.0.174045 -FFA;com.schellgames.untilyoufall;174045;2021-11-06 01:55 UTC;634
+VR Aim Trainer;VR Aim Trainer v1+1.0 -unknown;com.aim.vraimtrainer;1;2021-06-02 20:22 UTC;91
+VR Battle of Battleship;VR Battle of Battleship v3+1.2 -QU;hit.nullcityrts.ovrbatleofbattleship;3;2021-06-11 16:08 UTC;118
+VR Chess;VR Chess v6+1.06 -VRP;com.KnightWizards.VRChess;6;2021-09-19 14:09 UTC;389
+VR Sashimi Tanpopo;VR Sashimi Tanpopo v70+1.1 -QU;com.framesynthesis.VRSashimiTanpopo;70;2021-06-23 14:25 UTC;86
+VRIT;VRIT v22+1.0b -FFA;com.Wasplay.VRIT;22;2021-10-16 04:20 UTC;119
+VRKarts Sprint;VRKarts Sprint v28+1.18 -QU;com.viewpointgames.vrkarts_sprint_quest;28;2020-10-24 21:19 UTC;281
+VRtuos Pro;VRtuos Pro v1+2.0.3 -unknown;com.PavelMarceluch.VRtuosPro;1;2020-07-30 00:23 UTC;77
+Vacation Simulator;Vacation Simulator v84+1.3.0-38033 -QU;com.owlchemylabs.vacationsimulator;84;2021-06-02 20:22 UTC;1692
+Vader Immortal - Episode I;Vader Immortal - Episode I v236952+1.1.0 -QU;com.ILMxLAB.VaderImmortal.ep1;236952;2021-06-02 20:22 UTC;2801
+Vader Immortal - Episode II;Vader Immortal - Episode II v236948+2.0.2 -QU;com.ILMxLAB.VaderImmortal.ep2;236948;2021-06-02 20:23 UTC;3809
+Vader Immortal - Episode III;Vader Immortal - Episode III v236944+3.0.2 -QU;com.ILMxLAB.VaderImmortal.ep3;236944;2021-06-02 20:22 UTC;3952
+Vanishing Grace;Vanishing Grace v34+1.0.3 -QU;com.MontePerdido.VanishingGrace;34;2021-09-19 14:08 UTC;3267
+VekWars;VekWars v2+0.9 -VRP;com.washingup.VekWars;2;2021-08-17 12:39 UTC;184
+Ven VR Adventure;Ven VR Adventure v44+1.44 -FFA;com.monologicgames.venvradventure;44;2021-11-06 01:56 UTC;8671
+Vermillion;Vermillion v9210+0.9.2b10 -FFA (prerelease);com.TheAviary.Vermillionbg2;9210;2021-12-02 03:12 UTC;281
+Verto Studio VR;Verto Studio VR v251+2.5.1 -QU;com.vertostudio.vertostudiovr;251;2021-06-02 20:22 UTC;73
+Vetrix;Vetrix v5+1.22 -FFA;com.PixelRacers.Vetrix;5;2021-10-16 04:19 UTC;79
+ViFit;ViFit v1+1.0.0 -unknown;com.VifitTraining.Vifit;1;2020-12-14 23:22 UTC;189
+Viking Days;Viking Days v21+1.0 -unknown;com.vrmonkey.VikingDays;21;2021-06-02 20:22 UTC;306
+Virtual Virtual Reality;Virtual Virtual Reality v11+1.8.13 -QU;com.TenderClaws.VVR.Quest;11;2021-06-02 20:23 UTC;366
+Void Racer - Extreme;Void Racer - Extreme v121+1.21 -QU;com.coplanar.vre;121;2021-06-02 20:23 UTC;324
+Volleyball Fever;Volleyball Fever v1+1.5.1 -QU;io.neuston.volleyballfever;1;2021-06-02 20:23 UTC;138
+Waifu's Spooky Space Station;Waifu's Spooky Space Station v11+1.0b -QU;com.MiraiMadaGames.WSS;11;2021-05-31 21:32 UTC;252
+Walkabout Mini Golf;Walkabout Mini Golf v6803+2.9 -FFA;com.MightyCoconut.WalkaboutMiniGolf;6803;2021-12-21 02:21 UTC;1509
+Waltz of the Wizard - Natural Magic;Waltz of the Wizard - Natural Magic v764+2.2.1.764 -FFA;com.Aldin.WotW;764;2021-12-21 02:22 UTC;1729
+Wander;Wander v3419+0.3419 -VRP;com.parkline.wander;3419;2021-08-17 12:28 UTC;226
+Wands;Wands v1078+1.8.0 -VRP;com.nux_games.Wands;1078;2021-11-06 01:47 UTC;398
+Wands;Wands v858+1.8.0 -VRP;com.CortopiaStudios.Wands;858;2021-10-11 02:03 UTC;425
+Warhammer 40,000 - Battle Sister;Warhammer 40,000 - Battle Sister v13671234+1.1.3.1 -QU;com.PixelToys.BattleSisters;13671234;2021-10-04 21:48 UTC;4677
+Warlike Space;Warlike Space v4+1.4 -QU;com.EVR.WarlikeSpace;4;2021-06-02 20:23 UTC;843
+Warplanes - WW1 Fighters;Warplanes - WW1 Fighters v300+3.0 -FFA;com.HomeNetGames.WW1oculus;300;2021-12-01 00:21 UTC;250
+Where Thoughts Go;Where Thoughts Go v38+1.26 -QU;com.feels.WhereThoughtsGo.Quest;38;2021-06-02 20:22 UTC;519
+Whirligig VR Media Player;Whirligig VR Media Player v25+4.84 -unknown;com.Whirligig.Whirligig;25;2021-06-02 20:23 UTC;637
+White Hole;White Hole v11+1.12 -FFA;Fenrir.WhiteHole;11;2021-10-14 02:21 UTC;257
+White Hole;White Hole v11+1.12 -QU;Fenrir.WhiteHole;11;2021-06-02 20:23 UTC;256
+Wind Wind;Wind Wind v60+1.02 -VRP;com.ELIOT.WindWind;60;2021-08-20 18:38 UTC;2537
+Windlands;Windlands v43+1.4.3 -FFA;com.psytecgames.windlands.quest.applab;43;2021-11-06 01:57 UTC;819
+Wisdom;Wisdom v22+22 -FFA;COM.RLH.MICROWISDOM;22;2021-10-14 02:21 UTC;369
+Witchblood;Witchblood v183732+1.0 -unknown;com.hiddenpath.Witchblood;183732;2021-06-02 20:22 UTC;474
+Wolf and Pigs - Out for Vengeance;Wolf and Pigs - Out for Vengeance v15+0.1 -FFA;com.visuallight.wolfandpigs;15;2021-10-16 04:21 UTC;263
+Wolves in the Walls;Wolves in the Walls v1375+1.1375 -VRP;com.fable.wolvesquest;1375;2020-11-19 22:58 UTC;1378
+Wonderglade;Wonderglade v109088216+1.9.88216 -QU;com.resolutiongames.wondergladesantacruz;109088216;2021-06-02 20:22 UTC;390
+Wraith - The Oblivion - Afterlife;Wraith - The Oblivion - Afterlife v108+1.0 -FFA;com.fasttravelgames.jukebox;108;2021-11-03 18:11 UTC;3637
+X-BOOSTER;X-BOOSTER v100065+3.31 -FFA;com.NiVision.XBOOSTER;100065;2021-11-11 16:14 UTC;332
+X-Fitness;X-Fitness v100078+3.57 -FFA;com.NiVision.XBOOSTER;100078;2021-12-21 02:22 UTC;498
+YUKI;YUKI v243+1.2.6.243 -FFA;com.Arvore.Yuki;243;2021-10-16 04:22 UTC;974
+You, Calligrapher;You, Calligrapher v1+1.0 -QU;com.nuodengren.YouCalligrapher;1;2021-06-11 17:22 UTC;211
+Yues VR FPV Drone Simulator;Yues VR FPV Drone Simulator v1+0.11 -VRP;com.YueBeifong.YuesVRFPVSim;1;2021-09-26 22:23 UTC;216
+Yupitergrad;Yupitergrad v44+2.4.0 -FFA;com.Gamedust.Yupitergrad;44;2021-11-06 01:57 UTC;1146
+ZOOKEEPER - Blast Quest;ZOOKEEPER - Blast Quest v142+0.15.1 -FFA;jp.kiteretsu.vr.zookeeper.world;142;2021-12-09 16:06 UTC;573
+ZenVR;ZenVR v10+1.05 -FFA;com.SatoriStudios.ZenVR;10;2021-12-01 00:18 UTC;427
+Zero Caliber - Reloaded;Zero Caliber - Reloaded v584+1.4.584 -QU;com.XrealGames.ZcReloaded;584;2021-11-12 05:52 UTC;3974
+ZomB Run;ZomB Run v26+0.44 -VRP;com.BlackDragonProductionsLtd.ZomBRun;26;2021-08-17 12:24 UTC;336
+Zombie Gunner;Zombie Gunner v4+1.0 -QU;net.mobilemischief.zombiegunnerquest;4;2021-07-08 17:04 UTC;233
+Zombie World VR;Zombie World VR v4+1.0 -unknown;com.Appalga.ZombieWorldVR;4;2021-06-02 20:22 UTC;125
+Zombieland - Headshot Fever;Zombieland - Headshot Fever v2283+1.6.1 -FFA;com.XRGames.ZombielandVR;2283;2021-11-23 02:30 UTC;1981
+Zombies in your Home;Zombies in your Home v1+0.1 -VRP;com.Cazforshort.ZombiesInYourHome;1;2021-11-03 18:05 UTC;36
+Zooma - Deluxe Edition;Zooma - Deluxe Edition v712+1.1.3 -VRP;com.GizmoVRLTD.Zooma;712;2021-08-17 12:24 UTC;116
+exVRience Golf Club;exVRience Golf Club v154+1 -FFA;com.exvrience.exvriencegolfclubq;154;2021-12-21 02:12 UTC;891
+iDoll;iDoll v1+v1 -FFA;com.iDollDev.iDollQuest;1;2021-11-18 04:28 UTC;221
