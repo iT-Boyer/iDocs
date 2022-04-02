@@ -1,10 +1,18 @@
 {
     "name": "金和开发相关库",
     "packages": [
-        {
-            "url": "https://github.com/it-boyer/JHBasePackagae.git"
-        },{
-            "url": "https://github.com/it-boyer/JHThirdPackage.git"
-        }
+        {"url": "https://github.com/jinher/JHBase.git"},
+        {"url": "https://github.com/Alamofire/Alamofire.git"},
+        {"url": "https://github.com/Moya/Moya.git"},
+        {"url": "https://github.com/SwiftyJSON/SwiftyJSON.git"},
+        {"url": "https://github.com/onevcat/Kingfisher.git"},
+        {"url": "https://github.com/SnapKit/SnapKit.git"},
+        {"url": "https://github.com/SwifterSwift/SwifterSwift.git"},
+        {"url": "https://github.com/groue/GRDB.swift.git"},
+        {"url": "https://github.com/eggswift/pull-to-refresh.git"},
+        {"url": "https://github.com/hackiftekhar/IQKeyboardManager.git"},
+        {"url": "https://github.com/apple/swift-algorithms.git"},
+        {"url": "https://github.com/danielgindi/Charts.git"},
+        {"url": "https://github.com/airbnb/lottie-ios.git"}
     ]
 }
