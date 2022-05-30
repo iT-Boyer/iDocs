@@ -5,7 +5,7 @@ Date:    2022-05-30-23:00-+0000
  -->
 <Project xmlns="http://schemas.microsoft.com/project">
  <SaveVersion>14</SaveVersion>
- <Name>project.xml</Name>
+ <Name>FullProject.xml</Name>
  <CreationDate>2022-05-30T23:14:02</CreationDate>
  <ScheduleFromStart>1</ScheduleFromStart>
  <StartDate>2022-04-22T00:00:00</StartDate>
@@ -18,7 +18,7 @@ Date:    2022-05-30-23:00-+0000
  <DaysPerMonth>21.726166666666668</DaysPerMonth>
  <CurrentDate>2022-05-30T23:00:00</CurrentDate>
  <StatusDate>2022-05-30T23:00:00</StatusDate>
- <WorkFormat>5</WorkFormat>
+ <WorkFormat>3</WorkFormat>
  <NewTasksAreManual>1</NewTasksAreManual>
  <SpreadPercentComplete>0</SpreadPercentComplete>
  <StandardRate>0.0</StandardRate>
